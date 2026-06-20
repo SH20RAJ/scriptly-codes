@@ -34,6 +34,15 @@ zip -r "ZIP/$PRODUCT_NAME.zip" "$PRODUCT_NAME" -x "*/STORE_LISTING.md" -x "*/.gi
 echo "Moving '$PRODUCT_NAME' to PRODUCTS/$CATEGORY/..."
 mv "$PRODUCT_NAME" "PRODUCTS/$CATEGORY/"
 
+# 4. Organize STORE_LISTING.md
+if [ -f "PRODUCTS/$CATEGORY/$PRODUCT_NAME/STORE_LISTING.md" ]; then
+    echo "Organizing STORE_LISTING.md into STORE_LISTING/$CATEGORY/$PRODUCT_NAME.md..."
+    mkdir -p "STORE_LISTING/$CATEGORY"
+    mv "PRODUCTS/$CATEGORY/$PRODUCT_NAME/STORE_LISTING.md" "STORE_LISTING/$CATEGORY/$PRODUCT_NAME.md"
+fi
+
 echo "✅ Packaging complete!"
 echo "Zip file: ZIP/$PRODUCT_NAME.zip"
 echo "Source code: PRODUCTS/$CATEGORY/$PRODUCT_NAME"
+echo "Store listing: STORE_LISTING/$CATEGORY/$PRODUCT_NAME.md"
+

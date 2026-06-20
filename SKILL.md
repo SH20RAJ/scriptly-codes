@@ -48,6 +48,7 @@ When the user triggers this skill (e.g., "Convert this project into a digital pr
 1. **Move from RAW_PRODUCT**: The project conversion begins in the `RAW_PRODUCT/` folder. After completing all rebranding, asset replacement, polishing, and documentation steps, the project folder must be moved to the `PRODUCTS/` directory.
 2. **Package the Zip**: Use the `package.sh` script to rename the original folder to the premium brand name. The script will zip the project into the centralized `ZIP/` folder while strictly excluding `STORE_LISTING.md` from the zip archive.
 3. **Categorize the Source**: The script will then move the renamed project folder from `RAW_PRODUCT/` into the `PRODUCTS/[Category]/` directory for clean organization.
+4. **Centralize Store Listing**: Move the generated `STORE_LISTING.md` file into the centralized `STORE_LISTING/[Category]/[brand-name].md` path to keep all marketplace listings structured and organized in one location.
 
 ---
 **Agent Rules:**
