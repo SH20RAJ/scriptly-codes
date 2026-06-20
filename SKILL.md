@@ -9,6 +9,7 @@ When the user triggers this skill (e.g., "Convert this project into a digital pr
 1. **Analyze the Codebase**: Read the main files (`index.html`, `App.js`, `styles.css`, etc.) to understand the core mechanic (e.g., parallax scroll, dashboard, AI wrapper).
 2. **Determine the Niche**: Based on the mechanic, decide the most lucrative category to sell it in (e.g., High-end Fashion Portfolio, SaaS Landing Page, Admin Dashboard).
 3. **Rebrand**: Update the page `<title>`, `<header>`, logos, and footer text. Remove all traces of the original open-source tutorial names and replace them with a premium brand name (e.g., "AURA", "NEXUS").
+4. **Mandatory Copy/Text Changes**: Changing the page copy/text is mandatory and non-negotiable. You must rewrite/update all descriptive text, headings, list items, and main paragraphs on the page to fit the new premium brand identity and target niche perfectly. Do not leave the original tutorial's copy/placeholder text.
 
 ### Phase 2: Assets & Copyright Compliance
 1. **Remove Licensed Assets**: Delete any existing images or media that may be restricted by the original creator's license.
@@ -18,7 +19,8 @@ When the user triggers this skill (e.g., "Convert this project into a digital pr
 
 ### Phase 3: Structural Polish
 1. **Premium Styling**: Modify the CSS to utilize modern luxury aesthetics (e.g., Dark mode, Inter/Playfair Display fonts, subtle linear-gradients, and smooth hover micro-interactions).
-2. **Expand the Layout**: If it's a single-page script, make it a Multi-Page Theme by adding a `contact.html` (with a form) and a secondary layout page (e.g., `gallery.html` or `pricing.html`). Ensure all navigation links work seamlessly.
+2. **Fix Dead Links & 404s**: Search the codebase for broken paths or dummy links (e.g., `/works`, `/about`) and convert them to valid `.html` files (e.g., `works.html`).
+3. **Expand the Layout**: If it's a single-page script, or if the navigation links to missing pages, generate those missing subpages (`contact.html`, `about.html`, etc.) and any necessary subcomponents to ensure the theme is fully functional out of the box.
 
 ### Phase 4: Buyer Documentation
 1. **Generate `README.md`**: Overwrite the original README with a buyer-friendly setup guide. It MUST include:
@@ -43,8 +45,11 @@ When the user triggers this skill (e.g., "Convert this project into a digital pr
 2. **Link Everything**: Once deployed, ensure the live URL is correctly placed in both the `README.md` and the `STORE_LISTING.md`.
 
 ### Phase 7: Packaging & Organization
-1. **Package the Zip**: Use the `package.sh` script to rename the original folder to the premium brand name. The script will zip the project into the centralized `ZIP/` folder while strictly excluding `STORE_LISTING.md` from the zip archive.
-2. **Categorize the Source**: The script will then move the renamed project folder into the `PRODUCTS/[Category]/` directory for clean organization.
+1. **Move from RAW_PRODUCT**: The project conversion begins in the `RAW_PRODUCT/` folder. After completing all rebranding, asset replacement, polishing, and documentation steps, the project folder must be moved to the `PRODUCTS/` directory.
+2. **Package the Zip**: Use the `package.sh` script to rename the original folder to the premium brand name. The script will zip the project into the centralized `ZIP/` folder while strictly excluding `STORE_LISTING.md` from the zip archive.
+3. **Categorize the Source**: The script will then move the renamed project folder from `RAW_PRODUCT/` into the `PRODUCTS/[Category]/` directory for clean organization.
 
 ---
-**Agent Rule:** Execute this entire pipeline autonomously when requested, making all file changes directly, deploying the site to Surge, packaging the zip, and notifying the user when the product is 100% packaged, live, and properly organized in the PRODUCTS directory.
+**Agent Rules:**
+1. **Pipeline Execution**: Execute this entire pipeline autonomously when requested, making all file changes directly, deploying the site to Surge, packaging the zip, and organizing the folder in the `PRODUCTS/` directory.
+2. **Git Push Rule**: You MUST run `git push` ONLY after all work is fully completed, verified, and packaged. Do not push intermediate commits before the task is fully done.

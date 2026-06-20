@@ -1,0 +1,362 @@
+:root {
+    --black: #080808;
+    --white: #F8F8F8;
+    --accent: #B89676; /* Sophisticated gold/bronze accent */
+
+    --bezzy: cubic-bezier(0.8, 0, 0, 1);
+    --bezzy2: cubic-bezier(0.430, 0.195, 0.020, 1);
+    --bezzy3: cubic-bezier(0.5, 0, 0, 1);
+}
+
+/* Hide scrollbars for all elements */
+* {
+    margin: 0;
+	padding: 0;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    box-sizing: border-box;
+	-webkit-font-smoothing: subpixel-antialiased; /* Enable subpixel antialiasing for better text rendering */
+	-moz-osx-font-smoothing: grayscale; /* Enable grayscale antialiasing for better text rendering */
+	text-rendering: geometricPrecision; /* Improve text rendering quality */
+}
+*::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera and Edge Chromium */
+}
+
+html, body {
+    /* Easy rems, 1rem - 10px */
+    font-size: 62.5%;
+    background: var(--black);
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+}
+
+.wrapper {
+    position: relative;
+    height: 100svh;
+    overflow: hidden;
+}
+
+.content {
+    position: relative;
+}
+
+.hero {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100svh;
+    overflow: clip;
+
+    & picture, & img {
+        display: block;
+    }
+
+    & picture {
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        background: var(--black);
+
+        /* Add an overlay to make text more readable */
+        &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%);
+            z-index: 1;
+        }
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.8; /* Slight dimming for a premium look */
+        }
+    }
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    mix-blend-mode: normal;
+
+    h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 10rem;
+        font-weight: 400;
+        line-height: 0.9;
+        text-transform: uppercase;
+        letter-spacing: -2px;
+        margin-bottom: 2rem;
+        color: var(--white);
+    }
+
+    p {
+        font-family: 'Inter', sans-serif;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        color: var(--accent);
+    }
+}
+
+/* Header Styling */
+
+header, footer {
+    position: fixed;
+    z-index: 12;
+
+    display: flex;
+    align-items: center;
+    padding: 3rem 4rem;
+    width: 100%;
+    background: linear-gradient(to var(--dir), rgba(8, 8, 8, 0.9) 0%, rgba(8, 8, 8, 0) 100%);
+
+    nav {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    h1, a, p {
+        display: inline-block;
+        color: var(--white);
+        font-size: 1.3rem;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: color 0.4s var(--bezzy2);
+        text-decoration: none;
+    }
+
+    h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 2.4rem;
+        letter-spacing: 0;
+        font-style: italic;
+    }
+
+    a {
+        &:hover {
+            color: var(--accent);
+        }
+    }
+}
+
+
+header {
+    --dir: bottom;
+    justify-content: space-between;
+    inset: 0 0 auto 0;
+}
+
+footer {
+    --dir: top;
+    justify-content: space-between;
+    inset: auto 0 0 0;
+}
+
+
+/* Mobile Styling */
+@media (max-width: 768px) {
+    .hero-text h2 {
+        font-size: 6rem;
+    }
+    
+    header, footer {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 1.5rem;
+        padding: 2.4rem;
+
+        & nav {
+            gap: 2rem;
+        }
+    }
+}
+
+/* =========================================
+   STATIC PAGES (Campaigns & Contact)
+   ========================================= */
+
+.wrapper-static {
+    padding-top: 10rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+    padding: 4rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.page-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    font-weight: 400;
+    margin-bottom: 4rem;
+    color: var(--white);
+    letter-spacing: -1px;
+}
+
+/* Campaigns Grid */
+.campaign-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 4rem;
+    padding-bottom: 8rem;
+}
+
+.campaign-item {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 3/4;
+    cursor: pointer;
+}
+
+.campaign-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s var(--bezzy2);
+    opacity: 0.8;
+}
+
+.campaign-item:hover img {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.campaign-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 3rem;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+}
+
+.campaign-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.campaign-info p {
+    color: var(--accent);
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Contact Layout */
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8rem;
+    padding-bottom: 8rem;
+}
+
+.contact-info p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #aaa;
+    margin-bottom: 4rem;
+    max-width: 400px;
+}
+
+.contact-details h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.contact-details p {
+    font-size: 1.4rem;
+    color: var(--white);
+    margin-bottom: 3rem;
+}
+
+.contact-form .form-group {
+    margin-bottom: 2rem;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    background: transparent;
+    border: 1px solid #333;
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+.btn-submit {
+    padding: 1.5rem 4rem;
+    background: var(--accent);
+    color: var(--black);
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 2rem;
+}
+
+.btn-submit:hover {
+    background: var(--white);
+}
+
+/* Active Link State */
+nav a.active {
+    color: var(--accent);
+}
+
+@media (max-width: 768px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+    .campaign-grid {
+        grid-template-columns: 1fr;
+    }
+    .container {
+        padding: 2rem;
+    }
+}
