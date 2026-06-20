@@ -10,6 +10,9 @@ When the user triggers this skill (e.g., "Convert this project into a digital pr
 2. **Determine the Niche**: Based on the mechanic, decide the most lucrative category to sell it in (e.g., High-end Fashion Portfolio, SaaS Landing Page, Admin Dashboard).
 3. **Rebrand**: Update the page `<title>`, `<header>`, logos, and footer text. Remove all traces of the original open-source tutorial names and replace them with a premium brand name (e.g., "AURA", "NEXUS").
 4. **Mandatory Copy/Text Changes**: Changing the page copy/text is mandatory and non-negotiable. You must rewrite/update all descriptive text, headings, list items, and main paragraphs on the page to fit the new premium brand identity and target niche perfectly. Do not leave the original tutorial's copy/placeholder text.
+5. **Rebrand Links & Socials**: During copy editing, always rebrand links:
+   - Replace any demo, general, or project links in the code/text with `https://scriptly.store/`.
+   - Replace any personal usernames, creators, or social media links with `@sh20raj` or `https://github.com/sh20raj`.
 
 ### Phase 2: Assets & Copyright Compliance
 1. **Remove Licensed Assets**: Delete any existing images or media that may be restricted by the original creator's license.
@@ -32,17 +35,17 @@ When the user triggers this skill (e.g., "Convert this project into a digital pr
    - "Find more templates at: [https://scriptly.store/](https://scriptly.store/)"
    - **A working Live Demo link** pointing to the deployed `surge.sh` URL.
 
-### Phase 5: Viral Marketing Assets
+### Phase 5: Viral Marketing Assets & Visual Design
 1. **Generate `STORE_LISTING.md`**: Create a markdown file containing high-CTR, psychologically driven marketing copy for the product page.
    - **Product Name**: Catchy, value-driven title (e.g., "The $10k Agency-Grade Portfolio").
-   - **Product Thumbnail**: Auto-generated from the project's first image, ensuring a distinct visual identity. The thumbnail should be generated using the "Premium Auto-Generated Thumbnail" style, applying the distinct visual identity of the product.
-   - **Product Preview Gif**: Auto-generated from the project's first image, ensuring a distinct visual identity. The thumbnail should be generated using the "Premium Auto-Generated Thumbnail" style, applying the distinct visual identity of the product.
-   - **Slug**: Auto-generated from the project's first image, ensuring a distinct visual identity. The thumbnail should be generated using the "Premium Auto-Generated Thumbnail" style, applying the distinct visual identity of the product.
+   - **Slug**: URL-friendly unique identifier.
    - **Categories & Tags**: SEO-optimized tags for marketplaces.
    - **Short Description**: A hook that calls out the target audience's pain points.
    - **Long Description**: Focus on the *feeling* and the *value* (e.g., "Stop losing clients to generic websites").
    - **A working Live Demo link** pointing to the deployed `surge.sh` URL.
    - Include links to `https://scriptly.store/` and `https://scriptly.store/support` at the bottom.
+2. **Generate Premium Mockup Images**: Use the `generate_image` tool to create professional, premium, high-converting thumbnail and screenshot visuals showing the template's UI design (with harmonious curated color palettes and refined typography). Do not use low-quality or raw unstyled browser screenshots.
+3. **Generate Walkthrough Preview GIF**: To create the animated preview GIF/WebP poster, optionally open the live demo URL in the browser using the `browser_subagent` and scroll through the page slowly. Rename the browser subagent's auto-generated WebP recording to `<slug>-walkthrough.webp` and upload it to the assets repository to serve as the animated preview image.
 
 ### Phase 6: Deployment & Hosting
 1. **Deploy to Surge**: Automatically deploy the finished project's compiled `dist/` directory to `surge.sh` using `npx surge [project-path]/dist/ [custom-domain].surge.sh`.
