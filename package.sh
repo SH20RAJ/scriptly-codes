@@ -26,9 +26,9 @@ fi
 echo "Renaming '$ORIGINAL_DIR' to '$PRODUCT_NAME'..."
 mv "$ORIGINAL_DIR" "$PRODUCT_NAME"
 
-# 2. Zip the directory, excluding STORE_LISTING.md and .git
+# 2. Zip the directory, excluding STORE_LISTING.md, .git, node_modules, and dist
 echo "Zipping '$PRODUCT_NAME' to ZIP/$PRODUCT_NAME.zip..."
-zip -r "ZIP/$PRODUCT_NAME.zip" "$PRODUCT_NAME" -x "*/STORE_LISTING.md" -x "*/.git/*"
+zip -r "ZIP/$PRODUCT_NAME.zip" "$PRODUCT_NAME" -x "*/STORE_LISTING.md" -x "*/.git/*" -x "*/node_modules/*" -x "*/dist/*"
 
 # 3. Move the renamed directory to the PRODUCTS folder
 echo "Moving '$PRODUCT_NAME' to PRODUCTS/$CATEGORY/..."

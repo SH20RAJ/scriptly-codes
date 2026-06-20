@@ -13,9 +13,10 @@ When the user triggers this skill (e.g., "Convert this project into a digital pr
 
 ### Phase 2: Assets & Copyright Compliance
 1. **Remove Licensed Assets**: Delete any existing images or media that may be restricted by the original creator's license.
-2. **Source Royalty-Free Media**: Automatically download relevant, high-quality images from Unsplash (or similar royalty-free APIs) using `curl`. Place them in the `assets/` or `public/` directory.
+2. **MIT License Exception**: If the raw product has an MIT license, you do NOT need to change or replace its media assets (e.g., images, textures, models, backups, etc.). You can keep them in full. You only need to edit all textual elements/copy and update the copyright/license file to Scriptly.
+3. **Source Royalty-Free Media**: If assets need to be replaced (e.g., due to restrictive licensing), automatically download relevant, high-quality images from Unsplash (or similar royalty-free APIs) using `curl`. Place them in the `assets/` or `public/` directory.
    - *Example Command:* `curl -s -L "https://images.unsplash.com/photo-[ID]?w=800&q=80" -o assets/01.jpg`
-3. **Clean the Code**: Remove specific author attributions in the HTML/JS that are not required by the MIT license to ensure the buyer receives a clean, white-labeled product.
+4. **Clean the Code**: Remove specific author attributions in the HTML/JS that are not required by the MIT license to ensure the buyer receives a clean, white-labeled product.
 
 ### Phase 3: Structural Polish
 1. **Premium Styling**: Modify the CSS to utilize modern luxury aesthetics (e.g., Dark mode, Inter/Playfair Display fonts, subtle linear-gradients, and smooth hover micro-interactions).
@@ -34,6 +35,9 @@ When the user triggers this skill (e.g., "Convert this project into a digital pr
 ### Phase 5: Viral Marketing Assets
 1. **Generate `STORE_LISTING.md`**: Create a markdown file containing high-CTR, psychologically driven marketing copy for the product page.
    - **Product Name**: Catchy, value-driven title (e.g., "The $10k Agency-Grade Portfolio").
+   - **Product Thumbnail**: Auto-generated from the project's first image, ensuring a distinct visual identity. The thumbnail should be generated using the "Premium Auto-Generated Thumbnail" style, applying the distinct visual identity of the product.
+   - **Product Preview Gif**: Auto-generated from the project's first image, ensuring a distinct visual identity. The thumbnail should be generated using the "Premium Auto-Generated Thumbnail" style, applying the distinct visual identity of the product.
+   - **Slug**: Auto-generated from the project's first image, ensuring a distinct visual identity. The thumbnail should be generated using the "Premium Auto-Generated Thumbnail" style, applying the distinct visual identity of the product.
    - **Categories & Tags**: SEO-optimized tags for marketplaces.
    - **Short Description**: A hook that calls out the target audience's pain points.
    - **Long Description**: Focus on the *feeling* and the *value* (e.g., "Stop losing clients to generic websites").
