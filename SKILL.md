@@ -44,9 +44,12 @@ When the user triggers this skill (e.g., "Convert this project into a digital pr
    - **A working Live Demo link** pointing to the deployed `surge.sh` URL.
    - Include links to `https://scriptly.store/` and `https://scriptly.store/support` at the bottom.
 
-### Phase 6: Deployment
-1. **Deploy to Surge**: Automatically deploy the finished project to `surge.sh` using `npx surge ./ [custom-domain].surge.sh`.
+### Phase 6: Deployment & Hosting
+1. **Deploy to Surge**: Automatically deploy the finished project's compiled `dist/` directory to `surge.sh` using `npx surge [project-path]/dist/ [custom-domain].surge.sh`.
 2. **Link Everything**: Once deployed, ensure the live URL is correctly placed in both the `README.md` and the `STORE_LISTING.md`.
+3. **Release Hosting**: If the generated ZIP file is larger than 20MB (exceeding jsDelivr's CDN limit), create a GitHub Release using the GitHub CLI to host it:
+   - `GITHUB_TOKEN=[PAT] gh release create [tag] ZIP/[file].zip --title "[Title] [Version]" --notes "[Notes]"`
+   - Use the public release download link (`https://github.com/[owner]/[repo]/releases/download/[tag]/[filename]`) for database/dashboard registration.
 
 ### Phase 7: Packaging & Organization
 1. **Move from RAW_PRODUCT**: The project conversion begins in the `RAW_PRODUCT/` folder. After completing all rebranding, asset replacement, polishing, and documentation steps, the project folder must be moved to the `PRODUCTS/` directory.
@@ -54,7 +57,17 @@ When the user triggers this skill (e.g., "Convert this project into a digital pr
 3. **Categorize the Source**: The script will then move the renamed project folder from `RAW_PRODUCT/` into the `PRODUCTS/[Category]/` directory for clean organization.
 4. **Centralize Store Listing**: Move the generated `STORE_LISTING.md` file into the centralized `STORE_LISTING/[Category]/[brand-name].md` path to keep all marketplace listings structured and organized in one location.
 
+### Phase 8: Upload to Scriptly Store
+1. **Auto-upload via API**: Call the `POST https://scriptly.store/api/agent/products` endpoint using the `AGENT_API_KEY` from `.env` as the Bearer token.
+2. **Payload Schema**: Populate the payload using metadata parsed from `STORE_LISTING.md`:
+   - `title`, `slug`, `shortDescription`, `description`
+   - `category` (e.g. `"landing-pages"`), `subcategory` (e.g. `"portfolio-landing-pages"`)
+   - `price` (e.g. `2900` paise = ₹29.00), `isFree: false`, `published: true`
+   - `thumbnail`, `previewGif`, `screenshots` (pointing to jsDelivr CDN URLs if <=20MB)
+   - `fileUrl` (pointing to the GitHub Release download URL if >20MB, or jsDelivr if <=20MB)
+   - `demoUrl` (pointing to the live Surge URL)
+
 ---
 **Agent Rules:**
-1. **Pipeline Execution**: Execute this entire pipeline autonomously when requested, making all file changes directly, deploying the site to Surge, packaging the zip, and organizing the folder in the `PRODUCTS/` directory.
-2. **Git Push Rule**: You MUST run `git push` ONLY after all work is fully completed, verified, and packaged. Do not push intermediate commits before the task is fully done.
+1. **Pipeline Execution**: Execute this entire pipeline autonomously when requested, making all file changes directly, deploying the site to Surge, packaging the zip, organizing the folders, creating GitHub Releases for heavy assets, and automatically listing the product on Scriptly Store.
+2. **Git Push Rule**: You MUST run `git push` ONLY after all work is fully completed, verified, packaged, and uploaded to the Scriptly Store API. Do not push intermediate commits before the task is fully done.
