@@ -42,5 +42,9 @@ When the user triggers this skill (e.g., "Convert this project into a digital pr
 1. **Deploy to Surge**: Automatically deploy the finished project to `surge.sh` using `npx surge ./ [custom-domain].surge.sh`.
 2. **Link Everything**: Once deployed, ensure the live URL is correctly placed in both the `README.md` and the `STORE_LISTING.md`.
 
+### Phase 7: Packaging & Organization
+1. **Package the Zip**: Use the `package.sh` script to rename the original folder to the premium brand name. The script will zip the project into the centralized `ZIP/` folder while strictly excluding `STORE_LISTING.md` from the zip archive.
+2. **Categorize the Source**: The script will then move the renamed project folder into the `PRODUCTS/[Category]/` directory for clean organization.
+
 ---
-**Agent Rule:** Execute this entire pipeline autonomously when requested, making all file changes directly, deploying the site to Surge, and notifying the user when the product is 100% packaged, live, and ready for the store.
+**Agent Rule:** Execute this entire pipeline autonomously when requested, making all file changes directly, deploying the site to Surge, packaging the zip, and notifying the user when the product is 100% packaged, live, and properly organized in the PRODUCTS directory.
