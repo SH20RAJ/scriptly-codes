@@ -1,5 +1,6 @@
 .agent/
-./RAW_PRODUCT/
+RAW_PRODUCT/
 node_modules
 .env
 .DS_Store
+RAW_PRODUCT/
