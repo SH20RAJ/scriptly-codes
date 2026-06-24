@@ -17,7 +17,7 @@ const pricingTable = [
 
 export default function PricingPage() {
   return (
-    <div className="min-h-screen bg-white dark:bg-slate-950 text-slate-800 dark:text-slate-100 selection:bg-cyan-500 selection:text-white">
+    <div className="min-h-screen bg-white text-slate-800 selection:bg-cyan-500 selection:text-white">
       <Navbar />
 
       <main className="py-20 lg:py-32 space-y-24">
@@ -31,16 +31,16 @@ export default function PricingPage() {
             
             {/* Standard Price List */}
             <div className="space-y-6">
-              <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 dark:text-white flex items-center gap-2">
+              <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 flex items-center gap-2">
                 <FileSpreadsheet className="h-6 w-6 text-cyan-500" /> Standard Treatment Price List
               </h2>
-              <p className="text-slate-500 dark:text-slate-400 font-light text-sm">
+              <p className="text-slate-500 font-light text-sm">
                 *Prices listed below represent general estimated ranges. Final quotes require clinical diagnosis by Dr. Sarah Johnson.
               </p>
 
-              <div className="overflow-x-auto border border-slate-100 dark:border-slate-800 rounded-2xl shadow-sm">
-                <table className="min-w-full divide-y divide-slate-100 dark:divide-slate-800 text-left text-sm">
-                  <thead className="bg-slate-50 dark:bg-slate-900 text-slate-500 dark:text-slate-400 font-bold uppercase tracking-wider text-xs">
+              <div className="overflow-x-auto border border-slate-100 rounded-2xl shadow-sm">
+                <table className="min-w-full divide-y divide-slate-100 text-left text-sm">
+                  <thead className="bg-slate-50 text-slate-500 font-bold uppercase tracking-wider text-xs">
                     <tr>
                       <th className="px-6 py-4">Treatment</th>
                       <th className="px-6 py-4">Price Range</th>
@@ -48,13 +48,13 @@ export default function PricingPage() {
                       <th className="px-6 py-4">As Low As (24 mo.)</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-slate-100 dark:divide-slate-800 text-slate-700 dark:text-slate-300">
+                  <tbody className="divide-y divide-slate-100 text-slate-700">
                     {pricingTable.map((item, idx) => (
-                      <tr key={idx} className="hover:bg-slate-50/50 dark:hover:bg-slate-900/30">
-                        <td className="px-6 py-4 font-bold text-slate-900 dark:text-white">{item.service}</td>
-                        <td className="px-6 py-4 font-semibold text-cyan-600 dark:text-cyan-400">{item.range}</td>
+                      <tr key={idx} className="hover:bg-slate-50/50">
+                        <td className="px-6 py-4 font-bold text-slate-900">{item.service}</td>
+                        <td className="px-6 py-4 font-semibold text-cyan-600">{item.range}</td>
                         <td className="px-6 py-4">{item.duration}</td>
-                        <td className="px-6 py-4 font-bold text-teal-600 dark:text-teal-400">{item.emi}</td>
+                        <td className="px-6 py-4 font-bold text-teal-600">{item.emi}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -66,16 +66,16 @@ export default function PricingPage() {
             <div className="space-y-8">
               
               {/* Insurance */}
-              <div className="bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-8 rounded-3xl space-y-4">
-                <h3 className="text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
+              <div className="bg-slate-50 border border-slate-100 p-8 rounded-3xl space-y-4">
+                <h3 className="text-lg font-bold text-slate-900 flex items-center gap-2">
                   <BadgeCheck className="h-5 w-5 text-teal-500" /> Insurance Providers We Accept
                 </h3>
-                <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed font-light">
+                <p className="text-slate-500 text-sm leading-relaxed font-light">
                   We accept and process claims directly with most major corporate insurance networks, including MetLife, Delta Dental, Cigna, Guardian, and Aetna.
                 </p>
                 <div className="flex flex-wrap gap-2 pt-2">
                   {["MetLife", "Delta Dental", "Cigna", "Aetna", "Guardian"].map((ins) => (
-                    <span key={ins} className="bg-white dark:bg-slate-950 px-3 py-1.5 rounded-lg border text-xs font-semibold text-slate-600 dark:text-slate-400 border-slate-200/60 dark:border-slate-800">
+                    <span key={ins} className="bg-white px-3 py-1.5 rounded-lg border text-xs font-semibold text-slate-600 border-slate-200/60">
                       {ins}
                     </span>
                   ))}
@@ -83,14 +83,14 @@ export default function PricingPage() {
               </div>
 
               {/* Financing */}
-              <div className="bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-8 rounded-3xl space-y-4">
-                <h3 className="text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
+              <div className="bg-slate-50 border border-slate-100 p-8 rounded-3xl space-y-4">
+                <h3 className="text-lg font-bold text-slate-900 flex items-center gap-2">
                   <CreditCard className="h-5 w-5 text-cyan-500" /> 0% Interest Financing Plans
                 </h3>
-                <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed font-light">
+                <p className="text-slate-500 text-sm leading-relaxed font-light">
                   Split your cosmetic and implant costs into interest-free monthly installments of 12, 18, or 24 months. We coordinate approvals within minutes during your visit.
                 </p>
-                <div className="flex items-start gap-2.5 text-xs text-slate-400 dark:text-slate-500 mt-2 bg-white dark:bg-slate-950 p-3.5 rounded-xl border border-slate-100 dark:border-slate-800">
+                <div className="flex items-start gap-2.5 text-xs text-slate-400 mt-2 bg-white p-3.5 rounded-xl border border-slate-100">
                   <ShieldAlert className="h-4.5 w-4.5 text-amber-500 shrink-0 mt-0.5" />
                   <span>Subject to simple credit authorization. Zero hidden initiation or prepayment fees.</span>
                 </div>

@@ -32,7 +32,7 @@ const clinicValues = [
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-white dark:bg-slate-950 text-slate-800 dark:text-slate-100 selection:bg-cyan-500 selection:text-white">
+    <div className="min-h-screen bg-white text-slate-800 selection:bg-cyan-500 selection:text-white">
       <Navbar />
 
       <main className="py-20 lg:py-32 space-y-24">
@@ -40,19 +40,19 @@ export default function AboutPage() {
         {/* Intro */}
         <div className="mx-auto max-w-7xl px-6 md:px-8 grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight animate-fade-in">
+            <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight animate-fade-in">
               Transforming Dental Visits Into a{" "}
-              <span className="bg-gradient-to-r from-cyan-600 to-teal-500 dark:from-cyan-400 dark:to-teal-350 bg-clip-text text-transparent">Premium Spa Experience</span>
+              <span className="bg-gradient-to-r from-cyan-600 to-teal-500 bg-clip-text text-transparent">Premium Spa Experience</span>
             </h1>
-            <p className="text-lg text-slate-600 dark:text-slate-400 font-light leading-relaxed">
+            <p className="text-lg text-slate-600 font-light leading-relaxed">
               Founded in 2011, SmileFlow was established with a singular mission: to combine world-class cosmetic and implant dentistry with warmth, transparency, and a luxury clinical experience.
             </p>
-            <p className="text-slate-600 dark:text-slate-400 font-light leading-relaxed">
+            <p className="text-slate-600 font-light leading-relaxed">
               We understand that visiting the dentist can be stressful. That is why we invested in pain-free anesthesia delivery, 3D intraoral digital scanners, and quiet handpieces to change the way patients experience dental health.
             </p>
           </div>
 
-          <div className="relative aspect-video rounded-3xl overflow-hidden shadow-2xl border border-slate-150 dark:border-slate-800">
+          <div className="relative aspect-video rounded-3xl overflow-hidden shadow-2xl border border-slate-150">
             <img 
               src="/clinic.png" 
               alt="SmileFlow Modern Dental Office" 
@@ -67,8 +67,8 @@ export default function AboutPage() {
         {/* Values Grid */}
         <div className="mx-auto max-w-7xl px-6 md:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <h2 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Our Practice Values</h2>
-            <p className="text-slate-600 dark:text-slate-400 font-light text-base md:text-lg">
+            <h2 className="text-3xl font-bold tracking-tight text-slate-900">Our Practice Values</h2>
+            <p className="text-slate-600 font-light text-base md:text-lg">
               At SmileFlow, we build long-term relationships based on clinical trust, gentle touch, and complete transparency.
             </p>
           </div>
@@ -77,12 +77,12 @@ export default function AboutPage() {
             {clinicValues.map((value, idx) => {
               const Icon = value.icon;
               return (
-                <div key={idx} className="border border-slate-100 dark:border-slate-850 bg-slate-50 dark:bg-slate-900 p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-                  <div className="h-12 w-12 rounded-xl bg-cyan-50 dark:bg-slate-950 flex items-center justify-center text-cyan-600 dark:text-cyan-400 mb-6">
+                <div key={idx} className="border border-slate-100 bg-slate-50 p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                  <div className="h-12 w-12 rounded-xl bg-cyan-50 flex items-center justify-center text-cyan-600 mb-6">
                     <Icon className="h-6 w-6" />
                   </div>
-                  <h3 className="text-lg font-bold text-slate-950 dark:text-white">{value.title}</h3>
-                  <p className="text-slate-500 dark:text-slate-400 text-sm mt-3 leading-relaxed font-light">{value.description}</p>
+                  <h3 className="text-lg font-bold text-slate-950">{value.title}</h3>
+                  <p className="text-slate-500 text-sm mt-3 leading-relaxed font-light">{value.description}</p>
                 </div>
               );
             })}

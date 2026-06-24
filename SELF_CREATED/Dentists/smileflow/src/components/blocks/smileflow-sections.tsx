@@ -43,7 +43,6 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
-import { ThemeToggle } from "@/components/ui/theme-toggle";
 
 // --- Header / Navbar ---
 export function Navbar() {
@@ -59,30 +58,29 @@ export function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-slate-100 dark:border-slate-800 bg-white/85 dark:bg-slate-950/85 backdrop-blur-md transition-colors">
+    <header className="sticky top-0 z-50 w-full border-b border-slate-100 bg-white/85 backdrop-blur-md transition-colors">
       <div className="mx-auto flex max-w-7xl h-20 items-center justify-between px-6 md:px-8">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 text-2xl font-bold tracking-tight text-cyan-600 dark:text-cyan-400">
+        <Link href="/" className="flex items-center gap-2 text-2xl font-bold tracking-tight text-cyan-600">
           <Smile className="h-8 w-8 text-cyan-500 animate-pulse" />
-          <span className="bg-gradient-to-r from-cyan-600 to-teal-500 dark:from-cyan-400 dark:to-teal-350 bg-clip-text text-transparent">SmileFlow</span>
+          <span className="bg-gradient-to-r from-cyan-600 to-teal-500 bg-clip-text text-transparent">SmileFlow</span>
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden md:flex gap-8 text-[15px] font-semibold text-slate-600 dark:text-slate-350">
+        <nav className="hidden md:flex gap-8 text-[15px] font-semibold text-slate-600">
           {navLinks.map((link) => (
             <Link
               key={link.name}
               href={link.href}
-              className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors"
+              className="hover:text-cyan-600 transition-colors"
             >
               {link.name}
             </Link>
           ))}
         </nav>
 
-        {/* CTA & Theme Switcher */}
+        {/* CTA */}
         <div className="hidden md:flex items-center gap-4">
-          <ThemeToggle />
           <Link href="/contact">
             <InteractiveHoverButton className="h-11 px-5 text-sm font-medium">Book Consultation</InteractiveHoverButton>
           </Link>
@@ -90,8 +88,7 @@ export function Navbar() {
 
         {/* Mobile controls */}
         <div className="flex md:hidden items-center gap-3">
-          <ThemeToggle />
-          <button className="text-slate-700 dark:text-slate-200" onClick={() => setIsOpen(!isOpen)}>
+          <button className="text-slate-700" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
@@ -99,13 +96,13 @@ export function Navbar() {
 
       {/* Mobile nav dropdown */}
       {isOpen && (
-        <div className="md:hidden border-b border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-950 px-6 py-6 space-y-4 shadow-lg flex flex-col transition-colors">
+        <div className="md:hidden border-b border-slate-100 bg-white px-6 py-6 space-y-4 shadow-lg flex flex-col transition-colors">
           {navLinks.map((link) => (
             <Link
               key={link.name}
               href={link.href}
               onClick={() => setIsOpen(false)}
-              className="text-lg font-medium text-slate-700 dark:text-slate-200 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors py-1"
+              className="text-lg font-medium text-slate-700 hover:text-cyan-600 transition-colors py-1"
             >
               {link.name}
             </Link>
@@ -259,7 +256,18 @@ export function Services() {
       name: "Dental Implants",
       description: "Replace missing teeth with permanent, natural-looking solutions designed for durability.",
       Icon: ShieldCheck,
-      background: <div className="absolute inset-0 bg-gradient-to-br from-cyan-50 to-cyan-100/50" />,
+      background: (
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/bg_implants.png"
+            alt="Dental Implants"
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="object-cover opacity-15 group-hover:opacity-25 transition-all duration-500 scale-100 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-cyan-50/50 to-cyan-100/30" />
+        </div>
+      ),
       className: "col-span-3 lg:col-span-2",
       href: "#book",
       cta: "Learn more",
@@ -268,7 +276,18 @@ export function Services() {
       name: "Teeth Whitening",
       description: "Brighten your smile with safe and highly effective whitening treatments.",
       Icon: Sparkles,
-      background: <div className="absolute inset-0 bg-gradient-to-br from-teal-50 to-teal-100/50" />,
+      background: (
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/bg_whitening.png"
+            alt="Teeth Whitening"
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="object-cover opacity-15 group-hover:opacity-25 transition-all duration-500 scale-100 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-teal-50/50 to-teal-100/30" />
+        </div>
+      ),
       className: "col-span-3 lg:col-span-1",
       href: "#book",
       cta: "Learn more",
@@ -277,7 +296,18 @@ export function Services() {
       name: "Invisalign & Aligners",
       description: "Straighten your teeth comfortably and discreetly without metal brackets.",
       Icon: Smile,
-      background: <div className="absolute inset-0 bg-gradient-to-br from-sky-50 to-sky-100/50" />,
+      background: (
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/bg_invisalign.png"
+            alt="Invisalign & Aligners"
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="object-cover opacity-15 group-hover:opacity-25 transition-all duration-500 scale-100 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-sky-50/50 to-sky-100/30" />
+        </div>
+      ),
       className: "col-span-3 lg:col-span-1",
       href: "#book",
       cta: "Learn more",
@@ -286,7 +316,18 @@ export function Services() {
       name: "Root Canal Treatment",
       description: "Pain-free root canal procedures performed using modern technology & gentle care.",
       Icon: Activity,
-      background: <div className="absolute inset-0 bg-gradient-to-br from-slate-50 to-slate-100/50" />,
+      background: (
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/bg_rootcanal.png"
+            alt="Root Canal Treatment"
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="object-cover opacity-15 group-hover:opacity-25 transition-all duration-500 scale-100 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-slate-50/50 to-slate-100/30" />
+        </div>
+      ),
       className: "col-span-3 lg:col-span-2",
       href: "#book",
       cta: "Learn more",
@@ -295,7 +336,18 @@ export function Services() {
       name: "Cosmetic Dentistry",
       description: "Transform your smile with custom veneers, bonding, and total smile makeovers.",
       Icon: Award,
-      background: <div className="absolute inset-0 bg-gradient-to-br from-emerald-50 to-emerald-100/50" />,
+      background: (
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/bg_cosmetic.png"
+            alt="Cosmetic Dentistry"
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="object-cover opacity-15 group-hover:opacity-25 transition-all duration-500 scale-100 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-emerald-50/50 to-emerald-100/30" />
+        </div>
+      ),
       className: "col-span-3 lg:col-span-2",
       href: "#book",
       cta: "Learn more",
@@ -304,7 +356,18 @@ export function Services() {
       name: "Emergency Dental Care",
       description: "Immediate relief and expert care for urgent dental concerns and trauma.",
       Icon: Clock,
-      background: <div className="absolute inset-0 bg-gradient-to-br from-rose-50 to-rose-100/50" />,
+      background: (
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/bg_emergency.png"
+            alt="Emergency Dental Care"
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="object-cover opacity-15 group-hover:opacity-25 transition-all duration-500 scale-100 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-rose-50/50 to-rose-100/30" />
+        </div>
+      ),
       className: "col-span-3 lg:col-span-1",
       href: "#book",
       cta: "Learn more",

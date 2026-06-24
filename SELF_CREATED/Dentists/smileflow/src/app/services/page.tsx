@@ -106,7 +106,7 @@ const serviceDetails = [
 
 export default function ServicesPage() {
   return (
-    <div className="min-h-screen bg-white dark:bg-slate-950 text-slate-800 dark:text-slate-100 selection:bg-cyan-500 selection:text-white">
+    <div className="min-h-screen bg-white text-slate-800 selection:bg-cyan-500 selection:text-white">
       <Navbar />
 
       <main className="py-20 lg:py-32">
@@ -114,10 +114,10 @@ export default function ServicesPage() {
           
           {/* Header */}
           <div className="text-center max-w-3xl mx-auto mb-20 space-y-4">
-            <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight">
+            <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight">
               Premium Dental Services
             </h1>
-            <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 font-light">
+            <p className="text-lg md:text-xl text-slate-600 font-light">
               We leverage cutting-edge digital dentistry to provide precise, pain-free, and beautiful results. Discover our services below.
             </p>
           </div>
@@ -129,25 +129,25 @@ export default function ServicesPage() {
               return (
                 <div 
                   key={idx}
-                  className={`grid lg:grid-cols-[0.8fr_1.2fr] gap-8 p-8 md:p-12 rounded-3xl border border-slate-100 dark:border-slate-800 bg-gradient-to-br ${service.bgClass} relative overflow-hidden`}
+                  className={`grid lg:grid-cols-[0.8fr_1.2fr] gap-8 p-8 md:p-12 rounded-3xl border border-slate-100 bg-gradient-to-br ${service.bgClass} relative overflow-hidden`}
                 >
                   {/* Left Column (Main Info) */}
                   <div className="space-y-4 flex flex-col justify-between">
                     <div>
-                      <div className="h-14 w-14 rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 flex items-center justify-center text-cyan-600 dark:text-cyan-400 shadow-sm mb-6">
+                      <div className="h-14 w-14 rounded-2xl bg-white border border-slate-100 flex items-center justify-center text-cyan-600 shadow-sm mb-6">
                         <Icon className="h-7 w-7" />
                       </div>
-                      <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 dark:text-white">
+                      <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900">
                         {service.name}
                       </h2>
-                      <p className="text-sm font-semibold text-cyan-600 dark:text-cyan-400 uppercase tracking-widest mt-1">
+                      <p className="text-sm font-semibold text-cyan-600 uppercase tracking-widest mt-1">
                         {service.tagline}
                       </p>
                     </div>
 
                     <div className="space-y-2 mt-6 lg:mt-0">
-                      <p className="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider">Estimated Treatment Time</p>
-                      <p className="text-slate-700 dark:text-slate-300 font-semibold flex items-center gap-2">
+                      <p className="text-xs font-bold text-slate-400 uppercase tracking-wider">Estimated Treatment Time</p>
+                      <p className="text-slate-700 font-semibold flex items-center gap-2">
                         <Clock className="h-4 w-4 text-cyan-500" /> {service.duration}
                       </p>
                     </div>
@@ -155,7 +155,7 @@ export default function ServicesPage() {
 
                   {/* Right Column (Benefits and Details) */}
                   <div className="flex flex-col justify-between space-y-8">
-                    <p className="text-slate-600 dark:text-slate-400 leading-relaxed font-light text-base md:text-lg">
+                    <p className="text-slate-600 leading-relaxed font-light text-base md:text-lg">
                       {service.description}
                     </p>
 
@@ -163,12 +163,12 @@ export default function ServicesPage() {
                       {service.benefits.map((benefit, i) => (
                         <div key={i} className="flex gap-2.5 items-start">
                           <CheckCircle2 className="h-5 w-5 text-teal-500 shrink-0 mt-0.5" />
-                          <span className="text-slate-700 dark:text-slate-300 text-sm font-medium">{benefit}</span>
+                          <span className="text-slate-700 text-sm font-medium">{benefit}</span>
                         </div>
                       ))}
                     </div>
 
-                    <div className="pt-4 border-t border-slate-200/50 dark:border-slate-800/50 flex justify-end">
+                    <div className="pt-4 border-t border-slate-200/50 flex justify-end">
                       <a href="/contact" id={`book-${service.name.toLowerCase().replace(/\s+/g, '-')}`}>
                         <InteractiveHoverButton className="h-12 px-6 text-sm font-medium">
                           Book {service.name} Consultation <ArrowRight className="h-4 w-4 ml-1 inline" />
