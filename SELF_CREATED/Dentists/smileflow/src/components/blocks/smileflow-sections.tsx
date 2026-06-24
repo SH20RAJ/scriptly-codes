@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
 import Image from "next/image";
 import { 
   Activity, 
@@ -42,90 +43,76 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
 
 // --- Header / Navbar ---
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: "Services", href: "#services" },
-    { name: "Transformations", href: "#transformations" },
-    { name: "Why Choose Us", href: "#why-choose-us" },
-    { name: "Meet the Doctor", href: "#doctor" },
-    { name: "Cost Calculator", href: "#calculator" },
-    { name: "FAQs", href: "#faqs" },
+    { name: "Home", href: "/" },
+    { name: "Services", href: "/services" },
+    { name: "Transformations", href: "/transformations" },
+    { name: "Pricing", href: "/pricing" },
+    { name: "About", href: "/about" },
+    { name: "Contact", href: "/contact" },
   ];
 
-  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    e.preventDefault();
-    const element = document.querySelector(href);
-    if (element) {
-      const offset = 80; // height of sticky header
-      const bodyRect = document.body.getBoundingClientRect().top;
-      const elementRect = element.getBoundingClientRect().top;
-      const elementPosition = elementRect - bodyRect;
-      const offsetPosition = elementPosition - offset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-      setIsOpen(false);
-    }
-  };
-
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-slate-100 bg-white/80 backdrop-blur-md">
+    <header className="sticky top-0 z-50 w-full border-b border-slate-100 dark:border-slate-800 bg-white/85 dark:bg-slate-950/85 backdrop-blur-md transition-colors">
       <div className="mx-auto flex max-w-7xl h-20 items-center justify-between px-6 md:px-8">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2 text-2xl font-bold tracking-tight text-cyan-600">
+        <Link href="/" className="flex items-center gap-2 text-2xl font-bold tracking-tight text-cyan-600 dark:text-cyan-400">
           <Smile className="h-8 w-8 text-cyan-500 animate-pulse" />
-          <span className="bg-gradient-to-r from-cyan-600 to-teal-500 bg-clip-text text-transparent">SmileFlow</span>
-        </a>
+          <span className="bg-gradient-to-r from-cyan-600 to-teal-500 dark:from-cyan-400 dark:to-teal-350 bg-clip-text text-transparent">SmileFlow</span>
+        </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden md:flex gap-8 text-[15px] font-medium text-slate-600">
+        <nav className="hidden md:flex gap-8 text-[15px] font-semibold text-slate-600 dark:text-slate-350">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.name}
               href={link.href}
-              onClick={(e) => handleScroll(e, link.href)}
-              className="hover:text-cyan-600 transition-colors"
+              className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors"
             >
               {link.name}
-            </a>
+            </Link>
           ))}
         </nav>
 
-        {/* CTA */}
-        <div className="hidden md:block">
-          <a href="#book" onClick={(e) => handleScroll(e, "#book")}>
+        {/* CTA & Theme Switcher */}
+        <div className="hidden md:flex items-center gap-4">
+          <ThemeToggle />
+          <Link href="/contact">
             <InteractiveHoverButton className="h-11 px-5 text-sm font-medium">Book Consultation</InteractiveHoverButton>
-          </a>
+          </Link>
         </div>
 
-        {/* Mobile menu toggle */}
-        <button className="md:hidden text-slate-700" onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-        </button>
+        {/* Mobile controls */}
+        <div className="flex md:hidden items-center gap-3">
+          <ThemeToggle />
+          <button className="text-slate-700 dark:text-slate-200" onClick={() => setIsOpen(!isOpen)}>
+            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile nav dropdown */}
       {isOpen && (
-        <div className="md:hidden border-b border-slate-100 bg-white px-6 py-6 space-y-4 shadow-lg flex flex-col">
+        <div className="md:hidden border-b border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-950 px-6 py-6 space-y-4 shadow-lg flex flex-col transition-colors">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.name}
               href={link.href}
-              onClick={(e) => handleScroll(e, link.href)}
-              className="text-lg font-medium text-slate-700 hover:text-cyan-600 transition-colors py-1"
+              onClick={() => setIsOpen(false)}
+              className="text-lg font-medium text-slate-700 dark:text-slate-200 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors py-1"
             >
               {link.name}
-            </a>
+            </Link>
           ))}
-          <a href="#book" onClick={(e) => handleScroll(e, "#book")} className="pt-4">
+          <Link href="/contact" onClick={() => setIsOpen(false)} className="pt-4">
             <InteractiveHoverButton className="w-full h-12 text-center text-base font-semibold">Book Consultation</InteractiveHoverButton>
-          </a>
+          </Link>
         </div>
       )}
     </header>
