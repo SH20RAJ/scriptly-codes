@@ -68,7 +68,11 @@ When the user triggers this skill (e.g., "Convert this project into a digital pr
    - `price` (e.g. `2900` paise = ₹29.00), `isFree: false`, `published: true`
    - `thumbnail`, `previewGif`, `screenshots` (pointing to jsDelivr CDN URLs if <=20MB)
    - `fileUrl` (pointing to the GitHub Release download URL if >20MB, or jsDelivr if <=20MB)
-   - `demoUrl` (pointing to the live Surge URL)
+3. **Link Back Product Coordinates**: After publishing the product and obtaining the product slug and product ID from the API response, update the codebase as follows:
+   - Add the product page link (`https://scriptly.store/products/<slug>`) to the project `README.md`.
+   - Add a "Buy Theme" button or banner to the website's `index.html` (linked to `https://scriptly.store/products/<slug>`).
+   - Add a license source comment or disclaimer in `index.html` or `LICENSE` stating: "For licensing, credits, or source, see: https://scriptly.store/products/<id>".
+   - Re-package and overwrite the project ZIP file in the `ZIP/` folder so the buyer gets these links.
 
 ---
 **Agent Rules:**

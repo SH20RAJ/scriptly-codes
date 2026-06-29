@@ -2,6 +2,9 @@
 
 GRILLÉ is a premium, fully responsive luxury fine dining and restaurant HTML website template. Crafted with rich aesthetics, smooth animations, parallax interactive components, and premium typography, it offers a high-end interface for Michelin-grade restaurants, bistros, and culinary spaces.
 
+## Purchase & Licensing
+You can view details, purchase commercial licenses, or get support for this theme on the [Scriptly Store Product Page](https://scriptly.store/products/grille-restaurant-theme).
+
 ## Live Demo
 Check out the live interactive preview: [GRILLÉ Live Demo](https://grille-restaurant-theme.surge.sh)
 
