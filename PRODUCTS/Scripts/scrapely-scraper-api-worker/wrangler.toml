@@ -1,0 +1,8 @@
+name = "scrapely-scraper-api-worker"
+main = "index.js"
+compatibility_date = "2024-05-01"
+
+[vars]
+# Add a secure API key to protect your scraping endpoints
+# You can leave this blank to allow open API access
+API_KEY = ""

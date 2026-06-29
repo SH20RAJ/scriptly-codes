@@ -1,0 +1,12 @@
+name = "lynx-url-shortener-worker"
+main = "index.js"
+compatibility_date = "2024-05-01"
+
+[[kv_namespaces]]
+binding = "LYNX_KV"
+# You can create a KV namespace using: wrangler kv:namespace create LYNX_KV
+id = "YOUR_KV_NAMESPACE_ID"
+
+[vars]
+# You can also set this securely using: wrangler secret put TELEGRAM_BOT_TOKEN
+TELEGRAM_BOT_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"
