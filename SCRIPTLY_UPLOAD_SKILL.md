@@ -163,18 +163,3 @@ The platform hosts an MCP server at `https://scriptly.store/api/agents/mcp` allo
 * **Arguments:**
   * `id` (string, required): The UUID or slug of the product to delete.
 
-
----
-
-## 6. LobeHub & Custom AI Skills (JSON Manifest)
-To import this skill into **LobeHub (LobeChat)**, **Dify**, **Coze**, or other AI clients, you **cannot** upload the raw Markdown file directly because these tools require a strictly validated JSON/YAML structure.
-
-Instead, import the companion **[SCRIPTLY_UPLOAD_SKILL.json](file:///Users/shaswatraj/Desktop/earn/scriptly-codes/SCRIPTLY_UPLOAD_SKILL.json)** file located in the root of this workspace. 
-
-### How to Import into LobeHub / LobeChat:
-1. Copy the full content of `SCRIPTLY_UPLOAD_SKILL.json`.
-2. Open LobeChat, go to **Assistant Settings** or **Plugins/Tools Manager**.
-3. Select **Add Custom Tool** / **Custom Plugin**.
-4. Paste the JSON manifest. It contains all valid API parameter schemas, description strings, and routing keys mapped to `https://scriptly.store/api/agent/products`.
-
-
