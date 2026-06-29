@@ -1,0 +1,14 @@
+<svg width="160" height="50" viewBox="0 0 160 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .logo-text {
+      font-family: 'Forum', serif;
+      font-size: 32px;
+      font-weight: 400;
+      letter-spacing: 5px;
+      fill: #E4C590;
+      text-anchor: middle;
+      dominant-baseline: middle;
+    }
+  </style>
+  <text x="80" y="27" class="logo-text">GRILLÉ</text>
+</svg>
