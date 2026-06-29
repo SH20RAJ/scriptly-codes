@@ -71,7 +71,7 @@ When the user triggers this skill (e.g., "Convert this project into a digital pr
 3. **Link Back Product Coordinates**: After publishing the product and obtaining the product slug and product ID from the API response, update the codebase as follows:
    - Add the product page link (`https://scriptly.store/products/<slug>`) to the project `README.md`.
    - Add a "Buy Theme" button or banner to the website's `index.html` (linked to `https://scriptly.store/products/<slug>`).
-   - Add a license source comment or disclaimer in `index.html` or `LICENSE` stating: "For licensing, credits, or source, see: https://scriptly.store/products/<id>".
+   - Add a license source comment or disclaimer in `index.html` or `LICENSE` stating: "For licensing, credits, or source, see: https://scriptly.store/products/<slug>".
    - Re-package and overwrite the project ZIP file in the `ZIP/` folder so the buyer gets these links.
 
 ---
