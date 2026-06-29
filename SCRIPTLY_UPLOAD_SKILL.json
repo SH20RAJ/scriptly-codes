@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "identifier": "scriptly-store-manager",
+  "meta": {
+    "title": "ScriptlyStore Product Manager",
+    "description": "List, create, update, or delete premium digital products on ScriptlyStore.",
+    "avatar": "📦"
+  },
+  "api": [
+    {
+      "name": "listProducts",
+      "description": "Retrieve catalog list of products from ScriptlyStore.",
+      "url": "https://scriptly.store/api/agent/products",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "category": { "type": "string", "description": "Filter by category slug" },
+          "status": { "type": "string", "description": "Filter by status (pending, approved, rejected)" },
+          "published": { "type": "string", "description": "Filter by listing status (true or false)" },
+          "tag": { "type": "string", "description": "Search within tags" },
+          "limit": { "type": "integer", "description": "Limit results (default 100, max 500)" },
+          "offset": { "type": "integer", "description": "Pagination offset" }
+        }
+      }
+    },
+    {
+      "name": "createProduct",
+      "description": "Register and publish a new product on ScriptlyStore.",
+      "url": "https://scriptly.store/api/agent/products",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "title": { "type": "string", "description": "The display title of the product" },
+          "slug": { "type": "string", "description": "URL-friendly unique identifier (lowercase and hyphens)" },
+          "shortDescription": { "type": "string", "description": "A brief one-liner summary of the product" },
+          "description": { "type": "string", "description": "A detailed product description (HTML/Markdown supported)" },
+          "category": { "type": "string", "description": "Category slug, e.g. ui-kits, boilerplates, scripts, landing-pages" },
+          "price": { "type": "integer", "description": "Price in paise (INR cents, e.g. 2900 paise = 29.00 INR)" },
+          "tags": { "type": "string", "description": "Comma-separated tags" },
+          "thumbnail": { "type": "string", "description": "jsDelivr URL of the thumbnail image" },
+          "previewGif": { "type": "string", "description": "jsDelivr URL of the preview GIF/WebP" },
+          "screenshots": { "type": "string", "description": "Comma-separated jsDelivr URLs of screenshots" },
+          "demoUrl": { "type": "string", "description": "Live preview/demo website URL" },
+          "fileUrl": { "type": "string", "description": "Protected download file path or URL" },
+          "published": { "type": "boolean", "description": "Whether the product is listed publicly" },
+          "isFree": { "type": "boolean", "description": "Whether the product is free" }
+        },
+        "required": ["title", "slug", "shortDescription", "description", "category", "price"]
+      }
+    },
+    {
+      "name": "getProduct",
+      "description": "Retrieve detailed information about a single product.",
+      "url": "https://scriptly.store/api/agent/products/{id_or_slug}",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "id_or_slug": { "type": "string", "description": "The product UUID or slug" }
+        },
+        "required": ["id_or_slug"]
+      }
+    },
+    {
+      "name": "updateProduct",
+      "description": "Modify an existing product on ScriptlyStore.",
+      "url": "https://scriptly.store/api/agent/products/{id_or_slug}",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "id_or_slug": { "type": "string", "description": "The product UUID or slug to update" },
+          "title": { "type": "string", "description": "The display title of the product" },
+          "price": { "type": "integer", "description": "Price in paise" },
+          "published": { "type": "boolean", "description": "Whether the product is listed publicly" },
+          "tags": { "type": "string", "description": "Comma-separated tags" }
+        },
+        "required": ["id_or_slug"]
+      }
+    },
+    {
+      "name": "deleteProduct",
+      "description": "Delete a product from ScriptlyStore permanently.",
+      "url": "https://scriptly.store/api/agent/products/{id_or_slug}",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "id_or_slug": { "type": "string", "description": "The product UUID or slug to delete" }
+        },
+        "required": ["id_or_slug"]
+      }
+    }
+  ]
+}
