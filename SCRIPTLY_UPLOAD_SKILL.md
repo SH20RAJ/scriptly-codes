@@ -11,8 +11,13 @@ Authorization: Bearer <AGENT_API_KEY>
 
 ---
 
-## 2. Asset Upload Workflow (Images & GIFs)
-Before creating or updating a product's image fields (`thumbnail`, `previewGif`, `screenshots`), agents **MUST** upload the assets to the `30tools/scriptly-assets` GitHub repository.
+## 2. Asset Sourcing & Upload Workflow (Images & GIFs)
+Before creating or updating a product's image fields (`thumbnail`, `previewGif`, `screenshots`), agents **MUST** capture them using the **agent-browser** tool suite and upload the assets to the `30tools/scriptly-assets` GitHub repository.
+
+### Browser Actions & Screenshot Capturing:
+For all browser activities, layout verification, screenshot captures, and walkthrough recordings, agents **MUST** use the **agent-browser** CLI (`agent-browser`) or its integrated MCP/skill toolset.
+- You can manage, stream, and review browser states and recordings at: `https://agent-browser.dev/recording`
+- Always capture at least 5 screenshots of key sections (e.g. Hero, Features, Pricing, etc.) to use in the product's screenshot carousel.
 
 ### Image/GIF Upload Steps:
 1. Encode the file content into Base64.
@@ -27,6 +32,7 @@ Before creating or updating a product's image fields (`thumbnail`, `previewGif`,
 5. Construct the `jsDelivr` CDN URL:
    `https://cdn.jsdelivr.net/gh/30tools/scriptly-assets@<commit_sha>/<filename>`
    *Example URL:* `https://cdn.jsdelivr.net/gh/30tools/scriptly-assets@85be7032af01206d78d46ba65219f5668a39580a/my-image-8b851a5d76efcfd1.png`
+
 
 ---
 

@@ -44,8 +44,8 @@ When the user triggers this skill (e.g., "Convert this project into a digital pr
    - **Long Description**: Focus on the *feeling* and the *value* (e.g., "Stop losing clients to generic websites").
    - **A working Live Demo link** pointing to the deployed `surge.sh` URL.
    - Include links to `https://scriptly.store/` and `https://scriptly.store/support` at the bottom.
-2. **Generate Premium Mockup Images**: Use the `generate_image` tool (or browser screenshots if image generation is unavailable) to create professional, premium, high-converting visuals. You must always capture and upload at least 5 screenshots covering all main areas of the website (e.g., Hero, Services, About Us, Menu/Features, Contact/Footer) to serve as the product's screenshot carousel.
-3. **Generate Walkthrough Preview GIF**: To create the animated preview GIF/WebP poster, optionally open the live demo URL in the browser using the `browser_subagent` and scroll through the page slowly. Rename the browser subagent's auto-generated WebP recording to `<slug>-walkthrough.webp` and upload it to the assets repository to serve as the animated preview image.
+2. **Generate Premium Mockup Images**: Capture screenshots using the **agent-browser** CLI tool. You must always capture and upload at least 5 screenshots covering all main areas of the website (e.g., Hero, Services, About Us, Menu/Features, Contact/Footer) to serve as the product's screenshot carousel. Stream and capture states via: `https://agent-browser.dev/recording`.
+3. **Generate Walkthrough Preview GIF**: To create the animated preview GIF/WebP poster, open the live demo URL in the browser using the `agent-browser` tool suite and record the scroll interactions. Rename the recording file to `<slug>-walkthrough.webp` and upload it to the assets repository to serve as the animated preview image. Manage and review session assets at `https://agent-browser.dev/recording`.
 
 ### Phase 6: Deployment & Hosting
 1. **Deploy to Surge**: Automatically deploy the finished project's compiled `dist/` directory to `surge.sh` using `npx surge [project-path]/dist/ [custom-domain].surge.sh`.
