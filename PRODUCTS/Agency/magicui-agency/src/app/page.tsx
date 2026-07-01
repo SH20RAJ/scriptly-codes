@@ -166,50 +166,48 @@ export default function HomePage() {
         refresh
       />
 
-      <Navbar />
-
-      {/* ─── HERO ─── */}
+      <Navbar />      {/* ─── HERO ─── */}
       <section className="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 pt-24 text-center">
         <div className="mb-6">
-          <AnimatedGradientText className="text-sm font-medium">
-            ✦ Trusted by 200+ brands worldwide
-          </AnimatedGradientText>
+          <div className="inline-flex items-center gap-2 rounded-full border border-white/5 bg-white/5 px-4 py-1.5 text-xs font-medium text-muted-foreground backdrop-blur-sm">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-violet-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-violet-500"></span>
+            </span>
+            Trusted by 200+ brands worldwide
+          </div>
         </div>
 
-        <h1 className="font-display max-w-5xl text-5xl font-bold leading-[1.1] tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
-          <TextAnimate animation="blurInUp" by="word">
-            We craft digital
-          </TextAnimate>
+        <h1 className="max-w-4xl text-5xl font-semibold tracking-tight sm:text-6xl md:text-7xl text-white font-sans leading-[1.15]">
+          We craft digital
           <br />
-          <AuroraText className="font-extrabold">
+          <AuroraText className="font-extrabold bg-gradient-to-r from-violet-400 via-indigo-400 to-blue-400 bg-clip-text text-transparent">
             experiences that convert
           </AuroraText>
         </h1>
 
-        <p className="mx-auto mt-8 max-w-2xl text-lg text-muted-foreground sm:text-xl">
-          <TextAnimate animation="fadeIn" by="word" delay={0.3}>
-            VORTEX is a full-service digital agency building premium web
-            platforms, brand identities, and growth systems for ambitious
-            companies.
-          </TextAnimate>
+        <p className="mx-auto mt-6 max-w-xl text-base text-muted-foreground sm:text-lg font-light leading-relaxed">
+          VORTEX is a full-service digital agency building premium web
+          platforms, brand identities, and growth systems for ambitious
+          companies.
         </p>
 
-        <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row">
-          <ShimmerButton className="px-8 py-4 text-base">
-            <span className="flex items-center gap-2">
-              Book a Discovery Call <ArrowRight className="h-5 w-5" />
+        <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row">
+          <ShimmerButton className="px-6 py-3.5 text-sm font-medium">
+            <span className="flex items-center gap-2 text-white">
+              Book a Discovery Call <ArrowRight className="h-4 w-4" />
             </span>
           </ShimmerButton>
           <a
             href="/work"
-            className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+            className="flex items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-white"
           >
-            <Rocket className="h-4 w-4" /> See our work
+            See our work <Rocket className="h-4 w-4" />
           </a>
         </div>
 
-        <div className="relative mx-auto mt-20 w-full max-w-4xl">
-          <BorderBeam size={250} duration={12} />
+        <div className="relative mx-auto mt-16 w-full max-w-4xl p-2 rounded-2xl border border-white/5 bg-background/20 backdrop-blur-sm shadow-2xl">
+          <BorderBeam size={200} duration={8} />
           <HeroVideoDialog
             className="block dark:hidden"
             animationStyle="from-center"
