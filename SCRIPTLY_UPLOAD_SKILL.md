@@ -176,4 +176,21 @@ Whenever ANY product is Created, Updated, or Deleted:
 1. **Always Update `TEMPLATES_INDEX.md`**: Keep the unified markdown inventory table updated with product details, live URLs, prices, and ZIP package sizes.
 2. **Always Git Commit and Push**: Run `git add . && git commit -m "..." && git push origin main` after completing any product CRUD operation.
 
+---
+
+## 7. Media Preservation & Live Capture Rules (MANDATORY)
+
+1. **Always Capture Real Website Screenshots**:
+   - Never upload placeholder mockups. Whenever deploying or updating a product on Scriptly Store, capture an actual high-resolution screenshot of the live, deployed website (e.g. via headless browser, browser automation, or viewport snapshot).
+2. **Never Overwrite Sample/Template Assets**:
+   - Do NOT overwrite existing sample images, hero photography, or icons within the template's source directories (`assets/images/...`).
+   - Store generated preview screenshots and marketing posters in a dedicated preview directory (e.g., `assets/preview/` or `assets/studiova-agency-theme/`) so the original template assets remain untouched and clean.
+3. **Video-to-GIF Conversion**:
+   - When a screen recording `.mov` or `.mp4` is provided, convert it into an optimized lightweight GIF using `ffmpeg`:
+     ```bash
+     ffmpeg -y -i "input.mov" -vf "fps=12,scale=800:-1:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=128[p];[s1][p]paletteuse=dither=bayer:bayer_scale=3" "output.gif"
+     ```
+   - Use the resulting GIF for hover previews (`previewGif` / `screenshots`).
+
+
 

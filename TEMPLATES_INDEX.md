@@ -6,10 +6,10 @@ Welcome to the central repository index for **ScriptlyStore** and **21st.dev** c
 
 ## 📊 Catalog Overview & Metrics
 
-- **Total Commercial Products**: 22 Assets
-- **Total Multi-Page Templates**: 14 Themes
+- **Total Commercial Products**: 23 Assets
+- **Total Multi-Page Templates**: 15 Themes
 - **Production Automation Workers & Scripts**: 5 Items
-- **Published 21st.dev Registry Components**: 11 Interactive Primitives
+- **Published 21st.dev Registry Components**: 15 Interactive Primitives
 - **Live Demo Platform**: Surge.sh & Netlify (100% SSL & CDN verified)
 - **Marketplace Distribution**: [Scriptly.store](https://scriptly.store/) & [21st.dev](https://21st.dev/)
 
@@ -41,6 +41,7 @@ Welcome to the central repository index for **ScriptlyStore** and **21st.dev** c
 | 20 | **Lynx — Edge URL Shortener** | `lynx-url-shortener-worker` | Scripts | $29.00 | [Live Demo](https://scriptly.store/products/lynx-url-shortener-worker) | [Scriptly Page](https://scriptly.store/products/lynx-url-shortener-worker) | Script #3 | Cloudflare Workers, KV, Web Crypto | `lynx-url-shortener-worker.zip` | 0.01 MB |
 | 21 | **Scrapely — Scraper API Worker** | `scrapely-scraper-api-worker` | Scripts | $29.00 | [Live Demo](https://scriptly.store/products/scrapely-scraper-api-worker) | [Scriptly Page](https://scriptly.store/products/scrapely-scraper-api-worker) | Script #4 | Cloudflare Workers, Cheerio | `scrapely-scraper-api-worker.zip` | 0.01 MB |
 | 22 | **SEOFlow — Article Generator** | `seoflow-blog-article-generator` | Scripts | $29.00 | [Live Demo](https://scriptly.store/products/seoflow-blog-article-generator) | [Scriptly Page](https://scriptly.store/products/seoflow-blog-article-generator) | Script #5 | Node.js, Claude 3.5 / OpenAI API | `seoflow-blog-article-generator.zip` | 0.01 MB |
+| 23 | **DevCraft — Full-Stack Engineer Portfolio** | `sh20raj-developer-portfolio` | Portfolio | $29.00 | [Live Demo](https://sh20raj.github.io) | [Scriptly Page](https://scriptly.store/products/sh20raj-developer-portfolio) | [21st Template](https://21st.dev/community/templates/devcraft-full-stack-engineer-portfolio) | Next.js 16, Tailwind, Framer, MDX | `sh20raj-developer-portfolio.zip` | 35.0 MB |
 
 ---
 
@@ -48,8 +49,12 @@ Welcome to the central repository index for **ScriptlyStore** and **21st.dev** c
 
 All interactive primitives published to 21st.dev under the `@sh20raj` namespace:
 
-| Component Name | 21st Component Ref | Registry URL | CLI Installation Command |
+| Component Name | 21st Component Ref / Slug | Registry URL | CLI Installation Command |
 |---|---|---|---|
+| **Kinetic Cyber Audio HUD** | `kinetic-cyber-audio-hud` | [View](https://21st.dev/@sh20raj/components/kinetic-cyber-audio-hud) | `npx @21st-dev/cli add @sh20raj/kinetic-cyber-audio-hud` |
+| **Studiova Luxury Pricing Table** | `studiova-luxury-pricing-table` | [View](https://21st.dev/@sh20raj/components/studiova-luxury-pricing-table) | `npx @21st-dev/cli add @sh20raj/studiova-luxury-pricing-table` |
+| **Studiova Interactive Services Tabs** | `studiova-interactive-services-tabs` | [View](https://21st.dev/@sh20raj/components/studiova-interactive-services-tabs) | `npx @21st-dev/cli add @sh20raj/studiova-interactive-services-tabs` |
+| **Developer GitHub Activity Matrix** | `developer-git-hub-activity-matrix` | [View](https://21st.dev/@sh20raj/components/developer-git-hub-activity-matrix) | `npx @21st-dev/cli add @sh20raj/developer-git-hub-activity-matrix` |
 | **Kinetic 3D Parallax Cards** | `component:13815` | [View](https://21st.dev/@sh20raj/components/kinetic-3-d-parallax-cards) | `npx @21st-dev/cli add @sh20raj/kinetic-3-d-parallax-cards` |
 | **Studiova Agency Metrics Grid** | `component:13814` | [View](https://21st.dev/@sh20raj/components/studiova-agency-metrics-grid) | `npx @21st-dev/cli add @sh20raj/studiova-agency-metrics-grid` |
 | **Cyber Matrix Retro Grid** | `component:13813` | [View](https://21st.dev/@sh20raj/components/cyber-matrix-retro-grid) | `npx @21st-dev/cli add @sh20raj/cyber-matrix-retro-grid` |

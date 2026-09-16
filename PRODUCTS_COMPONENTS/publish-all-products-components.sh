@@ -71,7 +71,56 @@ publish_comp \
   "3D perspective-projected retro wireframe synth terrain with continuous horizon acceleration, custom angles, and speed warping." \
   "grid,retro,synthwave,cyber,perspective,animation,react"
 
+# 6. Kinetic 3D Parallax Cards (component:13815)
+publish_comp \
+  "PRODUCTS_COMPONENTS/KineticParallaxCards.tsx" \
+  "PRODUCTS_COMPONENTS/KineticParallaxCardsDemo.tsx" \
+  "Kinetic 3D Parallax Cards" \
+  "Continuous interactive parallax card carousel with 3D depth layering, smooth inertial mouse tracking, and subtle brand badge." \
+  "portfolio,cards,3d,parallax,carousel,animation,react"
+
+# 7. Studiova Champagne Gold Metrics (component:13814)
+publish_comp \
+  "PRODUCTS_COMPONENTS/StudiovaMetricsGrid.tsx" \
+  "PRODUCTS_COMPONENTS/StudiovaMetricsGridDemo.tsx" \
+  "Studiova Champagne Gold Metrics" \
+  "Luxury agency statistics and KPI counter grid with champagne gold accents, subtle borders, and smooth entrance transitions." \
+  "metrics,stats,counter,agency,portfolio,react"
+
+# 8. Kinetic Cyber Audio HUD
+publish_comp \
+  "PRODUCTS_COMPONENTS/YuffieKineticInterface.tsx" \
+  "PRODUCTS_COMPONENTS/YuffieKineticInterfaceDemo.tsx" \
+  "Kinetic Cyber Audio HUD" \
+  "Anime and cyberpunk kinetic HUD music visualizer with HTML5 2D canvas falling sakura petal physics, inertia lerp parallax cursor tracking, laser scanning aura, and audio player." \
+  "cyberpunk,anime,audio,hud,canvas,parallax,interactive"
+
+# 9. Studiova Luxury Pricing Table
+publish_comp \
+  "PRODUCTS_COMPONENTS/StudiovaPricingTable.tsx" \
+  "PRODUCTS_COMPONENTS/StudiovaPricingTableDemo.tsx" \
+  "Studiova Luxury Pricing Table" \
+  "High-converting dark mode pricing table with monthly/annual billing toggle, champagne gold accents, popular tier highlighting, and custom features breakdown." \
+  "pricing,pricing-table,table,dark-mode,agency,saas,billing,react"
+
+# 10. Studiova Interactive Services Tabs
+publish_comp \
+  "PRODUCTS_COMPONENTS/StudiovaServicesTabs.tsx" \
+  "PRODUCTS_COMPONENTS/StudiovaServicesTabsDemo.tsx" \
+  "Studiova Interactive Services Tabs" \
+  "Luxury dark mode agency capabilities and services accordion tab system with champagne gold accents, dynamic deliverables preview, and responsive layouts." \
+  "services,tabs,accordion,agency,portfolio,interactive,dark-mode,react"
+
+# 11. Developer GitHub Activity Matrix
+publish_comp \
+  "PRODUCTS_COMPONENTS/GitHubStatsMatrix.tsx" \
+  "PRODUCTS_COMPONENTS/GitHubStatsMatrixDemo.tsx" \
+  "Developer GitHub Activity Matrix" \
+  "Interactive developer GitHub activity dashboard with merged pull request telemetry, external repository counters, contribution metrics, and multi-tab repository showcase." \
+  "github,stats,dashboard,developer,portfolio,telemetry,react,open-source"
+
 echo ""
 echo "=========================================================="
 echo "✅ All components successfully deployed to 21st.dev!"
 echo "=========================================================="
+

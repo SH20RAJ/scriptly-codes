@@ -88,4 +88,4 @@ Whenever ANY product is Created, Read, Updated, or Deleted (CRUD), the agent **M
 1. **Pipeline Execution**: Execute this entire pipeline autonomously when requested, making all file changes directly, deploying the site to Surge, packaging the zip, organizing the folders, creating GitHub Releases for heavy assets, and automatically listing the product on Scriptly Store.
 2. **Catalog Integrity**: You MUST always update `TEMPLATES_INDEX.md` whenever a product is created, modified, recolored, or published.
 3. **Mandatory Git Push**: Always run `git add . && git commit -m "..." && git push origin main` after every product CRUD cycle is completed and verified. Do not leave uncommitted or unpushed work.
-
+4. **Live Screenshot & Asset Preservation**: Always capture real high-resolution screenshots of the live deployed website when publishing/updating on Scriptly Store. Never overwrite or delete original sample/template images in the asset folder; store generated screenshots and posters in a dedicated preview directory (e.g. `assets/preview/`).

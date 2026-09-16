@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:x.com)",
+      "WebFetch(domain:nitter.net)",
+      "WebFetch(domain:sh20raj.gumroad.com)",
+      "WebSearch",
+      "WebFetch(domain:chatgpt.com)",
+      "Skill(firecrawl-scrape)"
+    ]
+  }
+}
