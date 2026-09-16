@@ -169,3 +169,11 @@ The platform hosts an MCP server at `https://scriptly.store/api/agents/mcp` allo
 * **Arguments:**
   * `id` (string, required): The UUID or slug of the product to delete.
 
+---
+
+## 6. Central Index & Git Synchronization Rule
+Whenever ANY product is Created, Updated, or Deleted:
+1. **Always Update `TEMPLATES_INDEX.md`**: Keep the unified markdown inventory table updated with product details, live URLs, prices, and ZIP package sizes.
+2. **Always Git Commit and Push**: Run `git add . && git commit -m "..." && git push origin main` after completing any product CRUD operation.
+
+

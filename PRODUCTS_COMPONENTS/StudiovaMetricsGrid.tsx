@@ -48,7 +48,7 @@ const DEFAULT_METRICS: MetricItem[] = [
 export function StudiovaMetricsGrid({
   className = "",
   metrics = DEFAULT_METRICS,
-  accentColor = "#C1FF72",
+  accentColor = "#E2B774",
   duration = 1600,
 }: StudiovaMetricsGridProps) {
   const [counts, setCounts] = useState<number[]>(metrics.map(() => 0));

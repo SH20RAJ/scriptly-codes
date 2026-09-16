@@ -9,12 +9,12 @@ export default function StudiovaMetricsGridDemo() {
   return (
     <div className="relative flex min-h-[540px] w-full flex-col items-center justify-center overflow-hidden rounded-2xl bg-[#08090d] p-8 text-white select-none border border-slate-800 shadow-2xl">
       {/* Ambience glow */}
-      <div className="pointer-events-none absolute -top-32 left-1/2 h-80 w-80 -translate-x-1/2 rounded-full bg-[#C1FF72]/15 blur-[120px]" />
+      <div className="pointer-events-none absolute -top-32 left-1/2 h-80 w-80 -translate-x-1/2 rounded-full bg-[#E2B774]/15 blur-[120px]" />
 
       {/* Header telemetry */}
       <div className="relative z-10 mb-8 flex flex-col items-center text-center">
-        <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-[#C1FF72]/30 bg-[#C1FF72]/10 px-3.5 py-1 text-xs font-semibold text-[#C1FF72]">
-          <span className="h-1.5 w-1.5 rounded-full bg-[#C1FF72] animate-ping" />
+        <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-[#E2B774]/30 bg-[#E2B774]/10 px-3.5 py-1 text-xs font-semibold text-[#E2B774]">
+          <span className="h-1.5 w-1.5 rounded-full bg-[#E2B774] animate-ping" />
           STUDIO PERFORMANCE TELEMETRY
         </div>
         <h2 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">
@@ -27,7 +27,7 @@ export default function StudiovaMetricsGridDemo() {
 
       {/* Metrics Grid */}
       <div className="relative z-10 w-full max-w-5xl">
-        <StudiovaMetricsGrid key={triggerKey} accentColor="#C1FF72" duration={1800} />
+        <StudiovaMetricsGrid key={triggerKey} accentColor="#E2B774" duration={1800} />
       </div>
 
       {/* Action triggers */}
@@ -37,7 +37,7 @@ export default function StudiovaMetricsGridDemo() {
           className="inline-flex items-center gap-2 rounded-xl border border-slate-700 bg-slate-900/80 px-4 py-2.5 text-xs font-semibold text-slate-200 transition-all hover:border-slate-500 hover:bg-slate-800 hover:text-white"
         >
           <svg
-            className="h-3.5 w-3.5 text-[#C1FF72]"
+            className="h-3.5 w-3.5 text-[#E2B774]"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -56,7 +56,7 @@ export default function StudiovaMetricsGridDemo() {
           href="https://scriptly.store/products/studiova-agency-bootstrap-template"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-[#C1FF72] to-[#a3e635] px-5 py-2.5 text-xs font-bold text-black shadow-lg shadow-[#C1FF72]/20 transition-all duration-200 hover:brightness-110 hover:-translate-y-0.5 active:translate-y-0"
+          className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-[#E2B774] to-[#c79c58] px-5 py-2.5 text-xs font-bold text-black shadow-lg shadow-[#E2B774]/20 transition-all duration-200 hover:brightness-110 hover:-translate-y-0.5 active:translate-y-0"
         >
           <span>Get Studiova Template</span>
           <svg
@@ -80,10 +80,10 @@ export default function StudiovaMetricsGridDemo() {
         href="https://scriptly.store/"
         target="_blank"
         rel="noopener noreferrer"
-        className="relative z-10 mt-6 inline-flex items-center gap-1.5 font-mono text-xs text-slate-500 hover:text-[#C1FF72] transition-colors"
+        className="relative z-10 mt-6 inline-flex items-center gap-1.5 font-mono text-xs text-slate-500 hover:text-[#E2B774] transition-colors"
       >
         <span>Curated digital products available at</span>
-        <span className="font-semibold text-[#C1FF72] underline underline-offset-4">Scriptly.store ↗</span>
+        <span className="font-semibold text-[#E2B774] underline underline-offset-4">Scriptly.store ↗</span>
       </a>
     </div>
   );

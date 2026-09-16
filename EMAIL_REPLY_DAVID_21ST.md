@@ -122,13 +122,21 @@ https://drive.google.com/drive/folders/1cT_83La3vNl9BpYExFyePT84gmqJJxZM?usp=sha
 - **ZIP Attachment:** `panda-scroll-portfolio.zip` (15.67 MB)
 - **Tech Stack:** Vite, React, Three.js, procedural curve animations, custom 3D papercraft models.
 
-### 13. STUDIOVA — Luxury Agency & Creative Business Bootstrap 5 Theme
-- **Template Name:** STUDIOVA — Luxury Agency & Creative Business Bootstrap 5 Theme
+### 13. STUDIOVA — Luxury Atelier & Digital Agency Bootstrap 5 Theme
+- **Template Name:** STUDIOVA — Luxury Atelier & Digital Agency Bootstrap 5 Theme
 - **Current Product Page & Price:** https://scriptly.store/products/studiova-agency-bootstrap-template ($29.00)
 - **Live Demo URL:** https://studiova-agency-theme.surge.sh/
 - **Cover Image:** https://studiova-agency-theme.surge.sh/assets/images/backgrounds/projects-banner.jpg
 - **ZIP Attachment:** `studiova-agency-bootstrap-template.zip` (5.5 MB)
 - **Tech Stack:** Bootstrap 5, HTML5/CSS3, OwlCarousel, AOS animation suite, 12 multi-page layouts.
+
+### 14. VELOUR — Kinetic GSAP Parallax Studio & Agency Portfolio
+- **Template Name:** VELOUR — Kinetic GSAP Parallax Studio & Agency Portfolio
+- **Current Product Page & Price:** https://scriptly.store/products/velour-kinetic-portfolio ($29.00)
+- **Live Demo URL:** https://velour-agency-theme.surge.sh/
+- **Cover Image:** https://velour-agency-theme.surge.sh/assets/images/portrait-1.jpg
+- **ZIP Attachment:** `velour-kinetic-portfolio.zip` (1.2 MB)
+- **Tech Stack:** HTML5, GSAP 3, ScrollTrigger, 3D mouse parallax vector physics, self-contained responsive assets.
 
 ---
 

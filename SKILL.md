@@ -74,7 +74,18 @@ When the user triggers this skill (e.g., "Convert this project into a digital pr
    - Add a license source comment or disclaimer in `index.html` or `LICENSE` stating: "For licensing, credits, or source, see: https://scriptly.store/products/<slug>".
    - Re-package and overwrite the project ZIP file in the `ZIP/` folder so the buyer gets these links.
 
+### Phase 9: Central Catalog Synchronization (`TEMPLATES_INDEX.md`)
+Whenever ANY product is Created, Read, Updated, or Deleted (CRUD), the agent **MUST** update the master [`TEMPLATES_INDEX.md`](file:///Users/shaswatraj/Desktop/earn/scriptly-codes/TEMPLATES_INDEX.md) catalog index file in the repository root:
+1. **Catalog Table**: Update the unified markdown table with Product Name, Category, Live Demo, Scriptly URL, 21st Reference, Price, Tech Stack, ZIP path, and File Size.
+2. **Metadata Consistency**: Keep slugs, pricing, demo URLs, and GitHub CDN paths synchronized across `TEMPLATES_INDEX.md`, `STORE_LISTING/`, `README.md`, and the Scriptly Store database.
+
+### Phase 10: 21st.dev Registry & Template Package Synchronization
+1. **Interactive UI Component**: Extract the signature interactive component from the product (e.g. Hero, Carousel, Metrics Grid, Card) into `PRODUCTS_COMPONENTS/` and publish it publicly to 21st.dev registry using `21st publish`.
+2. **Email Reply Package**: Update `EMAIL_REPLY_DAVID_21ST.md` and `EMAIL_REPLY_CLEAN_TEXT.txt` with the new template name, live demo URL, cover image, and zip metadata to keep 21st template migration fully up to date.
+
 ---
 **Agent Rules:**
 1. **Pipeline Execution**: Execute this entire pipeline autonomously when requested, making all file changes directly, deploying the site to Surge, packaging the zip, organizing the folders, creating GitHub Releases for heavy assets, and automatically listing the product on Scriptly Store.
-2. **Git Push Rule**: You MUST run `git push` ONLY after all work is fully completed, verified, packaged, and uploaded to the Scriptly Store API. Do not push intermediate commits before the task is fully done.
+2. **Catalog Integrity**: You MUST always update `TEMPLATES_INDEX.md` whenever a product is created, modified, recolored, or published.
+3. **Mandatory Git Push**: Always run `git add . && git commit -m "..." && git push origin main` after every product CRUD cycle is completed and verified. Do not leave uncommitted or unpushed work.
+
