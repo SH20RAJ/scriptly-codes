@@ -137,6 +137,18 @@ export const FluidWaveCanvas: FC<FluidWaveCanvasProps> = ({
         onMouseLeave={handleMouseLeave}
         className="w-full h-full cursor-crosshair"
       />
+
+      {/* Interactive Watermark / Signature */}
+      <a
+        href="https://scriptly.store/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="absolute bottom-3 right-3 z-10 text-[10px] font-mono text-zinc-500 hover:text-white bg-zinc-900/60 backdrop-blur-md px-2.5 py-1 rounded-full border border-zinc-800/80 transition-colors flex items-center gap-1.5 shadow-sm group"
+      >
+        <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
+        <span>Scriptly Wave Engine</span>
+        <span className="opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all">↗</span>
+      </a>
     </div>
   );
 };

@@ -10,6 +10,7 @@ export interface HoloTiltCardProps {
   image?: string;
   className?: string;
   glowColor?: string;
+  href?: string;
   children?: ReactNode;
 }
 
@@ -18,9 +19,10 @@ export const HoloTiltCard: FC<HoloTiltCardProps> = ({
   subtitle = "Neural Combat Class #042",
   badge = "LEGENDARY",
   rarity = "ultra-rare",
-  image = "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&auto=format&fit=crop&q=80",
+  image = "",
   className = "",
   glowColor = "#38bdf8",
+  href = "https://scriptly.store/",
   children,
 }) => {
   const cardRef = useRef<HTMLDivElement>(null);
@@ -157,7 +159,25 @@ export const HoloTiltCard: FC<HoloTiltCardProps> = ({
 
         {/* Card Footer Rarity Ribbon */}
         <div className="relative z-10 pt-2 border-t border-zinc-800/60 flex items-center justify-between text-[11px] text-zinc-500">
-          <span>Scriptly Holographic Series</span>
+          <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => {
+              e.stopPropagation();
+            }}
+            className="hover:text-pink-400 transition-colors flex items-center gap-1 group font-medium"
+          >
+            <span>Scriptly Holographic Series</span>
+            <svg
+              className="w-2.5 h-2.5 opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          </a>
           <span className="font-mono text-zinc-400">HP 9800</span>
         </div>
       </div>

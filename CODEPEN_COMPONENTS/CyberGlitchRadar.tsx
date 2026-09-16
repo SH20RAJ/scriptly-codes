@@ -195,10 +195,18 @@ export const CyberGlitchRadar: FC<CyberGlitchRadarProps> = ({
           <div className="text-zinc-500 text-[8px]">SWEEP</div>
           <div className="font-bold text-cyan-400">60 FPS</div>
         </div>
-        <div className="bg-zinc-900/80 p-1.5 rounded border border-zinc-800">
-          <div className="text-zinc-500 text-[8px]">GRID</div>
-          <div className="font-bold text-zinc-300">GEO-SYNC</div>
-        </div>
+        <a
+          href="https://scriptly.store/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-zinc-900/80 p-1.5 rounded border border-zinc-800 hover:border-cyan-500/50 hover:bg-cyan-950/30 transition-all cursor-pointer group"
+        >
+          <div className="text-zinc-500 text-[8px] group-hover:text-cyan-400">NETWORK</div>
+          <div className="font-bold text-zinc-300 group-hover:text-cyan-300 flex items-center justify-center gap-0.5">
+            <span>SCRIPTLY</span>
+            <span className="text-[8px] text-zinc-500 group-hover:text-cyan-400">↗</span>
+          </div>
+        </a>
       </div>
     </div>
   );

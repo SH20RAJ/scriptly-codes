@@ -7,14 +7,16 @@ export interface LiquidMagneticButtonProps extends ButtonHTMLAttributes<HTMLButt
   magneticStrength?: number;
   glowColor?: string;
   variant?: "emerald" | "violet" | "amber" | "cyan";
+  href?: string;
   className?: string;
 }
 
 export const LiquidMagneticButton: FC<LiquidMagneticButtonProps> = ({
-  children = "Explore Nexus",
+  children = "Explore on Scriptly",
   magneticStrength = 0.35,
   glowColor = "#10b981",
   variant = "emerald",
+  href = "https://scriptly.store/",
   className = "",
   onClick,
   ...props
@@ -58,6 +60,14 @@ export const LiquidMagneticButton: FC<LiquidMagneticButtonProps> = ({
         return "from-cyan-500 to-blue-600 text-white shadow-cyan-500/25";
       default:
         return "from-emerald-500 to-teal-600 text-white shadow-emerald-500/25";
+    }
+  };
+
+  const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    if (onClick) {
+      onClick(e);
+    } else if (href && typeof window !== "undefined") {
+      window.open(href, "_blank", "noopener,noreferrer");
     }
   };
 
@@ -112,7 +122,7 @@ export const LiquidMagneticButton: FC<LiquidMagneticButtonProps> = ({
           ref={buttonRef}
           onMouseMove={handleMouseMove}
           onMouseLeave={handleMouseLeave}
-          onClick={onClick}
+          onClick={handleClick}
           style={{
             transform: `translate(${position.x}px, ${position.y}px)`,
             transition: isHovered
