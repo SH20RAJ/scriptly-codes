@@ -262,3 +262,32 @@ API_KEY_21ST="21st_sk_..." 21st publish-template "<Template Title>" \
   --description "<Value-focused marketing description>"
 ```
 
+---
+
+## 10. CodePen Component Extraction & Headless Capture Guidelines
+
+When extracting trending animations and UI effects from CodePen into 21st.dev components:
+
+### A. The Origin Restriction Rule (CRITICAL)
+21st.dev uses a headless Chrome renderer (`render-cli`) to automatically generate screenshot covers and preview videos.
+- **NEVER** use external image URLs (e.g. `images.unsplash.com`, `via.placeholder.com`). If a request leaves the allowed origin during capture, the CLI throws:
+  `CLI review failed: Cover generation failed for "default": render-cli: Capture request left its allowed origin`
+- **ALWAYS** use self-contained inline SVG vector graphics, pure CSS gradients, or HTML5 Canvas 2D procedural rendering.
+
+### B. Structure Requirement
+Each component must consist of:
+1. `<Name>.tsx`: The self-contained React component with typed props.
+2. `<Name>Demo.tsx`: The interactive sandbox with a default export, interactive sliders/toggles, and a rich dark background (`bg-zinc-950`).
+
+### C. Published CodePen Collection (`CODEPEN_COMPONENTS/`)
+1. **Holographic 3D Tilt Card**: `npx @21st-dev/cli add @sh20raj/holographic-3-d-tilt-card`
+2. **Liquid Magnetic Button**: `npx @21st-dev/cli add @sh20raj/liquid-magnetic-button`
+3. **Cyberpunk HUD Radar**: `npx @21st-dev/cli add @sh20raj/cyberpunk-hud-radar`
+4. **Fluid Wave Canvas**: `npx @21st-dev/cli add @sh20raj/fluid-wave-canvas`
+
+Execute batch publishing at any time with:
+```bash
+bash CODEPEN_COMPONENTS/publish-all-codepen-components.sh
+```
+
+

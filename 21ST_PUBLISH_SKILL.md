@@ -110,3 +110,18 @@ The repository currently maintains 21 production-ready commercial templates and 
 
 Run `python3 scripts/package-all-for-21st.py` to bundle all 21 clean zip archives under 25 MB each.
 
+---
+
+## 9. Trending CodePen Component Registry (`CODEPEN_COMPONENTS/`)
+Four world-class trending UI components converted from CodePen into self-contained React TypeScript components:
+- **Holographic 3D Tilt Card**: `npx @21st-dev/cli add @sh20raj/holographic-3-d-tilt-card`
+- **Liquid Magnetic Button**: `npx @21st-dev/cli add @sh20raj/liquid-magnetic-button`
+- **Cyberpunk HUD Radar**: `npx @21st-dev/cli add @sh20raj/cyberpunk-hud-radar`
+- **Fluid Wave Canvas**: `npx @21st-dev/cli add @sh20raj/fluid-wave-canvas`
+
+Batch publish all components:
+```bash
+bash CODEPEN_COMPONENTS/publish-all-codepen-components.sh
+```
+
+
