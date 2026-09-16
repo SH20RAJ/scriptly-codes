@@ -122,6 +122,14 @@ https://drive.google.com/drive/folders/1cT_83La3vNl9BpYExFyePT84gmqJJxZM?usp=sha
 - **ZIP Attachment:** `panda-scroll-portfolio.zip` (15.67 MB)
 - **Tech Stack:** Vite, React, Three.js, procedural curve animations, custom 3D papercraft models.
 
+### 13. STUDIOVA — Luxury Agency & Creative Business Bootstrap 5 Theme
+- **Template Name:** STUDIOVA — Luxury Agency & Creative Business Bootstrap 5 Theme
+- **Current Product Page & Price:** https://scriptly.store/products/studiova-agency-bootstrap-template ($29.00)
+- **Live Demo URL:** https://studiova-agency-theme.surge.sh/
+- **Cover Image:** https://studiova-agency-theme.surge.sh/assets/images/backgrounds/projects-banner.jpg
+- **ZIP Attachment:** `studiova-agency-bootstrap-template.zip` (5.5 MB)
+- **Tech Stack:** Bootstrap 5, HTML5/CSS3, OwlCarousel, AOS animation suite, 12 multi-page layouts.
+
 ---
 
 ## ⚡ Production Developer Automation Scripts (5 Items)
