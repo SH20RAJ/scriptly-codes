@@ -1,101 +1,73 @@
-# VORTEX — Premium Agency Landing Page Template
+# 🏷️ VORTEX — Animated Agency Landing Page | 14 MagicUI Components
 
-**Product Name:** VORTEX — Animated Agency Landing Page | 14 MagicUI Components
-**Slug:** vortex-agency-magicui
-**Categories:** Landing Pages, Agency Templates, UI Kits
-**Tags:** nextjs, react, tailwind, magicui, agency, landing-page, animated, particles, globe, dark-mode, premium, modern
+### 📁 Category
+- **Category:** Landing Pages
+- **Subcategory:** None
+- **Canonical Slug:** `vortex-agency-magicui`
 
----
+### 🛒 Verified Purchase Link
+- **Buy Direct:** [VORTEX — Animated Agency Landing Page | 14 MagicUI Components](https://scriptly.store/products/vortex-agency-magicui)
+- **Effective Price:** $29.00 (Regular: $29.00)
+- **Storefront:** [Scriptly Store](https://scriptly.store/products/vortex-agency-magicui)
 
-## Short Description
+### 🖼️ Product Imagery
+- **Verified Cover Thumbnail:** https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/articles/r2t4eb1ac03zwpcwsk5z.png
+- **Live Demo Preview:** https://vortex-agency.surge.sh
 
-Stop losing clients to generic, lifeless websites. VORTEX is a premium agency landing page packed with 14 animated MagicUI components — particles, aurora text, 3D globe, shimmer buttons, and more — built on Next.js 16 + Tailwind CSS 4. Deploy in minutes, not weeks.
+### ⚡ Short Description
+Premium agency landing page with 14 animated MagicUI components. Next.js 16 + Tailwind CSS 4.
 
----
-
-## Long Description
-
-### 🚀 Your Agency Deserves a Website That Actually Converts
-
-Most agency templates look the same — flat, boring, forgettable. **VORTEX** is different. Every section is alive with purposeful animation that guides your visitor's eye exactly where it needs to go: your CTA.
-
-### ✨ What Makes VORTEX Stand Out
-
-**14 Premium MagicUI Animated Components:**
-
-- 🌌 **Particles Background** — Floating particles that create depth and atmosphere
-- 🌈 **Aurora Gradient Text** — Headlines that shimmer with living color
-- ⚡ **Shimmer Buttons** — CTAs that demand to be clicked
-- 📊 **Number Tickers** — Stats that count up as users scroll
-- 🎬 **Hero Video Dialog** — Cinematic click-to-play video overlay
-- 🌍 **Interactive 3D Globe** — Show your global reach with a draggable globe
-- ☁️ **3D Icon Cloud** — Rotating tech stack visualization
-- 📜 **Dual Marquee Scrollers** — Services that flow endlessly
-- 🎨 **Bento Grid Features** — Modern card layouts for your offerings
-- ✍️ **Text Blur-In/Fade Animations** — Text that reveals as you scroll
-- 🔮 **Border Beam Effects** — Animated gradient borders on hover
-- 🎯 **Typing Animation** — Typewriter effect for impactful CTAs
-
-### 🏗️ Built on a Modern, Proven Stack
-
-| Technology | Version |
-|---|---|
-| Next.js | 16.x |
-| React | 19.x |
-| TypeScript | 5.x |
-| Tailwind CSS | 4.x |
-| Framer Motion | Latest |
-
-### 📐 Conversion-Optimized Sections
-
-1. **Sticky Navbar** — Always-visible navigation with glassmorphism
-2. **Hero** — Animated headline + video demo + dual CTAs
-3. **Social Proof Stats** — Animated counters (200+ projects, 97% satisfaction)
-4. **Services Marquee** — Infinite scrolling service tags
-5. **Features Bento Grid** — 5 feature cards with hover effects
-6. **Tech Stack Cloud** — Interactive 3D icon visualization
-7. **Global Reach** — 3D globe + region badges
-8. **Testimonials** — 4 client quotes with star ratings and border beams
-9. **CTA Section** — Typewriter text + shimmer button
-10. **Footer** — 4-column links + Scriptly branding
-
-### 🎯 Perfect For
-
-- Digital agencies launching or rebranding
-- Freelancers showcasing premium services
-- SaaS companies needing a modern marketing page
-- Startups building credibility fast
-- Anyone who wants a website that looks like it cost $10,000
-
-### ⚡ One-Command Deployment
-
-Static output — deploy to Vercel, Netlify, Surge, GitHub Pages, or any static host.
-
-```bash
-npm install && npm run build
-```
-
-The `out/` folder is your deployable site. That's it.
+### 🏷️ SEO Tags
+`nextjs`, `react`, `tailwind`, `magicui`, `agency`, `landing-page`, `animated`
 
 ---
 
-## Demo
+## 💎 Product Overview
 
-🔗 **Live Preview:** [https://vortex-agency.surge.sh](https://vortex-agency.surge.sh)
+# VORTEX – Premium Digital Agency Landing Page
+
+**VORTEX** is a premium, production-ready digital agency landing page built with **Next.js**, **Tailwind CSS**, **shadcn/ui**, and **MagicUI**. Designed for agencies, freelancers, startups, SaaS businesses, and creative studios, VORTEX combines modern aesthetics with smooth animations to create a memorable, high-converting web experience.
+
+Featuring **14 beautifully integrated MagicUI animated components** and **6 fully designed pages**, VORTEX helps you launch a professional agency website in minutes instead of weeks. Every section is fully responsive, optimized for performance, and easy to customize.
+
+### Features
+
+* ✨ 14 premium MagicUI animated components
+* 📄 6 complete, professionally designed pages
+* ⚡ Built with Next.js, Tailwind CSS & shadcn/ui
+* 📱 Fully responsive across mobile, tablet, and desktop
+* 🎨 Clean, modern UI with smooth micro-interactions
+* 🚀 SEO-friendly and performance optimized
+* 🧩 Well-structured, reusable, and maintainable code
+* 🌙 Dark mode support
+* 🔧 Easy customization for branding, content, and colors
+* 📦 Production-ready codebase
+
+### Perfect For
+
+* Digital Agencies
+* Creative Studios
+* Marketing Agencies
+* Web Development Companies
+* Freelancers
+* SaaS Startups
+* AI Startups
+* Design Agencies
+* Product Launches
+* Portfolio Websites
+
+**Live Demo:** https://vortex-agency.surge.sh
+
+Transform your online presence with a modern landing page that combines elegant design, fluid animations, and production-quality code to help convert more visitors into clients.
 
 ---
 
-## What's Inside
-
-- Complete Next.js 16 project with TypeScript
-- 14 pre-installed MagicUI animated components
-- Fully responsive (mobile, tablet, desktop)
-- Dark mode by default
-- SEO-optimized with meta tags
-- Static export ready (no server needed)
-- Buyer-friendly README with customization guide
+### 🌐 Live Demo:
+https://vortex-agency.surge.sh
 
 ---
 
-**Buy this template:** [https://scriptly.store/](https://scriptly.store/)
-**Need help?** [https://scriptly.store/support](https://scriptly.store/support)
+### 🤝 Need Help?
+- **Get Support:** https://scriptly.store/support
+- **API Documentation:** https://scriptly.store/docs/api
+- **Find More Templates:** https://scriptly.store/

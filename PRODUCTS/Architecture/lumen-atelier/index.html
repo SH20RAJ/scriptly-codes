@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUMEN — Editorial Architecture & Spatial Atelier</title>
+  <meta name="description" content="An international architectural atelier crafting monolithic residences, contemplative cultural spaces, and restorative private environments.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@500;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            syne: ['Syne', 'sans-serif'],
+            italiana: ['Italiana', 'serif'],
+            mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'monospace'],
+          },
+          colors: {
+            stone: {
+              DEFAULT: '#f4efe6',
+              muted: '#a39e93',
+            },
+            bronze: {
+              DEFAULT: '#c89f6b',
+              hover: '#e0b985',
+            },
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#0c0b0a] text-[#f4efe6] antialiased selection:bg-[#c89f6b] selection:text-black">
+
+
+  <!-- Editorial Top Bar -->
+  <aside aria-label="Studio Dispatch" class="border-b border-white/10 bg-[#12100e] px-6 py-2.5 text-center text-xs tracking-widest uppercase font-mono text-[#c89f6b]">
+    <span>Studio Dispatch 08 // Copenhagen & San Francisco Atelier Commissions Open For 2026/27</span>
+  </aside>
+
+  <!-- Navigation -->
+  <header class="sticky top-0 z-50 border-b border-white/5 bg-[#0c0b0a]/90 backdrop-blur-xl">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
+      <a href="#" class="flex items-center gap-3">
+        <span class="font-syne text-2xl font-black tracking-widest text-[#f4efe6]">LUMEN</span>
+        <span class="hidden sm:inline-block font-mono text-[10px] tracking-widest text-[#c89f6b] uppercase border-l border-white/10 pl-3">Architecture Atelier</span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-10 text-xs uppercase tracking-widest font-mono text-[#a39e93]">
+        <a href="#projects" class="hover:text-[#f4efe6] transition">Monographs</a>
+        <a href="#philosophy" class="hover:text-[#f4efe6] transition">Philosophy</a>
+        <a href="#estimator" class="hover:text-[#f4efe6] transition">Feasibility Tool</a>
+        <a href="#materials" class="hover:text-[#f4efe6] transition">Materiality</a>
+        <a href="#contact" class="hover:text-[#f4efe6] transition">Inquiries</a>
+      </nav>
+
+      <a href="#contact" class="btn-editorial">
+        <span>Commission Atelier</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden pt-24 pb-32 border-b border-white/5">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="max-w-4xl">
+        <p class="font-mono text-xs uppercase tracking-[0.3em] text-[#c89f6b] mb-6">Volume XIX — Monolithic Spatial Exploration</p>
+        <h1 class="font-italiana text-5xl sm:text-8xl font-normal leading-[1.05] tracking-tight text-[#f4efe6]">
+          Sculpting Light, Matter, & Human Atmosphere.
+        </h1>
+        <p class="mt-8 max-w-2xl text-base sm:text-xl font-light text-[#b8b3a7] leading-relaxed">
+          We curate spaces not as mere enclosures, but as sensory sanctuaries. Blending brutalist concrete monolithic geometries with warm Scandinavian light and raw volcanic stone.
+        </p>
+      </div>
+
+      <!-- Hero Gallery Grid -->
+      <div class="mt-16 grid grid-cols-1 md:grid-cols-12 gap-6 items-end">
+        <div class="md:col-span-8 overflow-hidden rounded-2xl border border-white/10 group">
+          <img 
+            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1400&auto=format&fit=crop&q=85" 
+            alt="The Obsidian Pavilion by Lumen Atelier" 
+            class="h-[480px] w-full object-cover transition-transform duration-700 group-hover:scale-105"
+          >
+        </div>
+        <div class="md:col-span-4 space-y-6">
+          <div class="rounded-2xl border border-white/10 bg-[#161412] p-8">
+            <span class="font-mono text-xs text-[#c89f6b] uppercase tracking-widest">Monograph 04</span>
+            <h3 class="font-syne text-2xl font-bold mt-2 text-[#f4efe6]">The Obsidian Pavilion</h3>
+            <p class="text-xs text-[#9c978b] mt-2 leading-relaxed">Kyoto Prefecture, Japan • 9,400 sq.ft • Completed 2025</p>
+            <div class="mt-6 pt-6 border-t border-white/10 flex justify-between font-mono text-xs text-[#b8b3a7]">
+              <span>Mies Crown Hall Finalist</span>
+              <span class="text-[#c89f6b]">100% Geothermal</span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4 text-center font-mono">
+            <div class="rounded-xl border border-white/5 bg-[#141210] p-4">
+              <span class="text-3xl font-bold text-[#f4efe6]">48</span>
+              <p class="text-[10px] uppercase tracking-widest text-[#8c877b] mt-1">Built Monoliths</p>
+            </div>
+            <div class="rounded-xl border border-white/5 bg-[#141210] p-4">
+              <span class="text-3xl font-bold text-[#c89f6b]">14</span>
+              <p class="text-[10px] uppercase tracking-widest text-[#8c877b] mt-1">Global Awards</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Portfolio Monographs -->
+  <section id="projects" class="py-24 border-b border-white/5">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div>
+          <span class="font-mono text-xs uppercase tracking-widest text-[#c89f6b]">Selected Works</span>
+          <h2 class="font-italiana text-4xl sm:text-6xl text-[#f4efe6] mt-2">Architectural Monographs</h2>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="flex flex-wrap gap-2 font-mono text-xs">
+          <button onclick="filterProjects('all')" class="filter-btn active" id="filter-all">All Monographs</button>
+          <button onclick="filterProjects('residential')" class="filter-btn" id="filter-residential">Residential</button>
+          <button onclick="filterProjects('cultural')" class="filter-btn" id="filter-cultural">Cultural</button>
+          <button onclick="filterProjects('sanctuary')" class="filter-btn" id="filter-sanctuary">Sanctuaries</button>
+        </div>
+      </div>
+
+      <!-- Project Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="project-grid">
+        <!-- Project 1 -->
+        <div class="project-card" data-cat="residential">
+          <div class="overflow-hidden rounded-xl border border-white/10 aspect-[4/3] group relative">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&auto=format&fit=crop&q=80" alt="Villa Astraea" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+              <span class="text-xs font-mono text-[#c89f6b]">View Full Case Study →</span>
+            </div>
+          </div>
+          <div class="mt-4 flex justify-between items-start">
+            <div>
+              <h3 class="font-syne text-lg font-bold text-[#f4efe6]">Villa Astraea</h3>
+              <p class="text-xs text-[#8c877b] mt-1">Copenhagen Coastal Monolith • 2024</p>
+            </div>
+            <span class="font-mono text-xs text-[#c89f6b]">7,200 sq.ft</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-cat="cultural">
+          <div class="overflow-hidden rounded-xl border border-white/10 aspect-[4/3] group relative">
+            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=800&auto=format&fit=crop&q=80" alt="Solarium Archive" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+              <span class="text-xs font-mono text-[#c89f6b]">View Full Case Study →</span>
+            </div>
+          </div>
+          <div class="mt-4 flex justify-between items-start">
+            <div>
+              <h3 class="font-syne text-lg font-bold text-[#f4efe6]">Solarium Archive & Gallery</h3>
+              <p class="text-xs text-[#8c877b] mt-1">Aarhus Modern Art Annex • 2025</p>
+            </div>
+            <span class="font-mono text-xs text-[#c89f6b]">14,500 sq.ft</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-cat="sanctuary">
+          <div class="overflow-hidden rounded-xl border border-white/10 aspect-[4/3] group relative">
+            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&auto=format&fit=crop&q=80" alt="Komorebi Onsen" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+              <span class="text-xs font-mono text-[#c89f6b]">View Full Case Study →</span>
+            </div>
+          </div>
+          <div class="mt-4 flex justify-between items-start">
+            <div>
+              <h3 class="font-syne text-lg font-bold text-[#f4efe6]">Komorebi Mountain Retreat</h3>
+              <p class="text-xs text-[#8c877b] mt-1">Hakone Alpine Sanctuary • 2023</p>
+            </div>
+            <span class="font-mono text-xs text-[#c89f6b]">5,800 sq.ft</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Project Feasibility & Spatial Estimator -->
+  <section id="estimator" class="py-24 bg-[#100e0d] border-b border-white/5">
+    <div class="mx-auto max-w-5xl px-6">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="font-mono text-xs uppercase tracking-widest text-[#c89f6b]">Commission Feasibility</span>
+        <h2 class="font-italiana text-4xl sm:text-5xl text-[#f4efe6] mt-2">Spatial Scope Estimator</h2>
+        <p class="text-sm text-[#9c978b] mt-3">Calculate estimated architectural phases, municipal permit timelines, and engineering milestones based on project footprint.</p>
+      </div>
+
+      <div class="rounded-2xl border border-white/10 bg-[#161412] p-8 sm:p-12 shadow-2xl">
+        <div class="mb-8">
+          <div class="flex justify-between items-center mb-3">
+            <label class="font-syne text-sm font-bold text-[#f4efe6]">Target Spatial Footprint:</label>
+            <span id="sqft-val" class="font-mono text-xl font-bold text-[#c89f6b]">6,000 sq.ft</span>
+          </div>
+          <input 
+            type="range" 
+            id="sqft-slider" 
+            min="2500" 
+            max="20000" 
+            step="500" 
+            value="6000" 
+            oninput="updateEstimator(this.value)"
+            class="w-full accent-[#c89f6b] cursor-pointer"
+          >
+          <div class="flex justify-between text-[10px] font-mono text-[#736e63] mt-2">
+            <span>2,500 sq.ft (Boutique)</span>
+            <span>10,000 sq.ft (Substantial)</span>
+            <span>20,000 sq.ft (Estate / Institution)</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-6 border-t border-white/10 font-mono text-center">
+          <div class="rounded-xl border border-white/5 bg-[#1a1815] p-5">
+            <span class="text-xs text-[#8c877b] uppercase">Design & Engineering</span>
+            <div id="est-design" class="text-2xl font-bold text-[#f4efe6] mt-1">7 Months</div>
+          </div>
+          <div class="rounded-xl border border-white/5 bg-[#1a1815] p-5">
+            <span class="text-xs text-[#8c877b] uppercase">Construction Schedule</span>
+            <div id="est-build" class="text-2xl font-bold text-[#c89f6b] mt-1">16 Months</div>
+          </div>
+          <div class="rounded-xl border border-white/5 bg-[#1a1815] p-5">
+            <span class="text-xs text-[#8c877b] uppercase">Atelier Consultation</span>
+            <div id="est-tier" class="text-2xl font-bold text-[#f4efe6] mt-1">Master Atelier</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Materiality Showcase -->
+  <section id="materials" class="py-24 border-b border-white/5">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="max-w-2xl mb-12">
+        <span class="font-mono text-xs uppercase tracking-widest text-[#c89f6b]">Tactile Sensibility</span>
+        <h2 class="font-italiana text-4xl sm:text-5xl text-[#f4efe6] mt-2">The Architecture of Silence</h2>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="material-card">
+          <span class="font-mono text-[10px] text-[#c89f6b] uppercase tracking-widest">Material 01</span>
+          <h4 class="font-syne text-lg font-bold text-white mt-1">Tivoli Travertine</h4>
+          <p class="text-xs text-[#8c877b] mt-2">Open-vein honed stone capturing raw sunlight filtration.</p>
+        </div>
+
+        <div class="material-card">
+          <span class="font-mono text-[10px] text-[#c89f6b] uppercase tracking-widest">Material 02</span>
+          <h4 class="font-syne text-lg font-bold text-white mt-1">Charred Cedar</h4>
+          <p class="text-xs text-[#8c877b] mt-2">Traditional Shou Sugi Ban charring for weather resistance.</p>
+        </div>
+
+        <div class="material-card">
+          <span class="font-mono text-[10px] text-[#c89f6b] uppercase tracking-widest">Material 03</span>
+          <h4 class="font-syne text-lg font-bold text-white mt-1">Patina Bronze</h4>
+          <p class="text-xs text-[#8c877b] mt-2">Living metallic alloys designed to age with the maritime climate.</p>
+        </div>
+
+        <div class="material-card">
+          <span class="font-mono text-[10px] text-[#c89f6b] uppercase tracking-widest">Material 04</span>
+          <h4 class="font-syne text-lg font-bold text-white mt-1">Volcanic Concrete</h4>
+          <p class="text-xs text-[#8c877b] mt-2">Low-carbon aggregate poured in horizontal timber shuttering.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Commission Inquiries Form -->
+  <section id="contact" class="py-24 bg-[#0e0d0b]">
+    <div class="mx-auto max-w-4xl px-6">
+      <div class="text-center mb-12">
+        <span class="font-mono text-xs uppercase tracking-widest text-[#c89f6b]">Private Commissions</span>
+        <h2 class="font-italiana text-4xl sm:text-6xl text-[#f4efe6] mt-2">Initiate an Architectural Dialogue</h2>
+        <p class="text-xs text-[#8c877b] font-mono mt-3">San Francisco Studio: +1 (415) 890-2100 • Copenhagen: +45 32 89 21 00</p>
+      </div>
+
+      <form onsubmit="handleInquiry(event)" class="rounded-2xl border border-white/10 bg-[#141210] p-8 sm:p-12 space-y-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div>
+            <label class="block font-mono text-xs uppercase tracking-wider text-[#9c978b] mb-2">Principal Name</label>
+            <input type="text" required placeholder="Elena Vance" class="input-editorial">
+          </div>
+          <div>
+            <label class="block font-mono text-xs uppercase tracking-wider text-[#9c978b] mb-2">Direct Contact Email</label>
+            <input type="email" required placeholder="elena@vanceholdings.com" class="input-editorial">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div>
+            <label class="block font-mono text-xs uppercase tracking-wider text-[#9c978b] mb-2">Project Typology</label>
+            <select class="input-editorial">
+              <option>Private Monolithic Residence</option>
+              <option>Cultural Pavilion or Gallery</option>
+              <option>Alpine Sanctuary or Retreat</option>
+              <option>Bespoke Commercial Headquarter</option>
+            </select>
+          </div>
+          <div>
+            <label class="block font-mono text-xs uppercase tracking-wider text-[#9c978b] mb-2">Anticipated Site Location</label>
+            <input type="text" placeholder="Carmel-by-the-Sea, California" class="input-editorial">
+          </div>
+        </div>
+
+        <div>
+          <label class="block font-mono text-xs uppercase tracking-wider text-[#9c978b] mb-2">Spatial Aspirations & Context</label>
+          <textarea rows="4" placeholder="Brief notes on landscape, light orientation, and programmatic requirements..." class="input-editorial"></textarea>
+        </div>
+
+        <button type="submit" id="btn-submit-inquiry" class="btn-editorial-full">
+          Transmit Commission Inquiry
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 bg-[#070706] py-12 text-xs font-mono text-[#736e63]">
+    <div class="mx-auto max-w-7xl px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div>
+        <span class="font-syne font-bold text-white text-sm tracking-wider">LUMEN ATELIER</span>
+        <p class="mt-1">Architectural Monographs & Spatial Practice © 2026 Scriptly Store & 21st.dev.</p>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="https://scriptly.store" class="hover:text-white transition">Scriptly Store</a>
+        <a href="https://21st.dev/@sh20raj" class="hover:text-white transition">21st.dev Profile</a>
+        <a href="https://github.com/sh20raj" class="hover:text-white transition">GitHub @sh20raj</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+Subject: Re: Great, let's get you migrated - Codebase Package & Product Information
+
+Hi David,
+
+Thank you for reaching out! We are excited to migrate our full catalog of commercial templates and developer automation scripts over to 21st.
+
+As requested, all archives have been thoroughly cleaned and audited:
+- Removed all `.env` files, private tokens, secrets, and API keys.
+- Removed all `node_modules`.
+- Removed all `.git` directories and git configuration files.
+- Removed all build output artifacts (`dist`, `out`, `.next`, `build`, `.turbo`, `.cache`).
+- Included detailed step-by-step setup and customization instructions in the `README.md` for each template and script.
+
+Every single archive is under 25 MB (the largest is 23.56 MB), and the total combined size across all 17 products is 48.33 MB (well within the 50 MB maximum archive limit). 
+
+📁 **Master Google Drive Folder containing all 17 clean ZIP files:**  
+https://drive.google.com/drive/folders/1cT_83La3vNl9BpYExFyePT84gmqJJxZM?usp=sharing
+
+---
+
+### Mandatory Rights & Delivery Confirmation
+
+> “I confirm that I own or have the necessary rights to all code and assets in this package, and I authorize 21st to securely host and deliver it to customers who purchase it through 21st.”
+
+---
+
+## 🎨 Commercial Web & Mobile Templates (12 Items)
+
+### 1. VORTEX — Animated Agency Landing Page
+- **Template Name:** VORTEX — Animated Agency Landing Page
+- **Current Product Page & Price:** https://scriptly.store/products/vortex-agency-magicui ($29.00)
+- **Live Demo URL:** https://vortex-agency.surge.sh
+- **Cover Image:** https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/articles/r2t4eb1ac03zwpcwsk5z.png
+- **ZIP Attachment:** `vortex-agency-magicui.zip` (0.14 MB)
+- **Tech Stack:** Next.js 16, Tailwind CSS 4, shadcn/ui, 14 MagicUI components, dark mode.
+
+### 2. AURA — Premium AI SaaS Landing Page
+- **Template Name:** AURA — Premium AI SaaS Landing Page
+- **Current Product Page & Price:** https://scriptly.store/products/aura-ai-template ($49.00)
+- **Live Demo URL:** https://aura-ai-template.surge.sh
+- **Cover Image:** https://cdn.jsdelivr.net/gh/30tools/scriptly-assets@a6a4f912f0928cd4a7468fe55f539eed6f61db41/aura-screenshot-f2af123aaf190589.png
+- **ZIP Attachment:** `aura-ai-template.zip` (0.01 MB)
+- **Tech Stack:** HTML5, Modern Tailwind CSS, dark glassmorphism, high-conversion SaaS bento layout.
+
+### 3. LUMIÈRE — Elite Digital Agency HTML Theme
+- **Template Name:** LUMIÈRE — Elite Digital Agency HTML Theme
+- **Current Product Page & Price:** https://scriptly.store/products/lumiere-elite-digital-agency-html-theme ($39.00)
+- **Live Demo URL:** https://lumiere-theme-scriptly.surge.sh
+- **Cover Image:** https://cdn.jsdelivr.net/gh/30tools/scriptly-assets@08ca470aff1a4db6db672cf53545b9264d445fe9/Screenshot_2026-06-22_at_11.10.53_AM-fd2c74f48e70e3ac.png
+- **ZIP Attachment:** `lumiere-theme.zip` (0.44 MB)
+- **Tech Stack:** Lightweight pure HTML5/CSS3/JavaScript, GSAP text stagger animations, editorial typography.
+
+### 4. KRAFT — Premium 3D Hand-Drawn Portfolio Theme
+- **Template Name:** KRAFT — Premium 3D Hand-Drawn Portfolio Theme
+- **Current Product Page & Price:** https://scriptly.store/products/kraft-premium-3d-hand-drawn-portfolio-theme ($29.00)
+- **Live Demo URL:** https://kraft-portfolio-theme.surge.sh
+- **Cover Image:** https://cdn.jsdelivr.net/gh/SH20RAJ/scriptly-codes@main/PRODUCTS/Portfolio/kraft-theme/public/thumbnail.png
+- **ZIP Attachment:** `kraft-theme.zip` (23.56 MB)
+- **Tech Stack:** Three.js, WebGL camera paths, papercraft textures, spatial audio effects, zero build dependencies.
+
+### 5. GRILLÉ — Fine Dining & Luxury Restaurant
+- **Template Name:** GRILLÉ — Fine Dining & Luxury Restaurant
+- **Current Product Page & Price:** https://scriptly.store/products/grille-restaurant-theme ($39.00)
+- **Live Demo URL:** https://grille-restaurant-theme.surge.sh/
+- **Cover Image:** https://cdn.jsdelivr.net/gh/30tools/scriptly-assets@1c814a43b4a148ffab01a64df446e132419949a1/grille-thumbnail-9659c7da5fb1cdb0.png
+- **ZIP Attachment:** `grille-theme.zip` (2.59 MB)
+- **Tech Stack:** HTML5, CSS3, dynamic hero slider, interactive menu showcase, reservation forms.
+
+### 6. PIXELCRAFT — Retro Pixel Art Portfolio
+- **Template Name:** PIXELCRAFT — Retro Pixel Art Portfolio
+- **Current Product Page & Price:** https://scriptly.store/products/pixel-craft-theme ($39.00)
+- **Live Demo URL:** https://pixel-craft-portfolio.surge.sh/
+- **Cover Image:** https://cdn.jsdelivr.net/gh/30tools/scriptly-assets@6cdafcff3c3edb59696d7c38104e5ef764de03b0/pixel-craft-thumbnail-52d45625eaeaff77.png
+- **ZIP Attachment:** `pixel-craft-theme.zip` (5.32 MB)
+- **Tech Stack:** Next.js, Tailwind CSS, Lucide icons, retro 8-bit aesthetic, interactive arcade buttons.
+
+### 7. AURA — Editorial & Fashion Portfolio
+- **Template Name:** AURA — Editorial & Fashion Portfolio
+- **Current Product Page & Price:** https://scriptly.store/products/aura-premium-editorial-fashion-portfolio-html-theme ($26.10 / $29.00)
+- **Live Demo URL:** https://aura-scriptly-theme.surge.sh/
+- **Cover Image:** https://github.com/30tools/scriptly-assets/releases/download/dwq/Screen.Recording.2026-06-22.at.11.26.34.AM.gif
+- **ZIP Attachment:** `aura-portfolio-theme.zip` (0.45 MB)
+- **Tech Stack:** HTML5, custom fluid typography, Lenis smooth scroll, editorial photography grids.
+
+### 8. AETHEL — Autonomous AI Agents Platform
+- **Template Name:** AETHEL — Autonomous AI Agents Platform
+- **Current Product Page & Price:** https://scriptly.store/products/aethel-ai-agents ($49.00)
+- **Live Demo URL:** https://aethel-ai.surge.sh
+- **Cover Image:** https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&auto=format&fit=crop&q=80
+- **ZIP Attachment:** `aethel-ai-agents.zip` (0.01 MB)
+- **Tech Stack:** Pure HTML5/CSS3/JS, interactive terminal simulator, dynamic monthly/annual billing matrix.
+
+### 9. LUMEN — Editorial Architecture Atelier
+- **Template Name:** LUMEN — Editorial Architecture Atelier
+- **Current Product Page & Price:** https://scriptly.store/products/lumen-atelier ($49.00)
+- **Live Demo URL:** https://lumen-atelier.surge.sh
+- **Cover Image:** https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1400&auto=format&fit=crop&q=85
+- **ZIP Attachment:** `lumen-atelier.zip` (0.01 MB)
+- **Tech Stack:** Minimalist Swiss & Scandinavian typography, interactive scope feasibility estimator, materiality grid.
+
+### 10. MATTER — Luxury Creative Agency Template
+- **Template Name:** MATTER — Luxury Creative Agency Template
+- **Current Product Page & Price:** https://scriptly.store/products/matter-theme ($29.00)
+- **Live Demo URL:** https://matter-agency-theme.surge.sh
+- **Cover Image:** https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=80
+- **ZIP Attachment:** `matter-theme.zip` (0.04 MB)
+- **Tech Stack:** HTML5, GSAP motion, Lenis smooth scrolling, case study showcases, zero build overhead.
+
+### 11. VORTEX STUDIO — High-Impact Motion Agency Theme
+- **Template Name:** VORTEX STUDIO — High-Impact Motion Agency Theme
+- **Current Product Page & Price:** https://scriptly.store/products/vortex-agency-magicui ($39.00)
+- **Live Demo URL:** https://vortex-agency-theme.surge.sh/
+- **Cover Image:** https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/articles/r2t4eb1ac03zwpcwsk5z.png
+- **ZIP Attachment:** `vortex-theme.zip` (0.09 MB)
+- **Tech Stack:** Astro, Three.js custom image displacement shaders, GSAP page transitions.
+
+### 12. PANDA SCROLL — 3D Travel Animation Portfolio
+- **Template Name:** PANDA SCROLL — 3D Travel Animation Portfolio
+- **Current Product Page & Price:** https://scriptly.store/products/panda-scroll-travel-animation-portfolio ($40.00)
+- **Live Demo URL:** https://www.mr-pandas-psychologically-safe-portfolio.com/
+- **Cover Image:** https://github.com/30tools/coders/releases/download/few/Screenshot.2026-06-24.at.12.28.39.AM.png
+- **ZIP Attachment:** `panda-scroll-portfolio.zip` (15.67 MB)
+- **Tech Stack:** Vite, React, Three.js, procedural curve animations, custom 3D papercraft models.
+
+---
+
+## ⚡ Production Developer Automation Scripts (5 Items)
+
+### 13. AETHERA — Serverless Telegram AI Assistant Worker
+- **Script Name:** AETHERA — Serverless Telegram AI Assistant Worker
+- **Current Product Page & Price:** https://scriptly.store/products/aethera-telegram-ai-worker ($29.00)
+- **Live Demo URL:** https://t.me/AetheraAIBot
+- **Cover Image:** https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&auto=format&fit=crop&q=80
+- **ZIP Attachment:** `aethera-telegram-ai-worker.zip` (0.01 MB)
+- **Tech Stack:** Cloudflare Workers, Cloudflare AI bindings (Llama 3 8B + Stable Diffusion XL), Telegram Bot API.
+
+### 14. CRYPTOBULK — Multi-Exchange Crypto Alert & Arbitrage Bot
+- **Script Name:** CRYPTOBULK — Multi-Exchange Crypto Alert & Arbitrage Bot
+- **Current Product Page & Price:** https://scriptly.store/products/cryptobulk-crypto-alert-bot ($29.00)
+- **Live Demo URL:** https://scriptly.store/products/cryptobulk-crypto-alert-bot
+- **Cover Image:** https://images.unsplash.com/photo-1621416894569-0f39ed31d247?w=800&auto=format&fit=crop&q=80
+- **ZIP Attachment:** `cryptobulk-crypto-alert-bot.zip` (0.01 MB)
+- **Tech Stack:** Python 3, Asyncio, CCXT (Binance, Bybit, Coinbase), automated price threshold alerts.
+
+### 15. LYNX — High-Performance Edge URL Shortener Worker
+- **Script Name:** LYNX — High-Performance Edge URL Shortener Worker
+- **Current Product Page & Price:** https://scriptly.store/products/lynx-url-shortener-worker ($29.00)
+- **Live Demo URL:** https://scriptly.store/products/lynx-url-shortener-worker
+- **Cover Image:** https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&auto=format&fit=crop&q=80
+- **ZIP Attachment:** `lynx-url-shortener-worker.zip` (0.01 MB)
+- **Tech Stack:** Cloudflare Workers, Cloudflare KV storage, Base62 encoding, click telemetry & analytics.
+
+### 16. SCRAPELY — Resilient Headless Web Scraper API Worker
+- **Script Name:** SCRAPELY — Resilient Headless Web Scraper API Worker
+- **Current Product Page & Price:** https://scriptly.store/products/scrapely-scraper-api-worker ($29.00)
+- **Live Demo URL:** https://scriptly.store/products/scrapely-scraper-api-worker
+- **Cover Image:** https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=800&auto=format&fit=crop&q=80
+- **ZIP Attachment:** `scrapely-scraper-api-worker.zip` (0.01 MB)
+- **Tech Stack:** Cloudflare Workers, HTML Cheerio DOM extraction, automated Markdown and JSON API output.
+
+### 17. SEOFLOW — Automated Long-Form SEO Article Generator
+- **Script Name:** SEOFLOW — Automated Long-Form SEO Article Generator
+- **Current Product Page & Price:** https://scriptly.store/products/seoflow-blog-article-generator ($29.00)
+- **Live Demo URL:** https://scriptly.store/products/seoflow-blog-article-generator
+- **Cover Image:** https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&auto=format&fit=crop&q=80
+- **ZIP Attachment:** `seoflow-blog-article-generator.zip` (0.01 MB)
+- **Tech Stack:** Python 3, OpenRouter / OpenAI API, SERP search intent analysis, markdown export.
+
+---
+
+### Archive Delivery Summary
+
+All 17 files are attached directly to this email response:
+1. `vortex-agency-magicui.zip` (0.14 MB)
+2. `aura-ai-template.zip` (0.01 MB)
+3. `lumiere-theme.zip` (0.44 MB)
+4. `kraft-theme.zip` (23.56 MB)
+5. `grille-theme.zip` (2.59 MB)
+6. `pixel-craft-theme.zip` (5.32 MB)
+7. `aura-portfolio-theme.zip` (0.45 MB)
+8. `aethel-ai-agents.zip` (0.01 MB)
+9. `lumen-atelier.zip` (0.01 MB)
+10. `matter-theme.zip` (0.04 MB)
+11. `vortex-theme.zip` (0.09 MB)
+12. `panda-scroll-portfolio.zip` (15.67 MB)
+13. `aethera-telegram-ai-worker.zip` (0.01 MB)
+14. `cryptobulk-crypto-alert-bot.zip` (0.01 MB)
+15. `lynx-url-shortener-worker.zip` (0.01 MB)
+16. `scrapely-scraper-api-worker.zip` (0.01 MB)
+17. `seoflow-blog-article-generator.zip` (0.01 MB)
+
+📁 **Direct Google Drive Download:**  
+You can access the shared master folder and download all 17 clean archives directly here:  
+https://drive.google.com/drive/folders/1cT_83La3vNl9BpYExFyePT84gmqJJxZM?usp=sharing
+
+Please let me know if you need any additional metadata, licenses, or assets. Looking forward to having everything live on 21st!
+
+
+Best regards,  
+Shaswat Raj (@sh20raj)  
+Founder, ScriptlyStore  
+https://scriptly.store

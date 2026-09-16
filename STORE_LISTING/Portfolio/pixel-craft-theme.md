@@ -1,16 +1,28 @@
-# PixelCraft — Retro Pixel Art Portfolio & Blog Next.js Theme
+# 🏷️ PIXELCRAFT — Retro Pixel Art Portfolio Next.js Theme
 
-- **Slug**: `pixel-craft-theme`
-- **Category**: `landing-pages`
-- **Subcategory**: `portfolio-landing-pages`
-- **Price**: `3900`
-- **Tags**: `nextjs, tailwindcss, react, typescript, pixel-art, retro, portfolio, blog, static-export`
-- **Demo URL**: `https://pixel-craft-portfolio.surge.sh/`
-- **Short Description**: Stand out with PixelCraft: a highly responsive, custom-cursor, retro 8-bit styled personal portfolio and blog Next.js template.
+### 📁 Category
+- **Category:** Landing Pages
+- **Subcategory:** Portfolio Landing Pages
+- **Canonical Slug:** `pixel-craft-theme`
+
+### 🛒 Verified Purchase Link
+- **Buy Direct:** [PIXELCRAFT — Retro Pixel Art Portfolio Next.js Theme](https://scriptly.store/products/pixel-craft-theme)
+- **Effective Price:** $39.00 (Regular: $39.00)
+- **Storefront:** [Scriptly Store](https://scriptly.store/products/pixel-craft-theme)
+
+### 🖼️ Product Imagery
+- **Verified Cover Thumbnail:** https://cdn.jsdelivr.net/gh/30tools/scriptly-assets@6cdafcff3c3edb59696d7c38104e5ef764de03b0/pixel-craft-thumbnail-52d45625eaeaff77.png
+- **Live Demo Preview:** https://pixel-craft-portfolio.surge.sh/
+
+### ⚡ Short Description
+Stand out with PixelCraft: a highly responsive, custom-cursor, retro 8-bit styled personal portfolio and blog Next.js template.
+
+### 🏷️ SEO Tags
+`nextjs`, `tailwindcss`, `react`, `typescript`, `pixel-art`, `retro`, `portfolio`, `blog`, `static-export`
 
 ---
 
-## 👾 Bring Nostalgic Charm to the Modern Web
+## 💎 Product Overview
 
 Tired of generic, flat SaaS-style portfolios? PixelCraft is designed for developers, pixel artists, indie game creators, and retro aesthetics lovers who want their online home to make a bold visual statement.
 
@@ -28,8 +40,12 @@ PixelCraft combines 8-bit/16-bit retro console graphics with a blazing-fast, mod
 
 ---
 
-## 🛠️ Setup & Customization
-PixelCraft is extremely developer friendly. You don't need any complex database setups. Simply update your details inside the `lib/data.ts` file, and the entire portfolio updates dynamically.
+### 🌐 Live Demo:
+https://pixel-craft-portfolio.surge.sh/
 
-* **Find More Templates**: [https://scriptly.store/](https://scriptly.store/)
-* **Get Support**: [https://scriptly.store/support](https://scriptly.store/support)
+---
+
+### 🤝 Need Help?
+- **Get Support:** https://scriptly.store/support
+- **API Documentation:** https://scriptly.store/docs/api
+- **Find More Templates:** https://scriptly.store/

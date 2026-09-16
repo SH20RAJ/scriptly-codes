@@ -1,22 +1,28 @@
-# AURA - Viral Store Listing Copy
-*Use this copy on Scriptly Store to maximize CTR and conversions.*
+# 🏷️ AURA | Premium Editorial & Fashion Portfolio HTML Theme
+
+### 📁 Category
+- **Category:** Landing Pages
+- **Subcategory:** Portfolio Landing Pages
+- **Canonical Slug:** `aura-premium-editorial-fashion-portfolio-html-theme`
+
+### 🛒 Verified Purchase Link
+- **Buy Direct:** [AURA | Premium Editorial & Fashion Portfolio HTML Theme](https://scriptly.store/products/aura-premium-editorial-fashion-portfolio-html-theme)
+- **Effective Price:** $26.10 (Regular: $29.00)
+- **Storefront:** [Scriptly Store](https://scriptly.store/products/aura-premium-editorial-fashion-portfolio-html-theme)
+
+### 🖼️ Product Imagery
+- **Verified Cover Thumbnail:** https://github.com/30tools/scriptly-assets/releases/download/dwq/Screen.Recording.2026-06-22.at.11.26.34.AM.gif
+- **Live Demo Preview:** https://aura-scriptly-theme.surge.sh/
+
+### ⚡ Short Description
+A luxurious, dark-mode HTML template featuring a cinematic GSAP-powered infinite scroll. Designed specifically for high-end fashion brands, creative agencies, and elite photographers looking for an award-winning web presence.
+
+### 🏷️ SEO Tags
+`GSAP`, `Lenis`, `Infinite Scroll`, `Dark Mode`, `Luxury`, `Fashion`, `Photography Portfolio`, `Creative Agency`, `Awwwards`, `Parallax`
 
 ---
 
-## 🏷️ Product Name
-**AURA | The $10k Agency-Grade Infinite Scroll Portfolio Template**
-
-## 📂 Categories & Tags
-*   **Category:** Web Templates / HTML Themes
-*   **Sub-Category:** Portfolio & Fashion
-*   **Tags:** High-End Portfolio, GSAP Animation, Infinite Scroll, Dark Mode, Luxury, Creative Agency, Awwwards, Lenis Smooth Scroll
-
-## 🎯 Short Description (For Thumbnails/Previews)
-Stop losing high-ticket clients to generic websites. AURA is a cinematic, GSAP-powered infinite scroll template that gives you an "Awwwards-winning" web presence in under 5 minutes. 
-
-**🔴 LIVE PREVIEW:** [https://aura-scriptly-theme.surge.sh](https://aura-scriptly-theme.surge.sh)
-
-## 🧠 Long Description (Viral / Psychological Hooks)
+## 💎 Product Overview
 
 **Have you ever wondered why top-tier creative agencies can charge $10,000+ for a simple portfolio website?**
 
@@ -45,3 +51,15 @@ You don't need to be a coding genius. Simply swap out our placeholder images wit
 ---
 *Support & Documentation included: [https://scriptly.store/support](https://scriptly.store/support)*
 *Find more premium templates at: [https://scriptly.store/](https://scriptly.store/)*
+
+---
+
+### 🌐 Live Demo:
+https://aura-scriptly-theme.surge.sh/
+
+---
+
+### 🤝 Need Help?
+- **Get Support:** https://scriptly.store/support
+- **API Documentation:** https://scriptly.store/docs/api
+- **Find More Templates:** https://scriptly.store/

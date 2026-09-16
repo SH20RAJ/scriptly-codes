@@ -1,8 +1,18 @@
-# 🏷️ Product Name: KRAFT - Premium 3D Hand-Drawn Portfolio Theme
+# 🏷️ KRAFT - Premium 3D Hand-Drawn Portfolio Theme
 
 ### 📁 Category
-- **Category:** Portfolio
-- **Sub-category:** Creative / 3D
+- **Category:** Landing Pages
+- **Subcategory:** Portfolio Landing Pages
+- **Canonical Slug:** `kraft-premium-3d-hand-drawn-portfolio-theme`
+
+### 🛒 Verified Purchase Link
+- **Buy Direct:** [KRAFT - Premium 3D Hand-Drawn Portfolio Theme](https://scriptly.store/products/kraft-premium-3d-hand-drawn-portfolio-theme)
+- **Effective Price:** $29.00 (Regular: $29.00)
+- **Storefront:** [Scriptly Store](https://scriptly.store/products/kraft-premium-3d-hand-drawn-portfolio-theme)
+
+### 🖼️ Product Imagery
+- **Verified Cover Thumbnail:** https://cdn.jsdelivr.net/gh/SH20RAJ/scriptly-codes@main/PRODUCTS/Portfolio/kraft-theme/public/thumbnail.png
+- **Live Demo Preview:** https://kraft-portfolio-theme.surge.sh
 
 ### ⚡ Short Description
 An immersive, scroll-triggered 3D hand-drawn sketch portfolio built on React Three Fiber and GSAP. Designed to captivate high-ticket clients and command elite rates.
@@ -12,7 +22,7 @@ An immersive, scroll-triggered 3D hand-drawn sketch portfolio built on React Thr
 
 ---
 
-## 💎 Long Description
+## 💎 Product Overview
 
 ### Stop Sending Boring, Flat Resumes. Start Command Attention.
 
@@ -51,3 +61,15 @@ Check out KRAFT live in action: [https://kraft-portfolio-theme.surge.sh](https:/
 ### 🤝 Need Help?
 - **Get Support:** https://scriptly.store/support
 - **More Templates:** https://scriptly.store/
+
+---
+
+### 🌐 Live Demo:
+https://kraft-portfolio-theme.surge.sh
+
+---
+
+### 🤝 Need Help?
+- **Get Support:** https://scriptly.store/support
+- **API Documentation:** https://scriptly.store/docs/api
+- **Find More Templates:** https://scriptly.store/

@@ -1,16 +1,28 @@
-# AURA — Premium AI SaaS Landing Page Template
+# 🏷️ AURA — Premium AI SaaS Landing Page Template
 
-- **Slug**: `aura-ai-template`
-- **Category**: `landing-pages`
-- **Subcategory**: `agency-themes`
-- **Price**: `4900`
-- **Tags**: `landing-page, saas, tailwind-css, dark-mode, responsive, html5, copy-ready, modern-ui`
-- **Demo URL**: `https://aura-ai-template.surge.sh`
-- **Short Description**: A next-gen dark themed AI SaaS landing page template built with Tailwind CSS, custom canvas particles, and copy-ready marketing sections.
+### 📁 Category
+- **Category:** Landing Pages
+- **Subcategory:** agency-themes
+- **Canonical Slug:** `aura-ai-template`
+
+### 🛒 Verified Purchase Link
+- **Buy Direct:** [AURA — Premium AI SaaS Landing Page Template](https://scriptly.store/products/aura-ai-template)
+- **Effective Price:** $49.00 (Regular: $49.00)
+- **Storefront:** [Scriptly Store](https://scriptly.store/products/aura-ai-template)
+
+### 🖼️ Product Imagery
+- **Verified Cover Thumbnail:** https://cdn.jsdelivr.net/gh/30tools/scriptly-assets@a6a4f912f0928cd4a7468fe55f539eed6f61db41/aura-screenshot-f2af123aaf190589.png
+- **Live Demo Preview:** https://aura-ai-template.surge.sh
+
+### ⚡ Short Description
+A next-gen dark themed AI SaaS landing page template built with Tailwind CSS, custom canvas particles, and copy-ready marketing sections.
+
+### 🏷️ SEO Tags
+`landing-page`, `saas`, `tailwind-css`, `dark-mode`, `responsive`, `html5`, `copy-ready`, `modern-ui`
 
 ---
 
-## 🔮 Launch Your AI SaaS Platform in Style
+## 💎 Product Overview
 
 **Aura** is a premium, high-converting HTML landing page template built specifically for AI startups, productivity spaces, and developer services.
 
@@ -26,8 +38,12 @@ Using a futuristic dark aesthetic highlighted by glowing radial gradients, glass
 
 ---
 
-## 🛠️ Setup & Customization
-To customize Aura, modify the inline styling and config blocks inside the main HTML file. Deploy your project instantly to Surge.sh using simple terminal commands.
+### 🌐 Live Demo:
+https://aura-ai-template.surge.sh
 
-* **Find More Templates**: [https://scriptly.store/](https://scriptly.store/)
-* **Get Support**: [https://scriptly.store/support](https://scriptly.store/support)
+---
+
+### 🤝 Need Help?
+- **Get Support:** https://scriptly.store/support
+- **API Documentation:** https://scriptly.store/docs/api
+- **Find More Templates:** https://scriptly.store/

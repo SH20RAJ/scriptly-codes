@@ -1,16 +1,28 @@
-# GRILLÉ — Premium Fine Dining & Luxury Restaurant HTML Template
+# 🏷️ GRILLÉ — Premium Fine Dining & Luxury Restaurant HTML Template
 
-- **Slug**: `grille-restaurant-theme`
-- **Category**: `landing-pages`
-- **Subcategory**: `restaurant-landing-pages`
-- **Price**: `3900`
-- **Tags**: `html, css, javascript, restaurant, fine-dining, luxury, parallax, responsive, reservation, landing-page`
-- **Demo URL**: `https://grille-restaurant-theme.surge.sh/`
-- **Short Description**: Elevate your culinary brand with Grillé: a luxury, parallax-rich HTML template for Michelin-grade fine dining restaurants, bistros, and culinary curators.
+### 📁 Category
+- **Category:** Landing Pages
+- **Subcategory:** restaurant-landing-pages
+- **Canonical Slug:** `grille-restaurant-theme`
+
+### 🛒 Verified Purchase Link
+- **Buy Direct:** [GRILLÉ — Premium Fine Dining & Luxury Restaurant HTML Template](https://scriptly.store/products/grille-restaurant-theme)
+- **Effective Price:** $39.00 (Regular: $39.00)
+- **Storefront:** [Scriptly Store](https://scriptly.store/products/grille-restaurant-theme)
+
+### 🖼️ Product Imagery
+- **Verified Cover Thumbnail:** https://cdn.jsdelivr.net/gh/30tools/scriptly-assets@1c814a43b4a148ffab01a64df446e132419949a1/grille-thumbnail-9659c7da5fb1cdb0.png
+- **Live Demo Preview:** https://grille-restaurant-theme.surge.sh/
+
+### ⚡ Short Description
+Elevate your culinary brand with Grillé: a luxury, parallax-rich HTML template for Michelin-grade fine dining restaurants, bistros, and culinary curators.
+
+### 🏷️ SEO Tags
+`html`, `css`, `javascript`, `restaurant`, `fine-dining`, `luxury`, `parallax`, `responsive`, `reservation`, `landing-page`
 
 ---
 
-## 🍷 Indulge Your Guests in Gastronomic Elegance
+## 💎 Product Overview
 
 Most restaurant websites fail to convey the sensory prestige of fine dining. Grillé is crafted to change that.
 
@@ -29,8 +41,12 @@ It is a high-converting digital portal that positions your restaurant as a premi
 
 ---
 
-## 🛠️ Setup & Customization
-Grillé is incredibly easy to configure. Simply change the CSS variables in the styles file to sync colors instantly. Text and images can be updated directly in the HTML file.
+### 🌐 Live Demo:
+https://grille-restaurant-theme.surge.sh/
 
-* **Find More Templates**: [https://scriptly.store/](https://scriptly.store/)
-* **Get Support**: [https://scriptly.store/support](https://scriptly.store/support)
+---
+
+### 🤝 Need Help?
+- **Get Support:** https://scriptly.store/support
+- **API Documentation:** https://scriptly.store/docs/api
+- **Find More Templates:** https://scriptly.store/

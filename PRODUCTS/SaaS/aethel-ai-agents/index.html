@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aethel — Autonomous AI Agents & Neural Workflow Platform</title>
+  <meta name="description" content="Deploy autonomous, reasoning AI agents with real-time tool execution, vector memory, and multi-agent coordination. Built for modern engineering teams.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            obsidian: '#08080c',
+            'bg-card': '#0e0e17',
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-obsidian text-slate-100 antialiased selection:bg-purple-500 selection:text-white">
+
+
+  <!-- Top Announcement Bar -->
+  <aside aria-label="Engine Release Announcement" class="border-b border-purple-500/20 bg-purple-950/40 px-4 py-2 text-center text-xs font-medium text-purple-300 backdrop-blur-md">
+    <div class="inline-flex items-center gap-2">
+      <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+      <span><strong>Aethel 3.0 Engine is Live:</strong> Sub-40ms execution latency with native sandboxed tool execution.</span>
+      <a href="#agents" class="underline underline-offset-4 hover:text-white ml-1">Explore Benchmark →</a>
+    </div>
+  </aside>
+
+  <!-- Sticky Navbar -->
+  <header class="sticky top-0 z-50 border-b border-white/5 bg-[#08080c]/80 backdrop-blur-xl">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-violet-600 to-indigo-700 shadow-[0_0_20px_rgba(139,92,246,0.4)] transition-transform group-hover:scale-105">
+          <svg class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M12 3v3m0 12v3M3 12h3m12 0h3m-2.6-6.4-2.1 2.1m-6.4 6.4-2.1 2.1m0-10.6 2.1 2.1m6.4 6.4 2.1 2.1"></path>
+          </svg>
+        </div>
+        <span class="text-xl font-extrabold tracking-tight text-white">AETHEL<span class="text-violet-400">.AI</span></span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#features" class="hover:text-violet-400 transition">Core Features</a>
+        <a href="#simulator" class="hover:text-violet-400 transition">Interactive Simulator</a>
+        <a href="#metrics" class="hover:text-violet-400 transition">Benchmarks</a>
+        <a href="#pricing" class="hover:text-violet-400 transition">Pricing</a>
+        <a href="#faq" class="hover:text-violet-400 transition">FAQ</a>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <div class="hidden lg:flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-950/30 px-3 py-1 font-mono text-xs text-emerald-400">
+          <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+          99.98% Latency 38ms
+        </div>
+        <a href="#pricing" class="btn-primary">
+          <span>Deploy Cluster</span>
+          <svg class="h-4 w-4 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" strokeLinejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden pt-20 pb-28">
+    <!-- Ambient Glow Backgrounds -->
+    <div class="pointer-events-none absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] rounded-full bg-gradient-to-tr from-violet-600/30 via-indigo-600/20 to-cyan-500/20 blur-[130px] -z-10"></div>
+    <div class="pointer-events-none absolute right-10 top-1/3 w-[450px] h-[450px] rounded-full bg-purple-600/15 blur-[120px] -z-10"></div>
+
+    <div class="mx-auto max-w-7xl px-6 text-center">
+      <div class="mx-auto mb-6 inline-flex items-center gap-2.5 rounded-full border border-violet-500/30 bg-violet-950/40 px-4 py-1.5 text-xs font-semibold text-violet-300 shadow-[0_0_15px_rgba(139,92,246,0.2)]">
+        <span class="flex h-2 w-2 rounded-full bg-violet-400 animate-ping"></span>
+        Next-Gen Autonomous Agent Infrastructure
+      </div>
+
+      <h1 class="mx-auto max-w-4xl text-5xl font-black tracking-tight sm:text-7xl">
+        Deploy Autonomous AI Agents That <span class="gradient-text">Think, Execute, and Scale.</span>
+      </h1>
+
+      <p class="mx-auto mt-6 max-w-2xl text-base sm:text-lg text-slate-300 leading-relaxed">
+        Stop relying on fragile LLM wrappers. Aethel gives your enterprise sovereign autonomous agents with persistent memory, real-world sandboxed tool calling, and high-velocity multi-agent consensus.
+      </p>
+
+      <div class="mt-10 flex flex-wrap items-center justify-center gap-4">
+        <a href="#simulator" class="btn-primary-large">
+          <span>Launch Interactive Agent</span>
+          <svg class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </a>
+        <a href="#features" class="btn-secondary-large">
+          <span>Read Technical Specs</span>
+        </a>
+      </div>
+
+      <!-- Trust Badges -->
+      <div class="mt-16 border-y border-white/5 py-8">
+        <p class="text-xs uppercase tracking-widest font-mono text-slate-400">Powering Autonomous Workflows For Engineering Leaders</p>
+        <div class="mt-6 flex flex-wrap items-center justify-center gap-8 md:gap-16 opacity-70 grayscale hover:grayscale-0 transition-all">
+          <span class="text-lg font-extrabold tracking-wider text-slate-300">NEXUS.CORP</span>
+          <span class="text-lg font-extrabold tracking-wider text-slate-300">SYNAPSE AI</span>
+          <span class="text-lg font-extrabold tracking-wider text-slate-300">VORTEX CLOUD</span>
+          <span class="text-lg font-extrabold tracking-wider text-slate-300">HYPERLOGIC</span>
+          <span class="text-lg font-extrabold tracking-wider text-slate-300">QUANTUM LABS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Agent Simulator Section -->
+  <section id="simulator" class="relative py-20 bg-[#09090e] border-y border-white/5">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <div class="inline-flex items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-950/30 px-3 py-1 text-xs font-semibold text-cyan-300">
+          Live Sandbox Simulation
+        </div>
+        <h2 class="mt-4 text-3xl sm:text-5xl font-extrabold text-white">Experience Sub-Second Agent Execution</h2>
+        <p class="mt-3 text-slate-400 text-sm sm:text-base">Select a specialized agent task below and trigger real-time neural execution and tool orchestration.</p>
+      </div>
+
+      <!-- Terminal Simulator Window -->
+      <div class="mx-auto max-w-4xl rounded-2xl border border-violet-500/20 bg-[#0c0c14] shadow-[0_0_50px_rgba(139,92,246,0.15)] overflow-hidden">
+        <!-- Terminal Header -->
+        <div class="flex items-center justify-between border-b border-white/10 bg-white/[0.03] px-5 py-3">
+          <div class="flex items-center gap-2">
+            <span class="h-3 w-3 rounded-full bg-rose-500/80"></span>
+            <span class="h-3 w-3 rounded-full bg-amber-500/80"></span>
+            <span class="h-3 w-3 rounded-full bg-emerald-500/80"></span>
+            <span class="ml-2 font-mono text-xs text-slate-400">cluster-01.aethel.internal — zsh</span>
+          </div>
+          <div class="flex items-center gap-3 font-mono text-xs text-slate-400">
+            <span class="text-emerald-400 font-bold">● ONLINE</span>
+            <span>RAM: 3.2GB / 16GB</span>
+          </div>
+        </div>
+
+        <!-- Task Selector Tabs -->
+        <div class="flex border-b border-white/10 bg-black/40 px-4 pt-2 overflow-x-auto gap-2">
+          <button onclick="setAgentTask('market')" id="btn-task-market" class="task-tab active">
+            <span>Market Intelligence</span>
+          </button>
+          <button onclick="setAgentTask('audit')" id="btn-task-audit" class="task-tab">
+            <span>Rust Smart Contract Audit</span>
+          </button>
+          <button onclick="setAgentTask('leadgen')" id="btn-task-leadgen" class="task-tab">
+            <span>Autonomous B2B Outbound</span>
+          </button>
+        </div>
+
+        <!-- Terminal Output Area -->
+        <div class="p-6 font-mono text-xs sm:text-sm text-slate-300 min-h-[300px] flex flex-col justify-between">
+          <div id="terminal-content" class="space-y-3">
+            <div class="flex items-center gap-2 text-violet-400">
+              <span>➜</span>
+              <span class="text-slate-200">aethel execute --agent="MarketIntel-v3" --autonomy="maximum"</span>
+            </div>
+            <p class="text-slate-400">[00:00:01] Initializing neural execution context. Model: Claude 3.5 Sonnet + Aethel Reasoning Engine.</p>
+            <p class="text-cyan-400">[00:00:02] Tool Invocation: WebScraper(target="competitor-matrix", depth=2)</p>
+            <p class="text-emerald-400">[00:00:03] Vector DB RAG Query resolved in 22ms. 1,480 relevant token chunks loaded.</p>
+            <p class="text-amber-300">[00:00:04] Synthesis Complete: Opportunity detected in enterprise agent orchestration tier. Generating tactical memorandum.</p>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-white/10 flex flex-wrap items-center justify-between gap-4">
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-400">
+              <div>Tokens: <span id="token-counter" class="text-violet-400 font-bold">1,842</span></div>
+              <div>Duration: <span class="text-emerald-400 font-bold">342ms</span></div>
+              <div>Tools Executed: <span class="text-cyan-400 font-bold">4</span></div>
+            </div>
+            <button onclick="triggerSimulation()" class="rounded-lg bg-violet-600 px-4 py-2 text-xs font-bold text-white hover:bg-violet-500 transition shadow-[0_0_15px_rgba(139,92,246,0.4)]">
+              Re-Run Live Execution
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Features (Bento Grid) -->
+  <section id="features" class="py-24">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 rounded-full border border-violet-500/30 bg-violet-950/40 px-3 py-1 text-xs font-semibold text-violet-300">
+          Industrial Grade Architecture
+        </div>
+        <h2 class="mt-4 text-3xl sm:text-5xl font-extrabold text-white">Engineered For Zero Hallucinations</h2>
+        <p class="mt-3 text-slate-400 text-sm sm:text-base">Everything needed to orchestrate autonomous agents safely across production software.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Feature 1 -->
+        <div class="feature-card md:col-span-2">
+          <div class="flex items-center justify-between mb-4">
+            <div class="h-10 w-10 rounded-lg bg-violet-600/20 border border-violet-500/30 flex items-center justify-center text-violet-400">
+              <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+              </svg>
+            </div>
+            <span class="font-mono text-xs text-violet-400 font-semibold uppercase">Multi-Agent Swarm</span>
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-2">Hierarchical Consensus Protocols</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-6">Orchestrate master planner agents that spawn specialized executor subagents. Consensus loops independently cross-verify outputs before any destructive tool call is executed.</p>
+          <div class="rounded-xl border border-white/10 bg-black/50 p-4 font-mono text-xs text-slate-300">
+            <span class="text-purple-400 font-bold">Workflow:</span> [Planner] → Spawns [CodeWriter, SecurityAuditor, Benchmarker] → 3/3 Vote Consensus → Auto-Merge.
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card">
+          <div class="h-10 w-10 rounded-lg bg-cyan-600/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400 mb-4">
+            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Episodic & Semantic Memory</h3>
+          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">Persistent state across infinite sessions with sub-millisecond Qdrant-powered vector recall.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card">
+          <div class="h-10 w-10 rounded-lg bg-emerald-600/20 border border-emerald-500/30 flex items-center justify-center text-emerald-400 mb-4">
+            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Sandboxed Tool Calling</h3>
+          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">MicroVM Dockerized environments granting agents bash, browser, and API execution without risk.</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-card md:col-span-2">
+          <div class="flex items-center justify-between mb-4">
+            <div class="h-10 w-10 rounded-lg bg-amber-600/20 border border-amber-500/30 flex items-center justify-center text-amber-400">
+              <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            </div>
+            <span class="font-mono text-xs text-amber-400 font-semibold uppercase">Enterprise Security</span>
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-2">SOC2 Type II Compliant Guardrails</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Real-time prompt injection filtering, deterministic permission scoping, complete telemetry audits, and automated PII data anonymization.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Benchmarks & Metrics Counter -->
+  <section id="metrics" class="py-20 bg-[#09090e] border-y border-white/5">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div>
+          <div class="text-4xl sm:text-6xl font-black text-white font-mono" id="stat-agents">4,820</div>
+          <div class="mt-2 text-xs sm:text-sm font-medium text-slate-400">Active Production Agents</div>
+        </div>
+        <div>
+          <div class="text-4xl sm:text-6xl font-black text-violet-400 font-mono" id="stat-tasks">18.4M</div>
+          <div class="mt-2 text-xs sm:text-sm font-medium text-slate-400">Autonomous Tasks Solved</div>
+        </div>
+        <div>
+          <div class="text-4xl sm:text-6xl font-black text-cyan-400 font-mono" id="stat-latency">38ms</div>
+          <div class="mt-2 text-xs sm:text-sm font-medium text-slate-400">Average Reasoning Latency</div>
+        </div>
+        <div>
+          <div class="text-4xl sm:text-6xl font-black text-emerald-400 font-mono" id="stat-cost">84%</div>
+          <div class="mt-2 text-xs sm:text-sm font-medium text-slate-400">Average Token Cost Saved</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="py-24">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 rounded-full border border-violet-500/30 bg-violet-950/40 px-3 py-1 text-xs font-semibold text-violet-300">
+          Predictable Pricing
+        </div>
+        <h2 class="mt-4 text-3xl sm:text-5xl font-extrabold text-white">Scale From Prototype to Millions of Runs</h2>
+        <p class="mt-3 text-slate-400 text-sm sm:text-base">Transparent tier pricing with zero markup on raw model inference.</p>
+
+        <!-- Billing Toggle -->
+        <div class="mt-8 inline-flex items-center gap-3 rounded-full border border-white/10 bg-black/40 p-1.5">
+          <button onclick="setBilling('monthly')" id="bill-monthly" class="rounded-full px-4 py-1.5 text-xs font-bold transition bg-violet-600 text-white">Monthly</button>
+          <button onclick="setBilling('yearly')" id="bill-yearly" class="rounded-full px-4 py-1.5 text-xs font-bold transition text-slate-400 hover:text-white">Yearly (Save 20%)</button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+        <!-- Starter Tier -->
+        <div class="pricing-card">
+          <h3 class="text-lg font-bold text-white">Developer Sandbox</h3>
+          <p class="text-xs text-slate-400 mt-1">Ideal for indie hackers prototyping autonomous agents.</p>
+          <div class="my-6">
+            <span class="text-4xl font-black text-white price-val" data-monthly="$29" data-yearly="$23">$29</span>
+            <span class="text-slate-400 text-xs">/ month</span>
+          </div>
+          <ul class="space-y-3 text-xs text-slate-300 mb-8">
+            <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> Up to 5 Concurrent Agents</li>
+            <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> Sandboxed Bash & Browser</li>
+            <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> 50,000 Tool Executions / mo</li>
+            <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> Community Discord Support</li>
+          </ul>
+          <a href="#" class="btn-secondary w-full text-center">Start Free Trial</a>
+        </div>
+
+        <!-- Pro Tier (Featured) -->
+        <div class="pricing-card border-violet-500/50 bg-[#120f22] relative shadow-[0_0_40px_rgba(139,92,246,0.25)]">
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-violet-600 to-cyan-500 px-3 py-0.5 text-[10px] font-black uppercase tracking-wider text-white">
+            Most Popular
+          </div>
+          <h3 class="text-lg font-bold text-white">Production Studio</h3>
+          <p class="text-xs text-slate-400 mt-1">For growing teams running mission-critical agent swarms.</p>
+          <div class="my-6">
+            <span class="text-4xl font-black text-white price-val" data-monthly="$79" data-yearly="$63">$79</span>
+            <span class="text-slate-400 text-xs">/ month</span>
+          </div>
+          <ul class="space-y-3 text-xs text-slate-300 mb-8">
+            <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> 25 Concurrent Agents</li>
+            <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> Multi-Agent Consensus Routing</li>
+            <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> 500,000 Tool Executions / mo</li>
+            <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> Dedicated MicroVM Isolation</li>
+            <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> Priority Slack Engineering Support</li>
+          </ul>
+          <a href="#" class="btn-primary w-full text-center">Deploy Production Cluster</a>
+        </div>
+
+        <!-- Enterprise Tier -->
+        <div class="pricing-card">
+          <h3 class="text-lg font-bold text-white">Enterprise Sovereign</h3>
+          <p class="text-xs text-slate-400 mt-1">Dedicated cloud or on-premise sovereign agent nodes.</p>
+          <div class="my-6">
+            <span class="text-4xl font-black text-white price-val" data-monthly="$299" data-yearly="$239">$299</span>
+            <span class="text-slate-400 text-xs">/ month</span>
+          </div>
+          <ul class="space-y-3 text-xs text-slate-300 mb-8">
+            <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> Unlimited Concurrent Agents</li>
+            <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> Custom Fine-Tuned Model Weights</li>
+            <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> SOC2 & HIPAA Compliant Audits</li>
+            <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> 99.99% Guaranteed SLA Guarantee</li>
+            <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> Dedicated Solution Architect</li>
+          </ul>
+          <a href="#" class="btn-secondary w-full text-center">Contact Enterprise Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="py-20 bg-[#09090e] border-t border-white/5">
+    <div class="mx-auto max-w-4xl px-6">
+      <h2 class="text-3xl font-bold text-white text-center mb-12">Frequently Asked Questions</h2>
+
+      <div class="space-y-4">
+        <details class="faq-item" open>
+          <summary class="faq-summary">How does Aethel prevent agent hallucination loops?</summary>
+          <p class="faq-body">Aethel implements multi-agent adversarial consensus. When a primary agent generates code or external mutations, a separate auditor agent evaluates the diff in a dry-run sandbox before changes are committed.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-summary">Can I bring my own LLM API keys or local weights?</summary>
+          <p class="faq-body">Yes. Aethel is completely model-agnostic. You can plug in Anthropic, OpenAI, DeepSeek, or run self-hosted vLLM/Ollama clusters behind your private VPC.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-summary">What security isolations are provided for tool execution?</summary>
+          <p class="faq-body">Every tool invocation runs in an ephemeral Firecracker MicroVM with strictly bounded network egress, disposable file systems, and real-time AST validation.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 bg-[#050508] py-12 text-xs text-slate-400">
+    <div class="mx-auto max-w-7xl px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <div class="h-7 w-7 rounded-lg bg-violet-600 flex items-center justify-center text-white font-black">A</div>
+        <span class="font-bold text-white text-sm">AETHEL PLATFORM</span>
+        <span>— © 2026 Scriptly Store & 21st.dev. All rights reserved.</span>
+      </div>
+
+      <div class="flex items-center gap-6">
+        <a href="https://scriptly.store" class="hover:text-white transition">Scriptly Store</a>
+        <a href="https://21st.dev/@sh20raj" class="hover:text-white transition">21st.dev Registry</a>
+        <a href="https://github.com/sh20raj" class="hover:text-white transition">GitHub @sh20raj</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -78,5 +78,24 @@ Themes require both `:root` and `.dark` blocks with standard CSS variables.
 All publisher scripts are located in `scripts/publish-21st/`:
 - `publish-components.sh`: Publishes all 6 interactive components.
 - `publish-themes.sh`: Publishes all 4 curated CSS themes.
-- `publish-all-templates.sh`: Publishes all 10 commercial templates.
+- `publish-all-templates.sh`: Publishes all 10+ commercial templates.
 - `publish-all.sh`: Master execution pipeline.
+
+---
+
+## 7. ScriptlyStore API Integration
+Documentation: `https://scriptly.store/docs/api`
+Endpoint: `https://scriptly.store/api/products.json`
+
+Always synchronize templates with the ground-truth ScriptlyStore public JSON feed before publishing or updating:
+```bash
+# Query active catalog and verify prices/links
+python3 scripts/scriptly_api.py list --limit 10
+
+# Query specific product details
+python3 scripts/scriptly_api.py get vortex-agency-magicui
+
+# Automatically synchronize local store listings
+python3 scripts/scriptly_api.py sync-listings
+```
+

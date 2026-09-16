@@ -201,3 +201,24 @@ To ensure assets get featured on 21st.dev and achieve high conversion/clones:
 2. **Visual Contrast**: Ensure dark themes and component demos use deep backgrounds (`bg-zinc-950` or `#09090b`) with vibrant neon/emerald accents for maximum contrast in 21st cards.
 3. **Interactive Demo Defaults**: Pre-populate demos with realistic data (e.g., real names, high-res Unsplash photos, sensible defaults) rather than empty placeholders.
 4. **Installability**: Verify that `npx @21st-dev/cli add @<username>/<component-slug>` installs the file cleanly without missing helper utilities.
+
+---
+
+## 8. ScriptlyStore API Integration & Verification
+Official API Documentation: `https://scriptly.store/docs/api`
+
+Before publishing commercial templates or syncing listings, ALWAYS verify metadata using the official ScriptlyStore public JSON API:
+- Endpoint: `GET https://scriptly.store/api/products.json?slug=<product-slug>`
+- Filters supported: `limit`, `category`, `subcategory`, `slug`, `featured`
+- The API supports CORS for client-side fetching in React/Vue web applications.
+- Run local synchronization tool:
+  ```bash
+  python3 scripts/scriptly_api.py list --limit 10
+  python3 scripts/scriptly_api.py get <slug>
+  python3 scripts/scriptly_api.py sync-listings
+  ```
+- Always use the returned canonical values for:
+  - `--buy-url`: `prod.url` (e.g., `https://scriptly.store/products/<canonical-slug>`)
+  - `--preview`: `prod.thumbnail` (e.g., jsDelivr or S3 CDN image)
+  - `--price`: `prod.effectivePriceFormatted` (rounded integer USD)
+

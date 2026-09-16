@@ -1,22 +1,28 @@
-# LUMIÈRE - Viral Store Listing Copy
-*Use this copy on Scriptly Store to maximize CTR and conversions.*
+# 🏷️ LUMIÈRE | Elite Digital Agency HTML Theme
+
+### 📁 Category
+- **Category:** Landing Pages
+- **Subcategory:** agency-landing-pages
+- **Canonical Slug:** `lumiere-elite-digital-agency-html-theme`
+
+### 🛒 Verified Purchase Link
+- **Buy Direct:** [LUMIÈRE | Elite Digital Agency HTML Theme](https://scriptly.store/products/lumiere-elite-digital-agency-html-theme)
+- **Effective Price:** $39.00 (Regular: $39.00)
+- **Storefront:** [Scriptly Store](https://scriptly.store/products/lumiere-elite-digital-agency-html-theme)
+
+### 🖼️ Product Imagery
+- **Verified Cover Thumbnail:** https://cdn.jsdelivr.net/gh/30tools/scriptly-assets@08ca470aff1a4db6db672cf53545b9264d445fe9/Screenshot_2026-06-22_at_11.10.53_AM-fd2c74f48e70e3ac.png
+- **Live Demo Preview:** https://lumiere-theme-scriptly.surge.sh
+
+### ⚡ Short Description
+Launch a breathtaking, "Awwwards-winning" digital agency site in minutes. LUMIÈRE is a top-tier HTML theme.
+
+### 🏷️ SEO Tags
+`Digital Agency`, `Web3`, `Fintech`, `Awwwards`, `GSAP Animation`, `Creative Studio`, `Startup`, `SaaS`, `Premium Design`
 
 ---
 
-## 🏷️ Product Name
-**LUMIÈRE | Elite Digital Agency HTML Theme**
-
-## 📂 Categories & Tags
-*   **Category:** Web Templates / HTML Themes
-*   **Sub-Category:** Agency & Corporate
-*   **Tags:** Digital Agency, Web3, Fintech, Awwwards, GSAP Animation, Creative Studio, Startup, SaaS, Premium Design
-
-## 🎯 Short Description (For Thumbnails/Previews)
-Launch a breathtaking, "Awwwards-winning" digital agency site in minutes. LUMIÈRE is a top-tier HTML theme designed for elite startups, fintechs, and design studios.
-
-**🔴 LIVE PREVIEW:** [https://lumiere-theme-scriptly.surge.sh](https://lumiere-theme-scriptly.surge.sh)
-
-## 🧠 Long Description (Viral / Psychological Hooks)
+## 💎 Product Overview
 
 **How do elite digital agencies land $50,000 contracts?**
 
@@ -44,3 +50,15 @@ Why spend weeks coding advanced GSAP animations from scratch when the world's be
 ---
 *Support & Documentation included: [https://scriptly.store/support](https://scriptly.store/support)*
 *Find more premium templates at: [https://scriptly.store/](https://scriptly.store/)*
+
+---
+
+### 🌐 Live Demo:
+https://lumiere-theme-scriptly.surge.sh
+
+---
+
+### 🤝 Need Help?
+- **Get Support:** https://scriptly.store/support
+- **API Documentation:** https://scriptly.store/docs/api
+- **Find More Templates:** https://scriptly.store/

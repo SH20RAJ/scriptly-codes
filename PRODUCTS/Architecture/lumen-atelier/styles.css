@@ -1,0 +1,132 @@
+/* Lumen Atelier Design System & Custom Tokens */
+:root {
+  --bg-monolith: #0c0b0a;
+  --bg-card: #141210;
+  --text-stone: #f4efe6;
+  --text-muted: #8c877b;
+  --bronze: #c89f6b;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--bg-monolith);
+  color: var(--text-stone);
+  overflow-x: hidden;
+}
+
+.font-italiana {
+  font-family: 'Italiana', serif;
+}
+
+.font-syne {
+  font-family: 'Syne', sans-serif;
+}
+
+/* Custom Editorial Buttons */
+.btn-editorial {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.4rem;
+  border-radius: 9999px;
+  font-family: 'Syne', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #0c0b0a;
+  background-color: var(--bronze);
+  border: 1px solid var(--bronze);
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-editorial:hover {
+  background-color: #f4efe6;
+  border-color: #f4efe6;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(200, 159, 107, 0.25);
+}
+
+.btn-editorial-full {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border-radius: 0.75rem;
+  font-family: 'Syne', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #0c0b0a;
+  background-color: var(--bronze);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-editorial-full:hover {
+  background-color: #f4efe6;
+  transform: translateY(-2px);
+}
+
+/* Filter Tab Buttons */
+.filter-btn {
+  padding: 0.4rem 0.85rem;
+  border-radius: 9999px;
+  background: transparent;
+  border: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  color: var(--text-stone);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.filter-btn.active {
+  background-color: var(--bronze);
+  color: #0c0b0a;
+  border-color: var(--bronze);
+  font-weight: 700;
+}
+
+/* Material Cards */
+.material-card {
+  border-radius: 1rem;
+  border: 1px solid var(--border-subtle);
+  background: #141210;
+  padding: 1.75rem;
+  transition: all 0.3s ease;
+}
+
+.material-card:hover {
+  border-color: var(--bronze);
+  transform: translateY(-3px);
+}
+
+/* Inputs */
+.input-editorial {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border-radius: 0.65rem;
+  border: 1px solid var(--border-subtle);
+  background: #1a1815;
+  color: var(--text-stone);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.85rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input-editorial:focus {
+  border-color: var(--bronze);
+}
