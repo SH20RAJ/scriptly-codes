@@ -99,3 +99,14 @@ python3 scripts/scriptly_api.py get vortex-agency-magicui
 python3 scripts/scriptly_api.py sync-listings
 ```
 
+---
+
+## 8. Catalog Expansion (21 Verified Commercial Products)
+The repository currently maintains 21 production-ready commercial templates and developer automation scripts:
+- **VETRA** (`/products/vetra-ai-automation`): Autonomous AI Marketing SaaS Landing Page ($39)
+- **NEXUS** (`/products/nexus-saas-template`): Next.js 16 + Tailwind CSS v4 Modern SaaS Template ($49)
+- **APEX** (`/products/apex-ai-studio`): Cinematic Framer Motion AI Agency & Interactive Studio ($39)
+- **LINKIFY PRO** (`/products/linkify-pro-showcase`): Developer Bio Showcase & Multi-Tool SaaS Platform ($29)
+
+Run `python3 scripts/package-all-for-21st.py` to bundle all 21 clean zip archives under 25 MB each.
+

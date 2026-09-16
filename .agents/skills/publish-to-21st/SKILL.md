@@ -222,3 +222,43 @@ Before publishing commercial templates or syncing listings, ALWAYS verify metada
   - `--preview`: `prod.thumbnail` (e.g., jsDelivr or S3 CDN image)
   - `--price`: `prod.effectivePriceFormatted` (rounded integer USD)
 
+---
+
+## 9. GitHub Template Ingestion & Rebranding Workflow
+
+When sourcing open-source repositories from GitHub to create commercial templates on 21st.dev and ScriptlyStore:
+
+### A. Strict License Verification
+- Ensure the repository license is explicitly permissive (**MIT**, **CC0**, or **Apache-2.0**).
+- Maintain foundational attribution in the `LICENSE` file while asserting distribution rights for ScriptlyStore and 21st.dev:
+  ```text
+  MIT License
+  Copyright (c) [Original Year] [Original Author]
+  Copyright (c) 2025-2026 ScriptlyStore (https://scriptly.store)
+  ```
+
+### B. Deep Cleaning Checklist
+1. **Strip All Git Metadata**: Remove `.git`, `.github`, `.gitattributes`, `.gitignore`.
+2. **Eliminate Secrets & Environments**: Remove all `.env`, `.env.local`, `.env.production` files. Convert sample configs into `env.example.txt` with dummy values.
+3. **Remove Build Artifacts & Caches**: Strip `node_modules`, `.next`, `dist`, `out`, `build`, `.turbo`, `.cache`.
+4. **Purge Personal Author Mentions**: Search and replace all personal Twitter/X handles, GitHub profiles, and author links across headers, footers, FAQs, and READMEs with official ScriptlyStore and 21st.dev links.
+
+### C. Aesthetic & Value-Add Transformation
+- Upgrade visual presentation with rich dark mode palettes, glowing bento grids, and fluid Framer Motion choreography.
+- Write complete, step-by-step setup guides in `README.md` (`npm install`, `npm run dev`, `npm run build`).
+- Ensure all ZIP archives stay strictly under **25 MB** for seamless 21st migration delivery.
+
+### D. Packaging & Publishing Command
+```bash
+# 1. Package clean archive
+python3 scripts/package-all-for-21st.py
+
+# 2. Publish to 21st.dev
+API_KEY_21ST="21st_sk_..." 21st publish-template "<Template Title>" \
+  --site "https://<slug>.surge.sh" \
+  --preview "https://images.unsplash.com/..." \
+  --price "39" \
+  --buy-url "https://scriptly.store/products/<slug>" \
+  --description "<Value-focused marketing description>"
+```
+

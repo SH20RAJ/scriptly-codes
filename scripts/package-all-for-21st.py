@@ -199,6 +199,62 @@ PRODUCTS_CATALOG = [
         "cover_image": "https://github.com/30tools/coders/releases/download/few/Screenshot.2026-06-24.at.12.28.39.AM.png",
         "tech_stack": "Vite, React, Three.js, Procedural Path Curves, Blender Models"
     },
+    {
+        "id": "vetra-ai-automation",
+        "name": "VETRA — Autonomous AI Marketing Platform",
+        "type": "template",
+        "category": "SaaS / AI",
+        "source_dir": "PRODUCTS/SaaS/vetra-ai-marketing",
+        "archive_root": "vetra-ai-automation",
+        "zip_file": "vetra-ai-automation.zip",
+        "price": "$39.00",
+        "product_page": "https://scriptly.store/products/vetra-ai-automation",
+        "demo_url": "https://vetra-saas.surge.sh",
+        "cover_image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1200&auto=format&fit=crop&q=80",
+        "tech_stack": "Next.js 15, Tailwind CSS, Framer Motion, shadcn/ui"
+    },
+    {
+        "id": "nexus-saas-template",
+        "name": "NEXUS — Next.js 16 & Tailwind v4 Modern SaaS",
+        "type": "template",
+        "category": "SaaS",
+        "source_dir": "PRODUCTS/SaaS/nexus-saas-template",
+        "archive_root": "nexus-saas-template",
+        "zip_file": "nexus-saas-template.zip",
+        "price": "$49.00",
+        "product_page": "https://scriptly.store/products/nexus-saas-template",
+        "demo_url": "https://nexus-saas.surge.sh",
+        "cover_image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&auto=format&fit=crop&q=80",
+        "tech_stack": "Next.js 16, Tailwind CSS v4, Radix UI, Dark/Light Themes"
+    },
+    {
+        "id": "apex-ai-studio",
+        "name": "APEX — Cinematic AI Agency & Interactive Studio",
+        "type": "template",
+        "category": "Agency / AI",
+        "source_dir": "PRODUCTS/Agency/apex-ai-studio",
+        "archive_root": "apex-ai-studio",
+        "zip_file": "apex-ai-studio.zip",
+        "price": "$39.00",
+        "product_page": "https://scriptly.store/products/apex-ai-studio",
+        "demo_url": "https://apex-studio.surge.sh",
+        "cover_image": "https://images.unsplash.com/photo-1534972195531-a756b1126f25?w=1200&auto=format&fit=crop&q=80",
+        "tech_stack": "Next.js 14, Tailwind CSS, Framer Motion, DotLottie"
+    },
+    {
+        "id": "linkify-pro-showcase",
+        "name": "LINKIFY PRO — Developer Showcase & Multi-Tool SaaS",
+        "type": "template",
+        "category": "Portfolio",
+        "source_dir": "PRODUCTS/Portfolio/linkify-pro",
+        "archive_root": "linkify-pro-showcase",
+        "zip_file": "linkify-pro-showcase.zip",
+        "price": "$29.00",
+        "product_page": "https://scriptly.store/products/linkify-pro-showcase",
+        "demo_url": "https://linkify-pro.surge.sh",
+        "cover_image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=1200&auto=format&fit=crop&q=80",
+        "tech_stack": "Next.js 14, Tailwind CSS, Framer Motion, Bento Layout"
+    },
 
     # --- Production Developer Automation Scripts ---
     {
@@ -327,7 +383,7 @@ def package_product(product):
 
 def main():
     print("=" * 80)
-    print("🚀 Packaging All 17 Templates and Scripts for 21st.dev Migration")
+    print("🚀 Packaging All 21 Templates and Scripts for 21st.dev Migration")
     print("=" * 80)
 
     packaged_summary = []
