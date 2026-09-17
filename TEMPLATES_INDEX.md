@@ -6,8 +6,8 @@ Welcome to the central repository index for **ScriptlyStore** and **21st.dev** c
 
 ## 📊 Catalog Overview & Metrics
 
-- **Total Commercial Products**: 24 Assets
-- **Total Multi-Page Templates**: 16 Themes
+- **Total Commercial Products**: 28 Assets
+- **Total Multi-Page Templates**: 20 Themes
 - **Production Automation Workers & Scripts**: 5 Items
 - **Published 21st.dev Registry Components**: 15 Interactive Primitives
 - **Live Demo Platform**: Surge.sh & Netlify (100% SSL & CDN verified)
@@ -43,6 +43,10 @@ Welcome to the central repository index for **ScriptlyStore** and **21st.dev** c
 | 22 | **Scrapely — Scraper API Worker** | `scrapely-scraper-api-worker` | Scripts | $29.00 | [Live Demo](https://scriptly.store/products/scrapely-scraper-api-worker) | [Scriptly Page](https://scriptly.store/products/scrapely-scraper-api-worker) | Script #4 | Cloudflare Workers, Cheerio | `scrapely-scraper-api-worker.zip` | 0.01 MB |
 | 23 | **SEOFlow — Article Generator** | `seoflow-blog-article-generator` | Scripts | $29.00 | [Live Demo](https://scriptly.store/products/seoflow-blog-article-generator) | [Scriptly Page](https://scriptly.store/products/seoflow-blog-article-generator) | Script #5 | Node.js, Claude 3.5 / OpenAI API | `seoflow-blog-article-generator.zip` | 0.01 MB |
 | 24 | **DevCraft — Full-Stack Engineer Portfolio** | `sh20raj-developer-portfolio` | Portfolio | $29.00 | [Live Demo](https://sh20raj.github.io) | [Scriptly Page](https://scriptly.store/products/sh20raj-developer-portfolio) | [21st Template](https://21st.dev/community/templates/devcraft-full-stack-engineer-portfolio-2) | Next.js 16, Tailwind, Framer, MDX | `sh20raj-developer-portfolio.zip` | 33.0 MB |
+| 25 | **Developer Portfolio Pro** | `developer-portfolio-pro` | Portfolio | $29.00 | [Live Demo](https://dev-portfolio-pro.surge.sh/) | [Scriptly Page](https://scriptly.store/products/developer-portfolio-pro) | [21st Template #998](https://21st.dev/community/templates/developer-portfolio-pro-staff-engineer-template) | HTML5, Tailwind, Terminal Sim | `developer-portfolio-pro.zip` | 0.01 MB |
+| 26 | **Doctor & Medical Practice** | `doctor-medical-practice` | Professional | $39.00 | [Live Demo](https://doctor-medical-practice.surge.sh/) | [Scriptly Page](https://scriptly.store/products/doctor-medical-practice) | [21st Template #999](https://21st.dev/community/templates/doctor-medical-practice-physician-surgical-clinic-template) | HTML5, Tailwind, Booking Modal | `doctor-medical-practice.zip` | 0.01 MB |
+| 27 | **Fine Dining & Modern Bistro** | `restaurant-fine-dining` | Restaurant | $49.00 | [Live Demo](https://bistro-dining-pro.surge.sh/) | [Scriptly Page](https://scriptly.store/products/restaurant-fine-dining) | [21st Template #1000](https://21st.dev/community/templates/fine-dining-modern-bistro-artisanal-hospitality-template) | HTML5, Tailwind, Reservation System | `restaurant-fine-dining.zip` | 0.01 MB |
+| 28 | **AI Agent & Autonomous Platform** | `ai-agent-platform` | SaaS | $59.00 | [Live Demo](https://ai-agent-platform.surge.sh/) | [Scriptly Page](https://scriptly.store/products/ai-agent-platform) | [21st Template #1001](https://21st.dev/community/templates/ai-agent-platform-autonomous-agent-infrastructure-swarms) | HTML5, Tailwind, Agent Sandbox | `ai-agent-platform.zip` | 0.01 MB |
 
 ---
 

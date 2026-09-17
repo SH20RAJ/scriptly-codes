@@ -18,10 +18,10 @@ This document tracks all Master Design Engines, derived production variations, l
 
 | # | Product Name | Vertical | Base Engine | Price | Live Demo URL | Scriptly Store URL | 21st.dev Ref | Deliverable ZIP | Status |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | **Developer Portfolio Pro** | Dev Portfolio | `engine-portfolio` | $29.00 | [Live Demo](https://dev-portfolio-pro.surge.sh/) | [Scriptly Page](https://scriptly.store/products/developer-portfolio-pro) | Pending | `developer-portfolio-pro.zip` | 🚀 Ready |
-| 2 | **Doctor & Medical Practice** | Clinic / Medical | `engine-professional` | $39.00 | [Live Demo](https://doctor-medical-practice.surge.sh/) | [Scriptly Page](https://scriptly.store/products/doctor-medical-practice) | Pending | `doctor-medical-practice.zip` | 🚀 Ready |
-| 3 | **Fine Dining & Modern Bistro** | Restaurant / Food | `engine-local-business` | $49.00 | [Live Demo](https://bistro-dining-pro.surge.sh/) | [Scriptly Page](https://scriptly.store/products/restaurant-fine-dining) | Pending | `restaurant-fine-dining.zip` | 🚀 Ready |
-| 4 | **AI Agent & Autonomous Platform** | AI SaaS / Tech | `engine-saas` | $59.00 | [Live Demo](https://ai-agent-platform.surge.sh/) | [Scriptly Page](https://scriptly.store/products/ai-agent-platform) | Pending | `ai-agent-platform.zip` | 🚀 Ready |
+| 1 | **Developer Portfolio Pro** | Dev Portfolio | `engine-portfolio` | $29.00 | [Live Demo](https://dev-portfolio-pro.surge.sh/) | [Scriptly Page](https://scriptly.store/products/developer-portfolio-pro) | [Template #998](https://21st.dev/community/templates/developer-portfolio-pro-staff-engineer-template) | `developer-portfolio-pro.zip` | 🟢 Published |
+| 2 | **Doctor & Medical Practice** | Clinic / Medical | `engine-professional` | $39.00 | [Live Demo](https://doctor-medical-practice.surge.sh/) | [Scriptly Page](https://scriptly.store/products/doctor-medical-practice) | [Template #999](https://21st.dev/community/templates/doctor-medical-practice-physician-surgical-clinic-template) | `doctor-medical-practice.zip` | 🟢 Published |
+| 3 | **Fine Dining & Modern Bistro** | Restaurant / Food | `engine-local-business` | $49.00 | [Live Demo](https://bistro-dining-pro.surge.sh/) | [Scriptly Page](https://scriptly.store/products/restaurant-fine-dining) | [Template #1000](https://21st.dev/community/templates/fine-dining-modern-bistro-artisanal-hospitality-template) | `restaurant-fine-dining.zip` | 🟢 Published |
+| 4 | **AI Agent & Autonomous Platform** | AI SaaS / Tech | `engine-saas` | $59.00 | [Live Demo](https://ai-agent-platform.surge.sh/) | [Scriptly Page](https://scriptly.store/products/ai-agent-platform) | [Template #1001](https://21st.dev/community/templates/ai-agent-platform-autonomous-agent-infrastructure-swarms) | `ai-agent-platform.zip` | 🟢 Published |
 
 ---
 
