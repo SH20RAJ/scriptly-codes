@@ -1,0 +1,65 @@
+{
+  "scriptly-hire-me": {
+    "scriptly_store": "https://scriptly.store/products/scriptly-hire-me",
+    "twentyfirst_id": 1002,
+    "twentyfirst_slug": "scriptly-hire-me-senior-engineering-services-client-intake-hub",
+    "demo_url": "https://scriptly-hire-me.surge.sh",
+    "price": "$39"
+  },
+  "velocity-dev-portfolio": {
+    "scriptly_store": "https://scriptly.store/products/velocity-dev-portfolio",
+    "twentyfirst_id": 1003,
+    "twentyfirst_slug": "velocity-ai-dev-portfolio-high-performance-astro-preact-showcase",
+    "demo_url": "https://velocity-dev-portfolio.surge.sh",
+    "price": "$29"
+  },
+  "zenith-minimal-dev": {
+    "scriptly_store": "https://scriptly.store/products/zenith-minimal-dev",
+    "twentyfirst_id": 1004,
+    "twentyfirst_slug": "zenith-minimalist-developer-clean-astro-react-portfolio",
+    "demo_url": "https://zenith-minimal-dev.surge.sh",
+    "price": "$29"
+  },
+  "docudev-portfolio": {
+    "scriptly_store": "https://scriptly.store/products/docudev-portfolio",
+    "twentyfirst_id": 1005,
+    "twentyfirst_slug": "docudev-portfolio-tech-showcase-astro-architecture-knowledge-engine",
+    "demo_url": "https://docudev-portfolio.surge.sh",
+    "price": "$39"
+  },
+  "nextcraft-shadcn-pro": {
+    "scriptly_store": "https://scriptly.store/products/nextcraft-shadcn-pro",
+    "twentyfirst_id": 1006,
+    "twentyfirst_slug": "nextcraft-shadcn-pro-portfolio-next-js-radix-command-center",
+    "demo_url": "https://nextcraft-shadcn-pro.surge.sh",
+    "price": "$39"
+  },
+  "motioncraft-portfolio": {
+    "scriptly_store": "https://scriptly.store/products/motioncraft-portfolio",
+    "twentyfirst_id": 1007,
+    "twentyfirst_slug": "motioncraft-animated-portfolio-next-js-framer-motion-3d-experience",
+    "demo_url": "https://motioncraft-portfolio.surge.sh",
+    "price": "$39"
+  },
+  "cleants-portfolio": {
+    "scriptly_store": "https://scriptly.store/products/cleants-portfolio",
+    "twentyfirst_id": 1008,
+    "twentyfirst_slug": "cleants-minimalist-developer-next-js-15-typescript-engineering-portfolio",
+    "demo_url": "https://cleants-portfolio.surge.sh",
+    "price": "$29"
+  },
+  "cybercraft-studio": {
+    "scriptly_store": "https://scriptly.store/products/cybercraft-studio",
+    "twentyfirst_id": 1009,
+    "twentyfirst_slug": "cybercraft-creative-studio-cybernetic-webgl-react-portfolio",
+    "demo_url": "https://cybercraft-studio.surge.sh",
+    "price": "$39"
+  },
+  "aurora-variant-dev": {
+    "scriptly_store": "https://scriptly.store/products/aurora-variant-dev",
+    "twentyfirst_id": 1010,
+    "twentyfirst_slug": "aurora-creative-variant-engine-astro-space-grotesk-showcase",
+    "demo_url": "https://aurora-variant-dev.surge.sh",
+    "price": "$29"
+  }
+}

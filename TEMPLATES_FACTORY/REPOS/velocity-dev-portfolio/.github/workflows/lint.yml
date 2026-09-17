@@ -1,0 +1,50 @@
+name: ESLint
+on:
+  push:
+    branches:
+      - '*'
+      - '!docs'
+    paths:
+      - 'packages/frontend/**'
+      - 'packages/backend/**'
+      - '.eslintrc.*'
+      - 'package.json'
+      - 'yarn.lock'
+      - '.github/workflows/lint.yml'
+  workflow_dispatch:
+
+jobs:
+  lint:
+    name: Lint source code
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Node v18
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18.x
+
+      - name: Cache Yarn packages
+        uses: actions/cache@v4
+        with:
+          path: |
+            node_modules
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Run ESLint for all files
+        run: yarn post-fix
+
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: packages/frontend/src packages/backend/src
+          message: 'chore(lint): auto-lint source code'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

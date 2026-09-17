@@ -1,0 +1,71 @@
+---
+import Mono from "@/components/Mono.astro";
+import Pulse from "@/components/Pulse.astro";
+import SectionHead from "@/components/SectionHead.astro";
+import Card from "@/components/ui/Card.astro";
+
+const SOCIAL: ReadonlyArray<readonly [string, string, string]> = [
+  ["GITHUB", "github.com/kcsujeet", "https://github.com/kcsujeet"],
+  [
+    "LINKEDIN",
+    "linkedin.com/in/kc-sujeet",
+    "https://linkedin.com/in/kc-sujeet",
+  ],
+];
+---
+
+<section data-screen-label="06 Contact">
+  <SectionHead n="06." label="CONTACT" anchor="contact">
+    <p>
+      I'm always interested in ambitious projects and thoughtful collaborations. If you're building something worth talking about, reach out.
+    </p>
+  </SectionHead>
+
+  <div class="grid md:grid-cols-3 gap-3 mt-4">
+    <Card
+      as="a"
+      href="mailto:sujeetkc45@gmail.com"
+      hover
+      glow="top-left"
+      padding="lg"
+      class="md:col-span-2"
+    >
+      <Mono class="text-primary">EMAIL COMMUNICATION</Mono>
+      <p class="mt-4 text-white text-3xl md:text-5xl tracking-tight leading-tight break-all">
+        sujeetkc45@gmail.com
+      </p>
+      <div class="mt-6 inline-flex items-center gap-2 text-muted-foreground group-hover:text-primary transition-colors">
+        <Mono>WRITE A MESSAGE</Mono>
+        <span class="group-hover:translate-x-1 transition-transform">→</span>
+      </div>
+    </Card>
+
+    <Card padding="lg">
+      <Mono class="text-primary">INQUIRY STATUS</Mono>
+      <div class="mt-4 flex items-center gap-2.5">
+        <Pulse />
+        <span class="text-white text-base">Open to interesting work</span>
+      </div>
+      <p class="mt-4 text-muted-foreground text-sm">
+        Expect a response within 24–48 business hours.
+      </p>
+      <div class="mt-6 space-y-2">
+        {
+          SOCIAL.map(([k, v, h]) => (
+            <a
+              href={h}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group flex items-baseline justify-between gap-3 py-1.5 border-b border-border hover:border-primary/40 transition-colors"
+            >
+              <Mono class="text-muted-foreground">{k}</Mono>
+              <span class="text-foreground/80 text-xs group-hover:text-primary transition-colors">
+                {v}
+              </span>
+            </a>
+          ))
+        }
+      </div>
+    </Card>
+  </div>
+</section>

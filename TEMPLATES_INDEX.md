@@ -6,12 +6,13 @@ Welcome to the central repository index for **ScriptlyStore** and **21st.dev** c
 
 ## 📊 Catalog Overview & Metrics
 
-- **Total Commercial Products**: 28 Assets
-- **Total Multi-Page Templates**: 20 Themes
+- **Total Commercial Products**: 37 Assets
+- **Total Multi-Page Templates**: 29 Themes
 - **Production Automation Workers & Scripts**: 5 Items
 - **Published 21st.dev Registry Components**: 15 Interactive Primitives
 - **Live Demo Platform**: Surge.sh & Netlify (100% SSL & CDN verified)
 - **Marketplace Distribution**: [Scriptly.store](https://scriptly.store/) & [21st.dev](https://21st.dev/)
+- **Creator Support & Retainers**: [PayPal @sh20raj](http://paypal.me/@sh20raj) & [Scriptly Hire Me](https://scriptly.store/hire-me)
 
 ---
 
@@ -47,6 +48,15 @@ Welcome to the central repository index for **ScriptlyStore** and **21st.dev** c
 | 26 | **Doctor & Medical Practice** | `doctor-medical-practice` | Professional | $39.00 | [Live Demo](https://doctor-medical-practice.surge.sh/) | [Scriptly Page](https://scriptly.store/products/doctor-medical-practice) | [21st Template #999](https://21st.dev/community/templates/doctor-medical-practice-physician-surgical-clinic-template) | HTML5, Tailwind, Booking Modal | `doctor-medical-practice.zip` | 0.01 MB |
 | 27 | **Fine Dining & Modern Bistro** | `restaurant-fine-dining` | Restaurant | $49.00 | [Live Demo](https://bistro-dining-pro.surge.sh/) | [Scriptly Page](https://scriptly.store/products/restaurant-fine-dining) | [21st Template #1000](https://21st.dev/community/templates/fine-dining-modern-bistro-artisanal-hospitality-template) | HTML5, Tailwind, Reservation System | `restaurant-fine-dining.zip` | 0.01 MB |
 | 28 | **AI Agent & Autonomous Platform** | `ai-agent-platform` | SaaS | $59.00 | [Live Demo](https://ai-agent-platform.surge.sh/) | [Scriptly Page](https://scriptly.store/products/ai-agent-platform) | [21st Template #1001](https://21st.dev/community/templates/ai-agent-platform-autonomous-agent-infrastructure-swarms) | HTML5, Tailwind, Agent Sandbox | `ai-agent-platform.zip` | 0.01 MB |
+| 29 | **Scriptly Hire Me & Engineering Services Hub** | `scriptly-hire-me` | Services | $39.00 | [Live Demo](https://scriptly-hire-me.surge.sh/) | [Scriptly Page](https://scriptly.store/products/scriptly-hire-me) | [21st Template #1002](https://21st.dev/community/templates/scriptly-hire-me-senior-engineering-services-client-intake-hub) | HTML5, Tailwind, PayPal Checkout | `scriptly-hire-me.zip` | 0.01 MB |
+| 30 | **Velocity AI & Dev Portfolio** | `velocity-dev-portfolio` | Portfolio | $29.00 | [Live Demo](https://velocity-dev-portfolio.surge.sh/) | [Scriptly Page](https://scriptly.store/products/velocity-dev-portfolio) | [21st Template #1003](https://21st.dev/community/templates/velocity-ai-dev-portfolio-high-performance-astro-preact-showcase) | Astro 5, Preact, PWA, Multi-theme | `velocity-dev-portfolio.zip` | 39.5 MB |
+| 31 | **Zenith Minimalist Developer** | `zenith-minimal-dev` | Portfolio | $29.00 | [Live Demo](https://zenith-minimal-dev.surge.sh/) | [Scriptly Page](https://scriptly.store/products/zenith-minimal-dev) | [21st Template #1004](https://21st.dev/community/templates/zenith-minimalist-developer-clean-astro-react-portfolio) | Astro 7, React 19, Tailwind v4 | `zenith-minimal-dev.zip` | 0.13 MB |
+| 32 | **DocuDev Portfolio & Tech Showcase** | `docudev-portfolio` | Portfolio | $39.00 | [Live Demo](https://docudev-portfolio.surge.sh/) | [Scriptly Page](https://scriptly.store/products/docudev-portfolio) | [21st Template #1005](https://21st.dev/community/templates/docudev-portfolio-tech-showcase-astro-architecture-knowledge-engine) | Astro 5, MDX, Mermaid Diagrams | `docudev-portfolio.zip` | 0.54 MB |
+| 33 | **NextCraft Shadcn Pro Portfolio** | `nextcraft-shadcn-pro` | Portfolio | $39.00 | [Live Demo](https://nextcraft-shadcn-pro.surge.sh/) | [Scriptly Page](https://scriptly.store/products/nextcraft-shadcn-pro) | [21st Template #1006](https://21st.dev/community/templates/nextcraft-shadcn-pro-portfolio-next-js-radix-command-center) | Next.js, Radix UI, Lucide, Themes | `nextcraft-shadcn-pro.zip` | 0.18 MB |
+| 34 | **MotionCraft Animated Portfolio** | `motioncraft-portfolio` | Portfolio | $39.00 | [Live Demo](https://motioncraft-portfolio.surge.sh/) | [Scriptly Page](https://scriptly.store/products/motioncraft-portfolio) | [21st Template #1007](https://21st.dev/community/templates/motioncraft-animated-portfolio-next-js-framer-motion-3d-experience) | Next.js, Framer Motion, Three.js, GSAP | `motioncraft-portfolio.zip` | 22.5 MB |
+| 35 | **CleanTS Minimalist Developer** | `cleants-portfolio` | Portfolio | $29.00 | [Live Demo](https://cleants-portfolio.surge.sh/) | [Scriptly Page](https://scriptly.store/products/cleants-portfolio) | [21st Template #1008](https://21st.dev/community/templates/cleants-minimalist-developer-next-js-15-typescript-engineering-portfolio) | Next.js 15, React 19, Tailwind v4, Jest | `cleants-portfolio.zip` | 0.19 MB |
+| 36 | **CyberCraft Creative Studio** | `cybercraft-studio` | Portfolio | $39.00 | [Live Demo](https://cybercraft-studio.surge.sh/) | [Scriptly Page](https://scriptly.store/products/cybercraft-studio) | [21st Template #1009](https://21st.dev/community/templates/cybercraft-creative-studio-cybernetic-webgl-react-portfolio) | Astro, React, OGL WebGL Shaders | `cybercraft-studio.zip` | 1.02 MB |
+| 37 | **Aurora Creative Variant Engine** | `aurora-variant-dev` | Portfolio | $29.00 | [Live Demo](https://aurora-variant-dev.surge.sh/) | [Scriptly Page](https://scriptly.store/products/aurora-variant-dev) | [21st Template #1010](https://21st.dev/community/templates/aurora-creative-variant-engine-astro-space-grotesk-showcase) | Astro, Tailwind, Space Grotesk | `aurora-variant-dev.zip` | 0.20 MB |
 
 ---
 
