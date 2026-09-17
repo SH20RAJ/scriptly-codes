@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<!-- 
+  ==============================================================================
+  Scriptly Store Commercial Template (https://scriptly.store)
+  Product: Doctor & Medical Practice (https://scriptly.store/products/doctor-medical-practice)
+  Engine: engine-professional (TEMPLATES_FACTORY)
+  License: Commercial Single/Multi-Use (https://scriptly.store/terms)
+  ==============================================================================
+-->
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Jonathan Vance, MD, FACS — Premier Cardiovascular & Surgical Practice</title>
+  <meta name="description" content="Board-certified cardiovascular surgeon and minimally invasive surgical clinic. Compassionate, precision-engineered patient care.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS & Lucide Icons -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          },
+          colors: {
+            medical: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              500: '#0284c7',
+              600: '#0369a1',
+              navy: '#0b1c2d',
+              slate: '#16293d',
+              border: '#e2e8f0'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #f8fafc;
+      color: #1e293b;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .medical-gradient {
+      background: linear-gradient(135deg, #0b1c2d 0%, #16293d 100%);
+    }
+    .card-shadow {
+      box-shadow: 0 10px 30px -5px rgba(2, 132, 199, 0.08);
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+  <!-- Emergency Alert Banner -->
+  <div class="bg-medical-navy text-white text-xs font-semibold py-2 px-6">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></span>
+        <span>Urgent Medical Consultations & Inquiries: <strong>+1 (800) 428-VANCE</strong></span>
+      </div>
+      <div class="flex items-center gap-4 text-slate-300">
+        <span>Mon–Fri: 8:00 AM – 6:00 PM</span>
+        <span>•</span>
+        <span>Presbyterian Medical Plaza, Suite 450</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-medical-500 text-white flex items-center justify-center font-bold text-xl shadow-md">
+          <i data-lucide="activity" class="w-6 h-6"></i>
+        </div>
+        <div>
+          <div class="font-bold text-lg text-medical-navy tracking-tight leading-tight">Dr. Jonathan Vance</div>
+          <div class="text-[11px] font-semibold text-medical-500 uppercase tracking-wider">MD, FACS · Cardiovascular Surgery</div>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+        <a href="#about" class="hover:text-medical-500 transition-colors">Biography</a>
+        <a href="#specialties" class="hover:text-medical-500 transition-colors">Specialties</a>
+        <a href="#credentials" class="hover:text-medical-500 transition-colors">Board Credentials</a>
+        <a href="#testimonials" class="hover:text-medical-500 transition-colors">Patient Stories</a>
+        <a href="#contact" class="hover:text-medical-500 transition-colors">Location</a>
+      </nav>
+
+      <button onclick="document.getElementById('booking-modal').classList.remove('hidden')" class="px-5 py-2.5 rounded-xl bg-medical-500 hover:bg-medical-600 text-white font-semibold text-sm shadow-md transition-all flex items-center gap-2">
+        <i data-lucide="calendar" class="w-4 h-4"></i> Book Consultation
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative pt-12 pb-20 overflow-hidden bg-gradient-to-b from-medical-50 to-transparent">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-medical-border text-xs font-semibold text-medical-600 shadow-sm">
+            <i data-lucide="shield-check" class="w-4 h-4 text-medical-500"></i>
+            <span>Top-Ranked Surgeon · American Board of Thoracic Surgery</span>
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-medical-navy leading-[1.15]">
+            Compassionate care. Precision surgical <span class="text-medical-500 italic">excellence</span>.
+          </h1>
+
+          <p class="text-lg text-slate-600 leading-relaxed max-w-xl">
+            Over 20 years of clinical leadership in complex aortic reconstruction, minimally invasive valve repair, and advanced coronary surgery with exceptional patient recovery outcomes.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <button onclick="document.getElementById('booking-modal').classList.remove('hidden')" class="px-7 py-3.5 rounded-xl bg-medical-navy hover:bg-medical-slate text-white font-bold text-sm shadow-lg transition-all flex items-center gap-2">
+              <i data-lucide="calendar" class="w-4 h-4"></i> Request Appointment
+            </button>
+            <a href="tel:+18004288262" class="px-7 py-3.5 rounded-xl bg-white border border-slate-200 hover:border-medical-500 text-slate-700 font-semibold text-sm transition-all flex items-center gap-2 shadow-sm">
+              <i data-lucide="phone" class="w-4 h-4 text-medical-500"></i> (800) 428-VANCE
+            </a>
+          </div>
+
+          <!-- Trust Badges Metrics -->
+          <div class="grid grid-cols-3 gap-6 pt-8 border-t border-slate-200">
+            <div>
+              <div class="text-3xl font-bold text-medical-navy font-serif">4,200+</div>
+              <div class="text-xs text-slate-500 mt-1">Successful Surgeries</div>
+            </div>
+            <div>
+              <div class="text-3xl font-bold text-medical-500 font-serif">99.4%</div>
+              <div class="text-xs text-slate-500 mt-1">Surgical Success Rate</div>
+            </div>
+            <div>
+              <div class="text-3xl font-bold text-emerald-600 font-serif">20+ Yrs</div>
+              <div class="text-xs text-slate-500 mt-1">Clinical Experience</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Doctor Portrait Visual Card -->
+        <div class="lg:col-span-5">
+          <div class="relative rounded-3xl overflow-hidden bg-white p-6 border border-slate-200 shadow-xl">
+            <div class="h-80 rounded-2xl bg-gradient-to-tr from-medical-navy to-medical-slate relative flex flex-col justify-end p-6 text-white overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-t from-medical-navy via-transparent to-transparent z-10"></div>
+              <div class="relative z-20 space-y-1">
+                <span class="text-xs font-semibold uppercase tracking-wider text-medical-100">Chief of Cardiothoracic Surgery</span>
+                <h3 class="text-2xl font-serif font-bold text-white">Dr. Jonathan Vance</h3>
+                <p class="text-xs text-slate-300">Presbyterian Heart & Vascular Institute</p>
+              </div>
+            </div>
+
+            <!-- Clinic Highlights -->
+            <div class="pt-6 space-y-3">
+              <div class="flex items-center gap-3 text-sm text-slate-700">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 shrink-0"></i>
+                <span>Fellow, American College of Surgeons (FACS)</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm text-slate-700">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 shrink-0"></i>
+                <span>In-Network with Major Insurances (BlueCross, Aetna, Medicare)</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm text-slate-700">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 shrink-0"></i>
+                <span>Same-Week Telehealth Second Opinions</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clinical Specialties Section -->
+  <section id="specialties" class="py-24 bg-white border-y border-slate-200">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-medical-500 text-xs font-bold uppercase tracking-wider">Clinical Excellence</span>
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-medical-navy mt-2">Comprehensive Cardiovascular Care</h2>
+        <p class="text-slate-600 text-sm mt-3">Utilizing the most advanced robotic and minimally invasive techniques to accelerate recovery times and reduce hospital stays.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Specialty 1 -->
+        <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:border-medical-500 transition-all card-shadow">
+          <div class="w-12 h-12 rounded-xl bg-medical-100 text-medical-600 flex items-center justify-center mb-6">
+            <i data-lucide="heart-pulse" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-medical-navy mb-3">Minimally Invasive Valve Repair</h3>
+          <p class="text-sm text-slate-600 leading-relaxed mb-6">
+            State-of-the-art keyhole catheter interventions replacing open-heart surgery for mitral and aortic valve dysfunctions with 48-hour discharge times.
+          </p>
+          <a href="#contact" class="text-sm font-semibold text-medical-500 hover:text-medical-600 flex items-center gap-1.5">
+            Learn Procedure Details <i data-lucide="chevron-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Specialty 2 -->
+        <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:border-medical-500 transition-all card-shadow">
+          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center mb-6">
+            <i data-lucide="activity" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-medical-navy mb-3">Coronary Revascularization</h3>
+          <p class="text-sm text-slate-600 leading-relaxed mb-6">
+            Advanced off-pump coronary artery bypass grafting (OPCAB) offering lower risk profiles, zero cardiopulmonary bypass pump downtime, and rapid rehabilitation.
+          </p>
+          <a href="#contact" class="text-sm font-semibold text-medical-500 hover:text-medical-600 flex items-center gap-1.5">
+            Learn Procedure Details <i data-lucide="chevron-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Specialty 3 -->
+        <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:border-medical-500 transition-all card-shadow">
+          <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center mb-6">
+            <i data-lucide="stethoscope" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-medical-navy mb-3">Aortic Aneurysm Surgery</h3>
+          <p class="text-sm text-slate-600 leading-relaxed mb-6">
+            Endovascular aneurysm repair (EVAR) and surgical aortic root reconstruction utilizing 3D patient modeling and tailored stent grafts.
+          </p>
+          <a href="#contact" class="text-sm font-semibold text-medical-500 hover:text-medical-600 flex items-center gap-1.5">
+            Learn Procedure Details <i data-lucide="chevron-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Patient Testimonials Section -->
+  <section id="testimonials" class="py-24 bg-medical-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-medical-500 text-xs font-bold uppercase tracking-wider">Patient Testimonials</span>
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-medical-navy mt-2">Lives Restored, Families Healed</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+          <div class="flex text-amber-400">
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+          </div>
+          <p class="text-slate-600 italic text-base leading-relaxed">
+            "Dr. Vance and his surgical team gave me my life back. His clarity in explaining my valve replacement procedure put my entire family at peace. Three weeks post-surgery, I am walking 3 miles every morning without shortness of breath."
+          </p>
+          <div>
+            <div class="font-bold text-medical-navy">Robert Sterling</div>
+            <div class="text-xs text-slate-400">Aortic Valve Patient · San Francisco, CA</div>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+          <div class="flex text-amber-400">
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+          </div>
+          <p class="text-slate-600 italic text-base leading-relaxed">
+            "Finding a physician who pairs immense technical precision with deep empathy is rare. Dr. Vance took over an hour during our initial consultation to review all treatment alternatives. His team is world-class."
+          </p>
+          <div>
+            <div class="font-bold text-medical-navy">Eleanor Zhang</div>
+            <div class="text-xs text-slate-400">Coronary Revascularization · Oakland, CA</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Appointment Booking Modal -->
+  <div id="booking-modal" class="fixed inset-0 bg-slate-950/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-8 shadow-2xl relative border border-slate-200">
+      <button onclick="document.getElementById('booking-modal').classList.add('hidden')" class="absolute top-6 right-6 text-slate-400 hover:text-slate-600">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="space-y-2 mb-6">
+        <h3 class="text-2xl font-serif font-bold text-medical-navy">Schedule Your Consultation</h3>
+        <p class="text-xs text-slate-500">In-person clinical visits and secure HIPAA-compliant telehealth reviews.</p>
+      </div>
+
+      <form onsubmit="event.preventDefault(); alert('Appointment request submitted successfully. Our patient coordinator will contact you within 2 hours.'); document.getElementById('booking-modal').classList.add('hidden');" class="space-y-4 text-sm">
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">Full Legal Name</label>
+          <input type="text" required placeholder="e.g. Sarah Jenkins" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-medical-500">
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Phone Number</label>
+            <input type="tel" required placeholder="(555) 000-0000" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-medical-500">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Consultation Type</label>
+            <select class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-medical-500">
+              <option>In-Person Visit</option>
+              <option>Telehealth Second Opinion</option>
+              <option>Post-Op Review</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">Primary Concern / Referral</label>
+          <textarea rows="3" placeholder="Briefly describe symptoms, diagnosis, or referring physician..." class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-medical-500"></textarea>
+        </div>
+        <button type="submit" class="w-full py-3.5 rounded-xl bg-medical-500 hover:bg-medical-600 text-white font-bold transition-all shadow-md">
+          Confirm Appointment Request
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Global Footer -->
+  <footer class="bg-medical-navy text-white py-12 border-t border-slate-800 text-xs">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <div class="font-bold text-base text-white mb-2">Dr. Jonathan Vance, MD, FACS</div>
+        <p class="text-slate-400 leading-relaxed">
+          Board-Certified Cardiothoracic Surgeon offering advanced heart and vascular surgical interventions at Presbyterian Medical Center.
+        </p>
+      </div>
+      <div>
+        <div class="font-bold text-sm text-white mb-2">Clinic Hours</div>
+        <p class="text-slate-400">Monday — Friday: 8:00 AM — 6:00 PM</p>
+        <p class="text-slate-400">Saturday: Emergency & Post-Op Only</p>
+        <p class="text-slate-400">Sunday: Closed</p>
+      </div>
+      <div>
+        <div class="font-bold text-sm text-white mb-2">Emergency Hotline</div>
+        <p class="text-slate-400">Dial 911 for life-threatening emergencies.</p>
+        <p class="text-slate-400">Clinic Answering Service: (800) 428-VANCE</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scriptly Store Backlink Badge -->
+  <div style="text-align: center; padding: 1.5rem 0; font-size: 0.85rem; opacity: 0.75; font-family: sans-serif;">
+    Powered by <a href="https://scriptly.store" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline; font-weight: 600;">Scriptly Store</a> — Modern Commercial Web Templates
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

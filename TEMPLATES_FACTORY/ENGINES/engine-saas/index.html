@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<!-- 
+  ==============================================================================
+  Scriptly Store Commercial Template (https://scriptly.store)
+  Product: AI Agent Platform (https://scriptly.store/products/ai-agent-platform)
+  Engine: engine-saas (TEMPLATES_FACTORY)
+  License: Commercial Single/Multi-Use (https://scriptly.store/terms)
+  ==============================================================================
+-->
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Synapse — Autonomous AI Agent Infrastructure & Multi-Agent Swarms</title>
+  <meta name="description" content="Production-grade AI agent orchestration platform. Sub-40ms tool-calling latency, deterministic reasoning loops, and sovereign multi-agent swarms.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS & Lucide Icons -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            synapse: {
+              50: '#ecfeff',
+              400: '#22d3ee',
+              500: '#06b6d4',
+              600: '#0891b2',
+              dark: '#050508',
+              card: '#0c0d14',
+              border: 'rgba(255, 255, 255, 0.08)'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #050508;
+      color: #f1f5f9;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .neon-glow {
+      background: radial-gradient(circle 600px at 50% 10%, rgba(6, 182, 212, 0.12), transparent);
+    }
+    .glass-card {
+      background: rgba(12, 13, 20, 0.7);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .glass-card:hover {
+      border-color: rgba(34, 211, 238, 0.3);
+      box-shadow: 0 20px 40px -15px rgba(6, 182, 212, 0.15);
+    }
+  </style>
+</head>
+<body class="min-h-screen relative">
+  <div class="fixed inset-0 neon-glow pointer-events-none z-0"></div>
+
+  <!-- Top Sticky Navigation -->
+  <header class="sticky top-0 z-50 w-full border-b border-synapse-border bg-synapse-dark/85 backdrop-blur-md">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 font-mono font-bold text-lg text-white">
+        <div class="w-8 h-8 rounded-lg bg-synapse-500 text-slate-950 flex items-center justify-center font-extrabold shadow-lg shadow-synapse-500/30">
+          <i data-lucide="cpu" class="w-5 h-5"></i>
+        </div>
+        <span>SYNAPSE<span class="text-synapse-400">.ai</span></span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
+        <a href="#features" class="hover:text-synapse-400 transition-colors">Features</a>
+        <a href="#sandbox" class="hover:text-synapse-400 transition-colors">Live Sandbox</a>
+        <a href="#architecture" class="hover:text-synapse-400 transition-colors">Architecture</a>
+        <a href="#pricing" class="hover:text-synapse-400 transition-colors">Pricing</a>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <a href="#sandbox" class="hidden sm:inline-flex items-center gap-1.5 text-xs font-mono text-synapse-400 hover:text-white transition-colors">
+          <i data-lucide="terminal" class="w-4 h-4"></i> Test Sandbox
+        </a>
+        <a href="#pricing" class="px-4 py-2 text-xs font-bold rounded-lg bg-synapse-500 hover:bg-synapse-400 text-slate-950 transition-all shadow-lg shadow-synapse-500/25">
+          Deploy Cluster
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="relative z-10 max-w-6xl mx-auto px-6 pt-20 pb-28">
+    <div class="text-center max-w-3xl mx-auto space-y-6">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-synapse-card border border-synapse-border text-xs font-mono text-synapse-400">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span>v3.4 Core Released · Sub-40ms Tool-Calling Latency</span>
+      </div>
+
+      <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-[1.1] text-white">
+        Deploy autonomous AI agent swarms with <span class="bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent">deterministic precision</span>.
+      </h1>
+
+      <p class="text-lg text-slate-400 leading-relaxed max-w-2xl mx-auto">
+        Stop relying on fragile single-turn prompts. Synapse gives enterprise engineering teams sovereign multi-agent coordination, persistent memory, and air-gapped sandboxes.
+      </p>
+
+      <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
+        <a href="#sandbox" class="px-8 py-3.5 rounded-xl bg-synapse-500 hover:bg-synapse-400 text-slate-950 font-bold transition-all shadow-xl shadow-synapse-500/25 flex items-center gap-2 text-sm">
+          <i data-lucide="play" class="w-4 h-4 fill-current"></i> Test Agent Swarm Live
+        </a>
+        <a href="#pricing" class="px-8 py-3.5 rounded-xl glass-card text-white font-semibold hover:border-synapse-400/50 transition-all flex items-center gap-2 text-sm">
+          <i data-lucide="layers" class="w-4 h-4"></i> View Pricing Matrix
+        </a>
+      </div>
+
+      <!-- Telemetry Highlights -->
+      <div class="grid grid-cols-3 gap-6 pt-12 border-t border-synapse-border font-mono text-left max-w-2xl mx-auto">
+        <div>
+          <div class="text-2xl sm:text-3xl font-bold text-white">38ms</div>
+          <div class="text-xs text-slate-500 mt-1">p99 Tool Execution</div>
+        </div>
+        <div>
+          <div class="text-2xl sm:text-3xl font-bold text-synapse-400">100%</div>
+          <div class="text-xs text-slate-500 mt-1">Sovereign Data Privacy</div>
+        </div>
+        <div>
+          <div class="text-2xl sm:text-3xl font-bold text-emerald-400">14.2M+</div>
+          <div class="text-xs text-slate-500 mt-1">Daily Agent Tool Calls</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Live Interactive Agent Sandbox Terminal -->
+    <section id="sandbox" class="pt-28">
+      <div class="text-center max-w-xl mx-auto mb-10">
+        <span class="text-synapse-400 text-xs font-mono uppercase tracking-wider">Zero Setup Required</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">Live Multi-Agent Sandbox</h2>
+        <p class="text-slate-400 text-sm mt-2">Trigger real autonomous workflows and observe multi-step tool calling live.</p>
+      </div>
+
+      <div class="glass-card rounded-3xl p-6 sm:p-8 border border-synapse-border max-w-4xl mx-auto">
+        <!-- Trigger Selector Tabs -->
+        <div class="flex flex-wrap gap-3 pb-6 border-b border-synapse-border">
+          <button onclick="runScenario('scrape')" class="scenario-btn active px-4 py-2 rounded-lg bg-synapse-500 text-slate-950 font-bold text-xs font-mono transition-all">
+            ⚡ Web Research Swarm
+          </button>
+          <button onclick="runScenario('code')" class="scenario-btn px-4 py-2 rounded-lg bg-synapse-card text-slate-400 hover:text-white font-mono text-xs border border-synapse-border transition-all">
+            🛡️ Security Audit Agent
+          </button>
+          <button onclick="runScenario('support')" class="scenario-btn px-4 py-2 rounded-lg bg-synapse-card text-slate-400 hover:text-white font-mono text-xs border border-synapse-border transition-all">
+            🤖 Tier-3 Support Resolver
+          </button>
+        </div>
+
+        <!-- Terminal Output View -->
+        <div class="mt-6 rounded-xl bg-black/70 border border-synapse-border p-5 font-mono text-xs text-slate-300 space-y-3 min-h-[220px]" id="terminal-screen">
+          <div class="text-slate-500">// Synapse Agent Swarm initialized. Select a scenario above to observe execution traces.</div>
+          <div class="text-synapse-400">$ synapse.orchestrate({ swarm: "market_intelligence", concurrency: 4 })</div>
+          <div class="text-slate-400">→ [PlannerAgent] Decomposing objective into 3 sub-tasks...</div>
+          <div class="text-emerald-400">✓ [WebCrawlerAgent] Extracted 42 competitor pricing matrices (latency: 34ms)</div>
+          <div class="text-emerald-400">✓ [SynthesizerAgent] Generated executive delta report (confidence: 99.2%)</div>
+          <div class="text-white font-bold">● Output Ready: Deliverable payload written to s3://synapse-vault/intel-q4.json</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bento Grid Features -->
+    <section id="features" class="pt-32">
+      <div class="text-center max-w-xl mx-auto mb-16">
+        <span class="text-synapse-400 text-xs font-mono uppercase tracking-wider">Enterprise Architecture</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">Built for Production Scale</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="glass-card rounded-2xl p-8 space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center">
+            <i data-lucide="zap" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white">Sub-40ms Tool Execution</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Eliminate prompt delays. Native Rust bindings and WASM sandboxes execute database queries, HTTP fetches, and Python scripts at wire speed.
+          </p>
+        </div>
+
+        <div class="glass-card rounded-2xl p-8 space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center">
+            <i data-lucide="shield" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white">Air-Gapped Privacy</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Deploy on VPC, Kubernetes, or sovereign clouds. Zero customer telemetry leaves your private network. SOC2 Type II and HIPAA certified.
+          </p>
+        </div>
+
+        <div class="glass-card rounded-2xl p-8 space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center">
+            <i data-lucide="git-merge" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white">Consensus & Self-Healing</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            When an agent hallucinates or hits an API rate limit, autonomous supervisor agents detect divergence and re-route tasks in real time.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Matrix -->
+    <section id="pricing" class="pt-32">
+      <div class="text-center max-w-xl mx-auto mb-16 space-y-2">
+        <span class="text-synapse-400 text-xs font-mono uppercase tracking-wider">Transparent Investment</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Cluster Pricing</h2>
+        <p class="text-slate-400 text-sm">Scale from your first prototype agent to hundreds of sovereign concurrent worker pods.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <!-- Tier 1 -->
+        <div class="glass-card rounded-3xl p-8 flex flex-col justify-between">
+          <div class="space-y-4">
+            <h3 class="text-lg font-bold text-white">Developer</h3>
+            <div class="text-3xl font-extrabold text-white font-mono">$49 <span class="text-xs text-slate-400 font-sans font-normal">/ month</span></div>
+            <p class="text-xs text-slate-400 leading-relaxed">For solo engineers and early-stage AI founders building prototypes.</p>
+            <ul class="space-y-2.5 text-xs text-slate-300 pt-4 border-t border-synapse-border">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Up to 5 Concurrent Agents</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> 100k Monthly Tool Executions</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Cloud Managed Sandbox</li>
+            </ul>
+          </div>
+          <a href="#" class="mt-8 block text-center py-3 rounded-xl bg-synapse-card border border-synapse-border hover:border-synapse-400 text-white font-bold text-xs transition-all">Start Developer Plan</a>
+        </div>
+
+        <!-- Tier 2 (Featured) -->
+        <div class="glass-card rounded-3xl p-8 flex flex-col justify-between border-synapse-500/50 relative shadow-2xl shadow-synapse-500/10">
+          <span class="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-synapse-500 text-slate-950 text-[10px] font-mono font-bold uppercase tracking-wider">Most Popular</span>
+          <div class="space-y-4">
+            <h3 class="text-lg font-bold text-white">Growth Swarm</h3>
+            <div class="text-3xl font-extrabold text-white font-mono">$199 <span class="text-xs text-slate-400 font-sans font-normal">/ month</span></div>
+            <p class="text-xs text-slate-400 leading-relaxed">For production SaaS teams automating multi-step customer workflows.</p>
+            <ul class="space-y-2.5 text-xs text-slate-300 pt-4 border-t border-synapse-border">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-synapse-400"></i> 50 Concurrent Agent Swarms</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-synapse-400"></i> 2.5M Monthly Tool Calls</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-synapse-400"></i> Sub-40ms Low Latency Routing</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-synapse-400"></i> Persistent Memory Graph</li>
+            </ul>
+          </div>
+          <a href="#" class="mt-8 block text-center py-3 rounded-xl bg-synapse-500 hover:bg-synapse-400 text-slate-950 font-bold text-xs transition-all shadow-lg shadow-synapse-500/25">Deploy Growth Swarm</a>
+        </div>
+
+        <!-- Tier 3 -->
+        <div class="glass-card rounded-3xl p-8 flex flex-col justify-between">
+          <div class="space-y-4">
+            <h3 class="text-lg font-bold text-white">Enterprise Sovereign</h3>
+            <div class="text-3xl font-extrabold text-white font-mono">Custom</div>
+            <p class="text-xs text-slate-400 leading-relaxed">Dedicated VPC deployment, customized model fine-tuning, and SLA guarantees.</p>
+            <ul class="space-y-2.5 text-xs text-slate-300 pt-4 border-t border-synapse-border">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Unlimited Swarms & Workers</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Air-Gapped On-Premises Install</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> 99.99% Uptime SLA</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Dedicated Solutions Architect</li>
+            </ul>
+          </div>
+          <a href="#" class="mt-8 block text-center py-3 rounded-xl bg-synapse-card border border-synapse-border hover:border-synapse-400 text-white font-bold text-xs transition-all">Contact Enterprise Sales</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="border-t border-synapse-border py-8 text-center text-xs text-slate-500 font-mono">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>&copy; 2026 Synapse AI Platforms. All rights reserved. Sovereign Agent Cloud.</div>
+      <div class="flex items-center gap-4">
+        <a href="#features" class="hover:text-white transition-colors">Features</a>
+        <a href="#sandbox" class="hover:text-white transition-colors">Sandbox</a>
+        <a href="https://scriptly.store" target="_blank" rel="noopener" class="text-synapse-400 hover:underline">Scriptly Store</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scriptly Store Backlink Badge -->
+  <div style="text-align: center; padding: 1.5rem 0; font-size: 0.85rem; opacity: 0.75; font-family: sans-serif;">
+    Powered by <a href="https://scriptly.store" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline; font-weight: 600;">Scriptly Store</a> — Modern Commercial Web Templates
+  </div>
+
+  <script>
+    lucide.createIcons();
+
+    function runScenario(type) {
+      const screen = document.getElementById('terminal-screen');
+      const btns = document.querySelectorAll('.scenario-btn');
+      btns.forEach(b => {
+        b.classList.remove('bg-synapse-500', 'text-slate-950', 'font-bold');
+        b.classList.add('bg-synapse-card', 'text-slate-400');
+      });
+      event.target.classList.remove('bg-synapse-card', 'text-slate-400');
+      event.target.classList.add('bg-synapse-500', 'text-slate-950', 'font-bold');
+
+      if (type === 'scrape') {
+        screen.innerHTML = `
+          <div class="text-slate-500">// Swarm scenario: Deep Research & Competitor Intel</div>
+          <div class="text-synapse-400">$ synapse.swarm("research").spawn({ nodes: 4 })</div>
+          <div class="text-slate-400">→ [Agent-Alpha] Ingesting 128 competitor pricing endpoints...</div>
+          <div class="text-emerald-400">✓ [Agent-Beta] Normalized schema across 14 tables (28ms)</div>
+          <div class="text-emerald-400">✓ [Agent-Gamma] Vectorized embeddings to Pinecone cluster</div>
+          <div class="text-white font-bold">● Status: Research matrix delivered with 100% data fidelity.</div>
+        `;
+      } else if (type === 'code') {
+        screen.innerHTML = `
+          <div class="text-slate-500">// Swarm scenario: Automated Security & AST Vulnerability Audit</div>
+          <div class="text-synapse-400">$ synapse.audit({ repo: "core/auth-service", engine: "static-ast" })</div>
+          <div class="text-slate-400">→ [AST-Parser] Constructing dependency call graph for 2,400 files...</div>
+          <div class="text-amber-400">⚠️ [VulnerabilityAgent] Flagged potential prototype pollution in utils.ts:42</div>
+          <div class="text-emerald-400">✓ [RemediationAgent] Generated zero-breakage diff patch & unit tests</div>
+          <div class="text-white font-bold">● Status: Automated PR #482 created with passing test suite.</div>
+        `;
+      } else {
+        screen.innerHTML = `
+          <div class="text-slate-500">// Swarm scenario: Multi-Channel Customer Support Escalation</div>
+          <div class="text-synapse-400">$ synapse.stream({ ticket_id: "TICK-9081", sentiment: "urgent" })</div>
+          <div class="text-slate-400">→ [TriageAgent] Identified billing webhook retry failure in Stripe...</div>
+          <div class="text-emerald-400">✓ [PaymentAgent] Re-issued idempotent invoice receipt (latency: 18ms)</div>
+          <div class="text-emerald-400">✓ [MessengerAgent] Sent personalized resolution email via SendGrid</div>
+          <div class="text-white font-bold">● Status: Ticket auto-resolved in 4.2 seconds with CSAT 5/5.</div>
+        `;
+      }
+    }
+  </script>
+</body>
+</html>

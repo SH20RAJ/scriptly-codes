@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<!-- 
+  ==============================================================================
+  Scriptly Store Commercial Template (https://scriptly.store)
+  Product: Fine Dining & Modern Bistro (https://scriptly.store/products/restaurant-fine-dining)
+  Engine: engine-local-business (TEMPLATES_FACTORY)
+  License: Commercial Single/Multi-Use (https://scriptly.store/terms)
+  ==============================================================================
+-->
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'Ambroisie — Artisanal Gastronomy & Seasonal Fine Dining</title>
+  <meta name="description" content="Contemporary seasonal fine dining bistro featuring farm-to-table tasting menus, rare biodynamic wines, and immersive hospitality.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS & Lucide Icons -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            serif: ['Cormorant Garamond', 'serif'],
+          },
+          colors: {
+            bistro: {
+              dark: '#0c0a09',
+              card: '#1c1917',
+              border: 'rgba(255, 255, 255, 0.08)',
+              gold: '#d4af37',
+              accent: '#f59e0b',
+              muted: '#a8a29e'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #0c0a09;
+      color: #e7e5e4;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .gold-gradient {
+      background: linear-gradient(135deg, #fef08a 0%, #d4af37 50%, #b45309 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-pattern {
+      background-image: radial-gradient(rgba(212, 175, 55, 0.08) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+  </style>
+</head>
+<body class="min-h-screen hero-pattern">
+  <!-- Top Navigation Header -->
+  <header class="sticky top-0 z-50 bg-bistro-dark/90 backdrop-blur-md border-b border-bistro-border">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="flex flex-col">
+        <span class="font-serif text-2xl font-bold tracking-wider text-white">L'AMBROISIE</span>
+        <span class="text-[9px] uppercase tracking-widest text-bistro-gold">Gastronomy & Wine · Est. 2018</span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-bistro-muted">
+        <a href="#about" class="hover:text-bistro-gold transition-colors">Philosophy</a>
+        <a href="#menu" class="hover:text-bistro-gold transition-colors">Tasting Menu</a>
+        <a href="#cellar" class="hover:text-bistro-gold transition-colors">Wine Cellar</a>
+        <a href="#acclaim" class="hover:text-bistro-gold transition-colors">Acclaim</a>
+        <a href="#location" class="hover:text-bistro-gold transition-colors">Hours & Visit</a>
+      </nav>
+
+      <button onclick="document.getElementById('reservation-modal').classList.remove('hidden')" class="px-5 py-2.5 rounded-full bg-bistro-gold hover:bg-amber-400 text-stone-950 font-bold text-xs uppercase tracking-wider transition-all shadow-lg shadow-bistro-gold/20">
+        Reserve Table
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative pt-20 pb-32 overflow-hidden text-center max-w-4xl mx-auto px-6">
+    <div class="space-y-6">
+      <div class="inline-flex items-center gap-2 px-4 py-1 rounded-full border border-bistro-gold/30 bg-bistro-card text-xs font-serif italic text-bistro-gold">
+        <span>Michelin Guide Selection 2025 · Two Stars</span>
+      </div>
+
+      <h1 class="text-5xl sm:text-7xl font-serif font-bold text-white tracking-tight leading-[1.1]">
+        Seasonal purity. Culinary <span class="gold-gradient">alchemy</span>.
+      </h1>
+
+      <p class="text-lg text-bistro-muted font-light max-w-2xl mx-auto leading-relaxed">
+        An intimate culinary theater celebrating regenerative California agriculture, coastal line-caught seafood, and wood-fired fermentation.
+      </p>
+
+      <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
+        <button onclick="document.getElementById('reservation-modal').classList.remove('hidden')" class="px-8 py-3.5 rounded-full bg-bistro-gold hover:bg-amber-400 text-stone-950 font-bold text-xs uppercase tracking-wider transition-all shadow-xl shadow-bistro-gold/25">
+          Book Experience
+        </button>
+        <a href="#menu" class="px-8 py-3.5 rounded-full bg-bistro-card border border-bistro-border hover:border-bistro-gold text-white font-medium text-xs uppercase tracking-wider transition-all">
+          Explore Menus
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Philosophy & Chef Story -->
+  <section id="about" class="py-24 border-y border-bistro-border bg-bistro-card/40">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6">
+          <span class="text-xs uppercase tracking-widest text-bistro-gold">The Culinary Vision</span>
+          <h2 class="text-3xl sm:text-5xl font-serif font-bold text-white">Rooted in Earth, Fire, and Deep Time</h2>
+          <p class="text-bistro-muted text-sm leading-relaxed">
+            Executive Chef Henri Moreau curates a nightly 9-course sensory journey. Every vegetable is harvested that morning from our 14-acre organic bio-dynamic farm in Sonoma Valley.
+          </p>
+          <p class="text-bistro-muted text-sm leading-relaxed">
+            From 48-hour koji-fermented broths to heritage dry-aged Wagyu smoked over white oak embers, our kitchen operates on respect for unadulterated flavor profiles.
+          </p>
+          <div class="pt-2 border-t border-bistro-border flex items-center gap-8">
+            <div>
+              <div class="font-serif text-3xl font-bold text-white">9 Courses</div>
+              <div class="text-xs text-bistro-muted">Nightly Tasting</div>
+            </div>
+            <div>
+              <div class="font-serif text-3xl font-bold text-bistro-gold">850+</div>
+              <div class="text-xs text-bistro-muted">Cellar Labels</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-3xl border border-bistro-border bg-bistro-card p-8 space-y-6">
+          <div class="flex items-center gap-4 text-bistro-gold">
+            <i data-lucide="award" class="w-8 h-8"></i>
+            <div>
+              <div class="font-serif text-xl font-bold text-white">James Beard Nominee</div>
+              <div class="text-xs text-bistro-muted">Best Chef California · 2024 & 2025</div>
+            </div>
+          </div>
+          <p class="text-sm text-bistro-muted italic leading-relaxed border-l-2 border-bistro-gold pl-4">
+            "A revelation in dining. L'Ambroisie bridges old-world French technique with the untamed biodiversity of Northern California."
+          </p>
+          <div class="text-xs uppercase tracking-wider text-stone-400 font-semibold">— San Francisco Chronicle Dining Review</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Culinary Menu -->
+  <section id="menu" class="py-28 max-w-5xl mx-auto px-6">
+    <div class="text-center space-y-3 mb-16">
+      <span class="text-xs uppercase tracking-widest text-bistro-gold">Culinary Repertory</span>
+      <h2 class="text-4xl sm:text-5xl font-serif font-bold text-white">Autumn Tasting Menu</h2>
+      <p class="text-bistro-muted text-sm max-w-md mx-auto">$185 per guest · Optional Reserve Pairing $120</p>
+    </div>
+
+    <!-- Menu Courses Grid -->
+    <div class="space-y-8">
+      <!-- Course 1 -->
+      <div class="p-6 rounded-2xl bg-bistro-card border border-bistro-border hover:border-bistro-gold/40 transition-all flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+        <div>
+          <div class="flex items-center gap-3">
+            <h3 class="font-serif text-xl font-bold text-white">Hokkaido Scallop Crudo</h3>
+            <span class="text-[10px] uppercase tracking-wider px-2 py-0.5 rounded bg-bistro-gold/10 text-bistro-gold border border-bistro-gold/20">First Course</span>
+          </div>
+          <p class="text-sm text-bistro-muted mt-1">Finger lime, white soy emulsion, smoked sea salt, shiso oil.</p>
+        </div>
+        <span class="text-xs font-serif text-bistro-gold italic shrink-0">Pairing: 2021 Chablis Grand Cru</span>
+      </div>
+
+      <!-- Course 2 -->
+      <div class="p-6 rounded-2xl bg-bistro-card border border-bistro-border hover:border-bistro-gold/40 transition-all flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+        <div>
+          <div class="flex items-center gap-3">
+            <h3 class="font-serif text-xl font-bold text-white">Sonoma Chanterelle Agnolotti</h3>
+            <span class="text-[10px] uppercase tracking-wider px-2 py-0.5 rounded bg-bistro-gold/10 text-bistro-gold border border-bistro-gold/20">Handmade Pasta</span>
+          </div>
+          <p class="text-sm text-bistro-muted mt-1">Parmigiano Reggiano 36-month foam, winter black truffle, brown butter crisp.</p>
+        </div>
+        <span class="text-xs font-serif text-bistro-gold italic shrink-0">Pairing: 2019 Barolo Cannubi</span>
+      </div>
+
+      <!-- Course 3 -->
+      <div class="p-6 rounded-2xl bg-bistro-card border border-bistro-border hover:border-bistro-gold/40 transition-all flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+        <div>
+          <div class="flex items-center gap-3">
+            <h3 class="font-serif text-xl font-bold text-white">Miyazaki A5 Wagyu Ribeye</h3>
+            <span class="text-[10px] uppercase tracking-wider px-2 py-0.5 rounded bg-bistro-gold/10 text-bistro-gold border border-bistro-gold/20">Principal Course</span>
+          </div>
+          <p class="text-sm text-bistro-muted mt-1">Charred cipollini onion, bone marrow jus, fermented garlic puree.</p>
+        </div>
+        <span class="text-xs font-serif text-bistro-gold italic shrink-0">Pairing: 2018 Nuits-Saint-Georges</span>
+      </div>
+
+      <!-- Course 4 -->
+      <div class="p-6 rounded-2xl bg-bistro-card border border-bistro-border hover:border-bistro-gold/40 transition-all flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+        <div>
+          <div class="flex items-center gap-3">
+            <h3 class="font-serif text-xl font-bold text-white">Valrhona Dark Chocolate Soufflé</h3>
+            <span class="text-[10px] uppercase tracking-wider px-2 py-0.5 rounded bg-bistro-gold/10 text-bistro-gold border border-bistro-gold/20">Finale</span>
+          </div>
+          <p class="text-sm text-bistro-muted mt-1">Single-origin 72% guanaja, bourbon vanilla bean gelato, Maldon caramel.</p>
+        </div>
+        <span class="text-xs font-serif text-bistro-gold italic shrink-0">Pairing: 2008 Vintage Port</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Table Reservation Modal -->
+  <div id="reservation-modal" class="fixed inset-0 bg-black/80 backdrop-blur-md z-50 flex items-center justify-center p-4 hidden">
+    <div class="bg-bistro-card border border-bistro-border rounded-3xl max-w-lg w-full p-8 relative shadow-2xl">
+      <button onclick="document.getElementById('reservation-modal').classList.add('hidden')" class="absolute top-6 right-6 text-stone-400 hover:text-white">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="space-y-2 mb-6">
+        <span class="text-xs uppercase tracking-widest text-bistro-gold">Intimate Dining</span>
+        <h3 class="text-2xl font-serif font-bold text-white">Reserve Your Table</h3>
+        <p class="text-xs text-bistro-muted">Seating is reserved 30 days in advance. A credit card is required to secure bookings.</p>
+      </div>
+
+      <form onsubmit="event.preventDefault(); alert('Reservation request confirmed! A verification text has been sent to your mobile phone.'); document.getElementById('reservation-modal').classList.add('hidden');" class="space-y-4 text-sm">
+        <div>
+          <label class="block text-xs uppercase tracking-wider text-stone-400 mb-1">Guest Name</label>
+          <input type="text" required placeholder="Lord/Lady, First & Last" class="w-full px-4 py-2.5 rounded-xl bg-bistro-dark border border-bistro-border text-white focus:outline-none focus:border-bistro-gold">
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs uppercase tracking-wider text-stone-400 mb-1">Party Size</label>
+            <select class="w-full px-4 py-2.5 rounded-xl bg-bistro-dark border border-bistro-border text-white focus:outline-none focus:border-bistro-gold">
+              <option>2 Guests</option>
+              <option>4 Guests</option>
+              <option>6 Guests</option>
+              <option>Chef's Counter (1-2)</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs uppercase tracking-wider text-stone-400 mb-1">Dining Area</label>
+            <select class="w-full px-4 py-2.5 rounded-xl bg-bistro-dark border border-bistro-border text-white focus:outline-none focus:border-bistro-gold">
+              <option>Main Dining Room</option>
+              <option>Chef's Counter</option>
+              <option>Garden Courtyard</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs uppercase tracking-wider text-stone-400 mb-1">Dietary Restrictions</label>
+          <textarea rows="2" placeholder="Allergies, pescatarian, vegan, anniversary notes..." class="w-full px-4 py-2.5 rounded-xl bg-bistro-dark border border-bistro-border text-white focus:outline-none focus:border-bistro-gold"></textarea>
+        </div>
+        <button type="submit" class="w-full py-3.5 rounded-xl bg-bistro-gold hover:bg-amber-400 text-stone-950 font-bold uppercase tracking-wider text-xs transition-all shadow-lg shadow-bistro-gold/20">
+          Confirm VIP Reservation
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Global Footer -->
+  <footer class="border-t border-bistro-border py-12 text-xs text-bistro-muted text-center">
+    <div class="max-w-6xl mx-auto px-6 space-y-4">
+      <div class="font-serif text-xl font-bold text-white">L'AMBROISIE</div>
+      <p class="max-w-md mx-auto">428 Montgomery Street, Financial District, San Francisco, CA 94104</p>
+      <p>Wednesday — Sunday: 5:30 PM — 10:30 PM · Valet Parking Available</p>
+      <div class="pt-4 text-stone-500">&copy; 2026 L'Ambroisie Gastronomy. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Scriptly Store Backlink Badge -->
+  <div style="text-align: center; padding: 1.5rem 0; font-size: 0.85rem; opacity: 0.75; font-family: sans-serif;">
+    Powered by <a href="https://scriptly.store" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline; font-weight: 600;">Scriptly Store</a> — Modern Commercial Web Templates
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

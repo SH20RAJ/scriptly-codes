@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<!-- 
+  ==============================================================================
+  Scriptly Store Commercial Template (https://scriptly.store)
+  Product: Developer Portfolio Pro (https://scriptly.store/products/developer-portfolio-pro)
+  Engine: engine-portfolio (TEMPLATES_FACTORY)
+  License: Commercial Single/Multi-Use (https://scriptly.store/terms)
+  ==============================================================================
+-->
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Rivers — Staff Software Engineer & Distributed Systems Architect</title>
+  <meta name="description" content="Production-ready portfolio for senior software engineers, distributed systems architects, and full-stack creators. Built for high-ticket contract conversion.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS & Lucide Icons -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            brand: {
+              50: '#f5f3ff',
+              400: '#a78bfa',
+              500: '#8b5cf6',
+              600: '#7c3aed',
+              dark: '#07080d',
+              surface: '#0f111a',
+              card: '#141724',
+              border: 'rgba(255, 255, 255, 0.08)'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #07080d;
+      color: #e2e8f0;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+    }
+    .glow-radial {
+      background: radial-gradient(circle 500px at 50% 20%, rgba(124, 58, 237, 0.15), transparent);
+    }
+    .code-grid {
+      background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+    .glass-card {
+      background: rgba(20, 23, 36, 0.65);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .glass-card:hover {
+      border-color: rgba(167, 139, 250, 0.35);
+      transform: translateY(-4px);
+      box-shadow: 0 16px 32px -10px rgba(124, 58, 237, 0.2);
+    }
+    .text-gradient {
+      background: linear-gradient(135deg, #ffffff 30%, #a78bfa 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body class="min-h-screen relative code-grid">
+  <!-- Subtle Glow Accent -->
+  <div class="fixed inset-0 glow-radial pointer-events-none z-0"></div>
+
+  <!-- Top Sticky Navigation -->
+  <header class="sticky top-0 z-50 w-full border-b border-brand-border bg-brand-dark/80 backdrop-blur-md">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 font-mono font-bold text-lg text-white group">
+        <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+        <span class="text-gradient">alex.rivers()</span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
+        <a href="#about" class="hover:text-white transition-colors">About</a>
+        <a href="#projects" class="hover:text-white transition-colors">Projects</a>
+        <a href="#experience" class="hover:text-white transition-colors">Experience</a>
+        <a href="#stack" class="hover:text-white transition-colors">Stack</a>
+        <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <span class="hidden sm:inline-flex items-center gap-1.5 text-xs font-mono px-2.5 py-1 rounded-full bg-emerald-950/60 border border-emerald-500/30 text-emerald-400">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Available for Q4 Contracts
+        </span>
+        <a href="#contact" class="px-4 py-2 text-xs font-semibold rounded-lg bg-brand-600 hover:bg-brand-500 text-white transition-all shadow-lg shadow-brand-600/25">
+          Hire Me
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="relative z-10 max-w-6xl mx-auto px-6 pt-20 pb-28">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-7 space-y-6">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-surface border border-brand-border text-xs font-mono text-brand-400">
+          <i data-lucide="terminal" class="w-3.5 h-3.5"></i>
+          <span>Staff Engineer & Distributed Systems Lead</span>
+        </div>
+
+        <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-[1.1]">
+          Architecting resilient, high-throughput systems at <span class="text-gradient">scale</span>.
+        </h1>
+
+        <p class="text-lg text-slate-400 leading-relaxed max-w-xl">
+          10+ years designing fault-tolerant architectures, sub-millisecond data pipelines, and developer tooling. Previously lead infrastructure at HyperScale and CloudKernel.
+        </p>
+
+        <!-- CTAs -->
+        <div class="flex flex-wrap items-center gap-4 pt-4">
+          <a href="#projects" class="px-6 py-3 rounded-xl bg-white text-slate-950 font-bold hover:bg-slate-200 transition-all flex items-center gap-2 text-sm shadow-xl shadow-white/5">
+            <i data-lucide="layers" class="w-4 h-4"></i> View Flagship Systems
+          </a>
+          <a href="#contact" class="px-6 py-3 rounded-xl glass-card font-semibold hover:border-brand-400/50 transition-all flex items-center gap-2 text-sm text-slate-300">
+            <i data-lucide="mail" class="w-4 h-4"></i> Schedule Architecture Call
+          </a>
+        </div>
+
+        <!-- Telemetry Numbers -->
+        <div class="grid grid-cols-3 gap-6 pt-8 border-t border-brand-border font-mono">
+          <div>
+            <div class="text-2xl sm:text-3xl font-bold text-white">99.999%</div>
+            <div class="text-xs text-slate-500 mt-0.5">SLA Uptime Maintained</div>
+          </div>
+          <div>
+            <div class="text-2xl sm:text-3xl font-bold text-brand-400">420k+</div>
+            <div class="text-xs text-slate-500 mt-0.5">RPS Peak Throughput</div>
+          </div>
+          <div>
+            <div class="text-2xl sm:text-3xl font-bold text-emerald-400">$3.8M</div>
+            <div class="text-xs text-slate-500 mt-0.5">Cloud Spend Saved</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Interactive Terminal Card -->
+      <div class="lg:col-span-5">
+        <div class="rounded-2xl glass-card p-5 border border-brand-border shadow-2xl font-mono text-xs">
+          <!-- Terminal Header -->
+          <div class="flex items-center justify-between pb-4 border-b border-brand-border">
+            <div class="flex items-center gap-2">
+              <span class="w-3 h-3 rounded-full bg-rose-500/80"></span>
+              <span class="w-3 h-3 rounded-full bg-amber-500/80"></span>
+              <span class="w-3 h-3 rounded-full bg-emerald-500/80"></span>
+            </div>
+            <span class="text-slate-500">river-cluster-ap-southeast-1</span>
+            <span class="text-emerald-400 text-[10px]">HEALTHY</span>
+          </div>
+
+          <!-- Terminal Content -->
+          <div class="space-y-3 pt-4 text-slate-300">
+            <p class="text-slate-500">$ query cluster.metrics --tail 3</p>
+            <div class="p-2.5 rounded bg-black/50 border border-brand-border space-y-1">
+              <div class="flex justify-between text-slate-400">
+                <span>p99_latency:</span> <span class="text-emerald-400 font-bold">1.42ms</span>
+              </div>
+              <div class="flex justify-between text-slate-400">
+                <span>active_replicas:</span> <span class="text-white">64 nodes</span>
+              </div>
+              <div class="flex justify-between text-slate-400">
+                <span>cache_hit_rate:</span> <span class="text-brand-400">98.7%</span>
+              </div>
+            </div>
+
+            <p class="text-slate-500">$ cat current_focus.json</p>
+            <div class="p-2.5 rounded bg-black/50 border border-brand-border text-slate-300">
+              {<br>
+              &nbsp;&nbsp;"role": "Staff Infrastructure Architect",<br>
+              &nbsp;&nbsp;"specialties": ["Distributed Consensus", "eBPF", "Raft", "K8s"],<br>
+              &nbsp;&nbsp;"location": "San Francisco & Remote"<br>
+              }
+            </div>
+
+            <div class="pt-2 flex items-center gap-2 text-emerald-400">
+              <span>●</span>
+              <span>Available for high-stakes audits & advisory</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured Flagship Systems (Projects) -->
+    <section id="projects" class="pt-32">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        <div>
+          <span class="text-brand-400 text-xs font-mono uppercase tracking-wider">Proven Track Record</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">Flagship Engineering Projects</h2>
+        </div>
+        <p class="text-slate-400 text-sm max-w-md">
+          Production systems currently serving tens of millions of daily active users across enterprise environments.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Project 1 -->
+        <div class="glass-card rounded-2xl p-6 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-mono px-2.5 py-1 rounded bg-brand-500/10 text-brand-400 border border-brand-500/20">Distributed Key-Value</span>
+              <a href="#" class="text-slate-400 group-hover:text-white transition-colors"><i data-lucide="external-link" class="w-4 h-4"></i></a>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand-400 transition-colors">VortexKV Storage Engine</h3>
+            <p class="text-sm text-slate-400 leading-relaxed mb-6">
+              LSM-tree based key-value storage engine engineered in Rust with custom WAL, zero-copy read paths, and Raft replication.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-brand-border flex items-center justify-between text-xs font-mono text-slate-400">
+            <span>Rust · Raft · io_uring</span>
+            <span class="text-emerald-400">0.8ms p99</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="glass-card rounded-2xl p-6 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-mono px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Observability Platform</span>
+              <a href="#" class="text-slate-400 group-hover:text-white transition-colors"><i data-lucide="external-link" class="w-4 h-4"></i></a>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand-400 transition-colors">Aether eBPF Telemetry</h3>
+            <p class="text-sm text-slate-400 leading-relaxed mb-6">
+              Kernel-level performance profiler capturing network anomalies, CPU cache misses, and memory leaks with &lt;1% CPU overhead.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-brand-border flex items-center justify-between text-xs font-mono text-slate-400">
+            <span>C · eBPF · Go · Grafana</span>
+            <span class="text-emerald-400">&lt;1% Overhead</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="glass-card rounded-2xl p-6 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-mono px-2.5 py-1 rounded bg-amber-500/10 text-amber-400 border border-amber-500/20">AI Infrastructure</span>
+              <a href="#" class="text-slate-400 group-hover:text-white transition-colors"><i data-lucide="external-link" class="w-4 h-4"></i></a>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand-400 transition-colors">Nexus LLM Router Gateway</h3>
+            <p class="text-sm text-slate-400 leading-relaxed mb-6">
+              Semantic proxy routing complex prompts across 14 LLM clusters with automated fallback, semantic caching, and token budget tracking.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-brand-border flex items-center justify-between text-xs font-mono text-slate-400">
+            <span>TypeScript · Redis · Cloudflare</span>
+            <span class="text-brand-400">62% Cost Cut</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Architecture Experience Timeline -->
+    <section id="experience" class="pt-32">
+      <div class="mb-12">
+        <span class="text-brand-400 text-xs font-mono uppercase tracking-wider">Career Trajectory</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">High-Impact Experience</h2>
+      </div>
+
+      <div class="space-y-6">
+        <!-- Experience 1 -->
+        <div class="glass-card rounded-2xl p-8">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4">
+            <div>
+              <h3 class="text-xl font-bold text-white">Staff Infrastructure Architect</h3>
+              <div class="text-sm text-brand-400 font-mono">HyperScale Data Systems</div>
+            </div>
+            <span class="text-xs font-mono text-slate-400 px-3 py-1 rounded-full bg-brand-surface border border-brand-border w-fit">
+              2023 — Present · Remote
+            </span>
+          </div>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">
+            Directing core storage infrastructure serving 4.5 billion daily API transactions. Spearheaded global migration from managed RDS to distributed multi-region Spanner clusters, dropping annual infrastructure expenditure by $2.4M while boosting 99th percentile SLA.
+          </p>
+          <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-300">
+            <span class="px-2.5 py-1 rounded bg-black/40 border border-brand-border">Kubernetes</span>
+            <span class="px-2.5 py-1 rounded bg-black/40 border border-brand-border">Spanner</span>
+            <span class="px-2.5 py-1 rounded bg-black/40 border border-brand-border">Rust</span>
+            <span class="px-2.5 py-1 rounded bg-black/40 border border-brand-border">Envoy</span>
+          </div>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="glass-card rounded-2xl p-8">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4">
+            <div>
+              <h3 class="text-xl font-bold text-white">Principal Systems Engineer</h3>
+              <div class="text-sm text-brand-400 font-mono">CloudKernel Compute</div>
+            </div>
+            <span class="text-xs font-mono text-slate-400 px-3 py-1 rounded-full bg-brand-surface border border-brand-border w-fit">
+              2020 — 2023 · San Francisco, CA
+            </span>
+          </div>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">
+            Architected container sandboxing primitives utilizing gVisor and Firecracker microVMs. Reduced cold-start container initialization latencies from 4.2 seconds to 85 milliseconds across serverless compute worker pools.
+          </p>
+          <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-300">
+            <span class="px-2.5 py-1 rounded bg-black/40 border border-brand-border">Firecracker</span>
+            <span class="px-2.5 py-1 rounded bg-black/40 border border-brand-border">Linux Kernel</span>
+            <span class="px-2.5 py-1 rounded bg-black/40 border border-brand-border">Go</span>
+            <span class="px-2.5 py-1 rounded bg-black/40 border border-brand-border">gRPC</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Arsenal & Stack Radar -->
+    <section id="stack" class="pt-32">
+      <div class="text-center max-w-xl mx-auto mb-12">
+        <span class="text-brand-400 text-xs font-mono uppercase tracking-wider">Technical Mastery</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">Architectural Tooling</h2>
+        <p class="text-slate-400 text-sm mt-2">Tools and primitives chosen for predictability, deterministic performance, and scale.</p>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 font-mono text-xs">
+        <div class="glass-card rounded-xl p-4 text-center">
+          <div class="text-brand-400 font-bold text-sm mb-1">Rust & Go</div>
+          <div class="text-slate-500">Core Systems</div>
+        </div>
+        <div class="glass-card rounded-xl p-4 text-center">
+          <div class="text-emerald-400 font-bold text-sm mb-1">eBPF & Linux</div>
+          <div class="text-slate-500">Kernel Profiling</div>
+        </div>
+        <div class="glass-card rounded-xl p-4 text-center">
+          <div class="text-amber-400 font-bold text-sm mb-1">Raft & Paxos</div>
+          <div class="text-slate-500">Consensus Algorithms</div>
+        </div>
+        <div class="glass-card rounded-xl p-4 text-center">
+          <div class="text-purple-400 font-bold text-sm mb-1">Kubernetes / Envoy</div>
+          <div class="text-slate-500">Service Mesh & Ingress</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Consultation Section -->
+    <section id="contact" class="pt-32">
+      <div class="glass-card rounded-3xl p-8 sm:p-14 border border-brand-border text-center max-w-3xl mx-auto relative overflow-hidden">
+        <div class="relative z-10 space-y-6">
+          <span class="px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono">
+            Booking Q4 High-Priority Engagements
+          </span>
+          <h2 class="text-3xl sm:text-5xl font-extrabold text-white">Let's solve your hardest engineering bottleneck.</h2>
+          <p class="text-slate-400 text-base max-w-lg mx-auto">
+            Available for architectural reviews, cloud cost audits, distributed systems consulting, and advisory retainer engagements.
+          </p>
+          <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
+            <a href="mailto:alex@rivers.dev" class="px-8 py-3.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-bold transition-all shadow-xl shadow-brand-600/30 flex items-center gap-2">
+              <i data-lucide="mail" class="w-4 h-4"></i> alex@rivers.dev
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener" class="px-6 py-3.5 rounded-xl glass-card text-slate-300 font-semibold hover:border-brand-400 transition-all flex items-center gap-2">
+              <i data-lucide="github" class="w-4 h-4"></i> GitHub Showcase
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="border-t border-brand-border py-8 text-center text-xs text-slate-500 font-mono">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>&copy; 2026 Alex Rivers. All rights reserved. Distributed Systems Portfolio.</div>
+      <div class="flex items-center gap-4">
+        <a href="#about" class="hover:text-white transition-colors">Top</a>
+        <a href="https://scriptly.store" target="_blank" rel="noopener" class="hover:text-brand-400 transition-colors font-semibold">Scriptly Store</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scriptly Store Backlink Badge -->
+  <div style="text-align: center; padding: 1.5rem 0; font-size: 0.85rem; opacity: 0.75; font-family: sans-serif;">
+    Powered by <a href="https://scriptly.store" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline; font-weight: 600;">Scriptly Store</a> — Modern Commercial Web Templates
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
