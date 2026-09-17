@@ -6,8 +6,8 @@ Welcome to the central repository index for **ScriptlyStore** and **21st.dev** c
 
 ## 📊 Catalog Overview & Metrics
 
-- **Total Commercial Products**: 37 Assets
-- **Total Multi-Page Templates**: 29 Themes
+- **Total Commercial Products**: 45 Assets
+- **Total Multi-Page Templates**: 37 Themes
 - **Production Automation Workers & Scripts**: 5 Items
 - **Published 21st.dev Registry Components**: 15 Interactive Primitives
 - **Live Demo Platform**: Surge.sh & Netlify (100% SSL & CDN verified)
@@ -57,6 +57,14 @@ Welcome to the central repository index for **ScriptlyStore** and **21st.dev** c
 | 35 | **CleanTS Minimalist Developer** | `cleants-portfolio` | Portfolio | $29.00 | [Live Demo](https://cleants-portfolio.surge.sh/) | [Scriptly Page](https://scriptly.store/products/cleants-portfolio) | [21st Template #1008](https://21st.dev/community/templates/cleants-minimalist-developer-next-js-15-typescript-engineering-portfolio) | Next.js 15, React 19, Tailwind v4, Jest | `cleants-portfolio.zip` | 0.19 MB |
 | 36 | **CyberCraft Creative Studio** | `cybercraft-studio` | Portfolio | $39.00 | [Live Demo](https://cybercraft-studio.surge.sh/) | [Scriptly Page](https://scriptly.store/products/cybercraft-studio) | [21st Template #1009](https://21st.dev/community/templates/cybercraft-creative-studio-cybernetic-webgl-react-portfolio) | Astro, React, OGL WebGL Shaders | `cybercraft-studio.zip` | 1.02 MB |
 | 37 | **Aurora Creative Variant Engine** | `aurora-variant-dev` | Portfolio | $29.00 | [Live Demo](https://aurora-variant-dev.surge.sh/) | [Scriptly Page](https://scriptly.store/products/aurora-variant-dev) | [21st Template #1010](https://21st.dev/community/templates/aurora-creative-variant-engine-astro-space-grotesk-showcase) | Astro, Tailwind, Space Grotesk | `aurora-variant-dev.zip` | 0.20 MB |
+| 38 | **QuickLaunch AI & SaaS Landing** | `shadcn-saas-landing` | SaaS | $39.00 | [Live Demo](https://shadcn-saas-landing.surge.sh/) | [Scriptly Page](https://scriptly.store/products/shadcn-saas-landing) | [21st Template #1011](https://21st.dev/community/templates/quicklaunch-ai-saas-landing-modern-next-js-shadcn-ui-template) | Next.js 14, shadcn/ui, Tailwind | `shadcn-saas-landing.zip` | 0.74 MB |
+| 39 | **Shadcn Admin Suite** | `shadcn-admin-suite` | Dashboard | $49.00 | [Live Demo](https://shadcn-admin-suite.surge.sh/) | [Scriptly Page](https://scriptly.store/products/shadcn-admin-suite) | [21st Template #1012](https://21st.dev/community/templates/shadcn-admin-suite-enterprise-react-tanstack-dashboard-console) | React 19, TanStack Router, shadcn | `shadcn-admin-suite.zip` | 1.3 MB |
+| 40 | **DevCraft Pro Portfolio** | `magicui-devcraft-portfolio` | Portfolio | $39.00 | [Live Demo](https://magicui-devcraft-portfolio.surge.sh/) | [Scriptly Page](https://scriptly.store/products/magicui-devcraft-portfolio) | [21st Template #1013](https://21st.dev/community/templates/devcraft-pro-senior-software-engineer-magic-ui-portfolio) | Next.js 14, Magic UI, Tailwind | `magicui-devcraft-portfolio.zip` | 1.2 MB |
+| 41 | **MedPulse Pro Clinic** | `medpulse-clinic-pro` | Medical | $49.00 | [Live Demo](https://medpulse-clinic-pro.surge.sh/) | [Scriptly Page](https://scriptly.store/products/medpulse-clinic-pro) | [21st Template #1014](https://21st.dev/community/templates/medpulse-pro-healthcare-clinic-physician-practice-template) | Next.js 14, Tailwind, Lucide | `medpulse-clinic-pro.zip` | 1.1 MB |
+| 42 | **SmileCraft Dental Clinic** | `smilecraft-dental-clinic` | Dental | $49.00 | [Live Demo](https://smilecraft-dental-clinic.surge.sh/) | [Scriptly Page](https://scriptly.store/products/smilecraft-dental-clinic) | [21st Template #1015](https://21st.dev/community/templates/smilecraft-dental-cosmetic-dentistry-oral-care-portal) | Next.js 14, Tailwind, Lucide | `smilecraft-dental-clinic.zip` | 1.0 MB |
+| 43 | **Bistrot Moderne Dining** | `bistrot-moderne-dining` | Restaurant | $39.00 | [Live Demo](https://bistrot-moderne-dining.surge.sh/) | [Scriptly Page](https://scriptly.store/products/bistrot-moderne-dining) | [21st Template #1016](https://21st.dev/community/templates/bistrot-moderne-fine-dining-restaurant-culinary-showcase) | React 19, Vite, Tailwind | `bistrot-moderne-dining.zip` | 0.99 MB |
+| 44 | **LexJuris Agency Pro** | `lexjuris-agency-pro` | Professional | $39.00 | [Live Demo](https://lexjuris-agency-pro.netlify.app/) | [Scriptly Page](https://scriptly.store/products/lexjuris-agency-pro) | [21st Template #1017](https://21st.dev/community/templates/lexjuris-agency-pro-corporate-legal-advisory-firm-theme) | Bootstrap 5, Vanilla JS, CSS3 | `lexjuris-agency-pro.zip` | 1.0 MB |
+| 45 | **AstroPaper Tech Blog** | `astropaper-tech-blog` | Blog | $29.00 | [Live Demo](https://astropaper-tech-blog.surge.sh/) | [Scriptly Page](https://scriptly.store/products/astropaper-tech-blog) | [21st Template #1018](https://21st.dev/community/templates/astropaper-tech-blog-ultra-fast-100-100-lighthouse-markdown-engine) | Astro 7, Tailwind, Pagefind | `astropaper-tech-blog.zip` | 5.5 MB |
 
 ---
 

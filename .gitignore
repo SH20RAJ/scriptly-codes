@@ -17,3 +17,6 @@ dist/
 **/.astro/
 screenshots_real/
 
+
+# Local Netlify folder
+.netlify

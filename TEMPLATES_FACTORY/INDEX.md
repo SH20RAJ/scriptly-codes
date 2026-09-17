@@ -7,8 +7,8 @@ This document tracks all Master Design Engines, derived production variations, l
 ## 📊 Factory Production Metrics
 
 - **Master Engines Built**: 5 Engines
-- **Active Commercial Variations**: 13 Live Production Products (Wave 1 + GitHub Foundations + Hire Me Engine)
-- **Live Demo Platform**: Surge.sh (100% SSL, CDN verified HTTP 200)
+- **Active Commercial Variations**: 21 Live Production Products (Wave 1 + GitHub Foundations + Healthcare/SaaS/Admin Wave 3)
+- **Live Demo Platform**: Surge.sh & Netlify (100% SSL, CDN verified HTTP 200)
 - **Marketplaces**: [Scriptly.store](https://scriptly.store) & [21st.dev](https://21st.dev)
 - **PayPal Retainers / Tips**: [`http://paypal.me/@sh20raj`](http://paypal.me/@sh20raj)
 - **Engineering Services Hub**: [`https://scriptly.store/hire-me`](https://scriptly.store/hire-me)
@@ -32,6 +32,14 @@ This document tracks all Master Design Engines, derived production variations, l
 | 10 | **CleanTS Minimalist Developer** | TypeScript Engineer | Next.js 15 + React 19 + Jest | $29.00 | [Live Demo](https://cleants-portfolio.surge.sh/) | [Scriptly Page](https://scriptly.store/products/cleants-portfolio) | [Template #1008](https://21st.dev/community/templates/cleants-minimalist-developer-next-js-15-typescript-engineering-portfolio) | `cleants-portfolio.zip` | 🟢 Published |
 | 11 | **CyberCraft Creative Studio** | Cyber / WebGL Creative | Astro + React + OGL Shaders | $39.00 | [Live Demo](https://cybercraft-studio.surge.sh/) | [Scriptly Page](https://scriptly.store/products/cybercraft-studio) | [Template #1009](https://21st.dev/community/templates/cybercraft-creative-studio-cybernetic-webgl-react-portfolio) | `cybercraft-studio.zip` | 🟢 Published |
 | 12 | **Aurora Creative Variant Engine** | Creative / Multipurpose | Astro + Space Grotesk | $29.00 | [Live Demo](https://aurora-variant-dev.surge.sh/) | [Scriptly Page](https://scriptly.store/products/aurora-variant-dev) | [Template #1010](https://21st.dev/community/templates/aurora-creative-variant-engine-astro-space-grotesk-showcase) | `aurora-variant-dev.zip` | 🟢 Published |
+| 13 | **QuickLaunch AI & SaaS Landing** | SaaS / Landing | Next.js 14 + shadcn/ui | $39.00 | [Live Demo](https://shadcn-saas-landing.surge.sh/) | [Scriptly Page](https://scriptly.store/products/shadcn-saas-landing) | [Template #1011](https://21st.dev/community/templates/quicklaunch-ai-saas-landing-modern-next-js-shadcn-ui-template) | `shadcn-saas-landing.zip` | 🟢 Published |
+| 14 | **Shadcn Admin Suite** | Enterprise Admin | React 19 + TanStack + shadcn | $49.00 | [Live Demo](https://shadcn-admin-suite.surge.sh/) | [Scriptly Page](https://scriptly.store/products/shadcn-admin-suite) | [Template #1012](https://21st.dev/community/templates/shadcn-admin-suite-enterprise-react-tanstack-dashboard-console) | `shadcn-admin-suite.zip` | 🟢 Published |
+| 15 | **DevCraft Pro Portfolio** | Senior Dev Portfolio | Next.js 14 + Magic UI | $39.00 | [Live Demo](https://magicui-devcraft-portfolio.surge.sh/) | [Scriptly Page](https://scriptly.store/products/magicui-devcraft-portfolio) | [Template #1013](https://21st.dev/community/templates/devcraft-pro-senior-software-engineer-magic-ui-portfolio) | `magicui-devcraft-portfolio.zip` | 🟢 Published |
+| 16 | **MedPulse Pro Clinic** | Clinic / Healthcare | Next.js 14 + Tailwind | $49.00 | [Live Demo](https://medpulse-clinic-pro.surge.sh/) | [Scriptly Page](https://scriptly.store/products/medpulse-clinic-pro) | [Template #1014](https://21st.dev/community/templates/medpulse-pro-healthcare-clinic-physician-practice-template) | `medpulse-clinic-pro.zip` | 🟢 Published |
+| 17 | **SmileCraft Dental Clinic** | Dental Practice | Next.js 14 + Tailwind | $49.00 | [Live Demo](https://smilecraft-dental-clinic.surge.sh/) | [Scriptly Page](https://scriptly.store/products/smilecraft-dental-clinic) | [Template #1015](https://21st.dev/community/templates/smilecraft-dental-cosmetic-dentistry-oral-care-portal) | `smilecraft-dental-clinic.zip` | 🟢 Published |
+| 18 | **Bistrot Moderne Dining** | Restaurant / Food | React 19 + Vite + Tailwind | $39.00 | [Live Demo](https://bistrot-moderne-dining.surge.sh/) | [Scriptly Page](https://scriptly.store/products/bistrot-moderne-dining) | [Template #1016](https://21st.dev/community/templates/bistrot-moderne-fine-dining-restaurant-culinary-showcase) | `bistrot-moderne-dining.zip` | 🟢 Published |
+| 19 | **LexJuris Agency Pro** | Legal / Advisory | Bootstrap 5 + Vanilla JS | $39.00 | [Live Demo](https://lexjuris-agency-pro.netlify.app/) | [Scriptly Page](https://scriptly.store/products/lexjuris-agency-pro) | [Template #1017](https://21st.dev/community/templates/lexjuris-agency-pro-corporate-legal-advisory-firm-theme) | `lexjuris-agency-pro.zip` | 🟢 Published |
+| 20 | **AstroPaper Tech Blog** | Markdown Tech Blog | Astro 7 + Tailwind | $29.00 | [Live Demo](https://astropaper-tech-blog.surge.sh/) | [Scriptly Page](https://scriptly.store/products/astropaper-tech-blog) | [Template #1018](https://21st.dev/community/templates/astropaper-tech-blog-ultra-fast-100-100-lighthouse-markdown-engine) | `astropaper-tech-blog.zip` | 🟢 Published |
 
 ---
 

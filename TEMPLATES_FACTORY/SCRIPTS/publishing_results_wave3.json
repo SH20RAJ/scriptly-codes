@@ -1,0 +1,138 @@
+[
+  {
+    "slug": "shadcn-saas-landing",
+    "name": "QuickLaunch AI & SaaS Landing \u2014 Modern Next.js & Shadcn UI Template",
+    "domain": "shadcn-saas-landing.surge.sh",
+    "price": 39,
+    "scriptly": {
+      "success": true,
+      "action": "created",
+      "status": 201
+    },
+    "twentyfirst": {
+      "success": true,
+      "id": 1011,
+      "slug": "quicklaunch-ai-saas-landing-modern-next-js-shadcn-ui-template",
+      "url": "https://21st.dev/community/templates/quicklaunch-ai-saas-landing-modern-next-js-shadcn-ui-template"
+    }
+  },
+  {
+    "slug": "shadcn-admin-suite",
+    "name": "Shadcn Admin Suite \u2014 Enterprise React & TanStack Dashboard Console",
+    "domain": "shadcn-admin-suite.surge.sh",
+    "price": 49,
+    "scriptly": {
+      "success": true,
+      "action": "created",
+      "status": 201
+    },
+    "twentyfirst": {
+      "success": true,
+      "id": 1012,
+      "slug": "shadcn-admin-suite-enterprise-react-tanstack-dashboard-console",
+      "url": "https://21st.dev/community/templates/shadcn-admin-suite-enterprise-react-tanstack-dashboard-console"
+    }
+  },
+  {
+    "slug": "magicui-devcraft-portfolio",
+    "name": "DevCraft Pro \u2014 Senior Software Engineer Magic UI Portfolio",
+    "domain": "magicui-devcraft-portfolio.surge.sh",
+    "price": 39,
+    "scriptly": {
+      "success": true,
+      "action": "created",
+      "status": 201
+    },
+    "twentyfirst": {
+      "success": true,
+      "id": 1013,
+      "slug": "devcraft-pro-senior-software-engineer-magic-ui-portfolio",
+      "url": "https://21st.dev/community/templates/devcraft-pro-senior-software-engineer-magic-ui-portfolio"
+    }
+  },
+  {
+    "slug": "medpulse-clinic-pro",
+    "name": "MedPulse Pro \u2014 Healthcare Clinic & Physician Practice Template",
+    "domain": "medpulse-clinic-pro.surge.sh",
+    "price": 49,
+    "scriptly": {
+      "success": true,
+      "action": "created",
+      "status": 201
+    },
+    "twentyfirst": {
+      "success": true,
+      "id": 1014,
+      "slug": "medpulse-pro-healthcare-clinic-physician-practice-template",
+      "url": "https://21st.dev/community/templates/medpulse-pro-healthcare-clinic-physician-practice-template"
+    }
+  },
+  {
+    "slug": "smilecraft-dental-clinic",
+    "name": "SmileCraft Dental \u2014 Cosmetic Dentistry & Oral Care Portal",
+    "domain": "smilecraft-dental-clinic.surge.sh",
+    "price": 49,
+    "scriptly": {
+      "success": true,
+      "action": "created",
+      "status": 201
+    },
+    "twentyfirst": {
+      "success": true,
+      "id": 1015,
+      "slug": "smilecraft-dental-cosmetic-dentistry-oral-care-portal",
+      "url": "https://21st.dev/community/templates/smilecraft-dental-cosmetic-dentistry-oral-care-portal"
+    }
+  },
+  {
+    "slug": "bistrot-moderne-dining",
+    "name": "Bistrot Moderne \u2014 Fine Dining Restaurant & Culinary Showcase",
+    "domain": "bistrot-moderne-dining.surge.sh",
+    "price": 39,
+    "scriptly": {
+      "success": true,
+      "action": "created",
+      "status": 201
+    },
+    "twentyfirst": {
+      "success": true,
+      "id": 1016,
+      "slug": "bistrot-moderne-fine-dining-restaurant-culinary-showcase",
+      "url": "https://21st.dev/community/templates/bistrot-moderne-fine-dining-restaurant-culinary-showcase"
+    }
+  },
+  {
+    "slug": "lexjuris-agency-pro",
+    "name": "LexJuris Agency Pro \u2014 Corporate Legal & Advisory Firm Theme",
+    "domain": "lexjuris-agency-pro.surge.sh",
+    "price": 39,
+    "scriptly": {
+      "success": true,
+      "action": "created",
+      "status": 201
+    },
+    "twentyfirst": {
+      "success": true,
+      "id": 1017,
+      "slug": "lexjuris-agency-pro-corporate-legal-advisory-firm-theme",
+      "url": "https://21st.dev/community/templates/lexjuris-agency-pro-corporate-legal-advisory-firm-theme"
+    }
+  },
+  {
+    "slug": "astropaper-tech-blog",
+    "name": "AstroPaper Tech Blog \u2014 Ultra-Fast 100/100 Lighthouse Markdown Engine",
+    "domain": "astropaper-tech-blog.surge.sh",
+    "price": 29,
+    "scriptly": {
+      "success": true,
+      "action": "created",
+      "status": 201
+    },
+    "twentyfirst": {
+      "success": true,
+      "id": 1018,
+      "slug": "astropaper-tech-blog-ultra-fast-100-100-lighthouse-markdown-engine",
+      "url": "https://21st.dev/community/templates/astropaper-tech-blog-ultra-fast-100-100-lighthouse-markdown-engine"
+    }
+  }
+]
