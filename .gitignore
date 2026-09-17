@@ -4,7 +4,7 @@ node_modules
 .env
 .DS_Store
 RAW_PRODUCT/
-publish-21st/
+/publish-21st/
 *.mov
 .next/
 _next/
