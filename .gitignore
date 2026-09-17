@@ -6,3 +6,7 @@ node_modules
 RAW_PRODUCT/
 publish-21st/
 *.mov
+.next/
+_next/
+out/
+screenshots_real/
