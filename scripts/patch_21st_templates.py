@@ -2,11 +2,25 @@
 """
 Patch 21st.dev templates with verified live demo URLs and authentic Retina screenshots.
 """
+import os
+from pathlib import Path
 import urllib.request
 import json
 import time
 
-API_KEY = "21st_sk_72d6ae9d2237f5ad7986e096d11e6310b3c16d97cfba3db675b95fe0c7787ac1"
+def get_env_var(name, fallback=""):
+    val = os.environ.get(name)
+    if val:
+        return val
+    env_path = Path(__file__).resolve().parents[1] / ".env"
+    if env_path.exists():
+        for line in env_path.read_text().splitlines():
+            line = line.strip()
+            if line.startswith(f"{name}="):
+                return line.split("=", 1)[1].strip()
+    return fallback
+
+API_KEY = get_env_var("TWENTYFIRST_API_KEY") or get_env_var("API_KEY_21ST")
 
 PATCH_SPECS = [
     # Aethel

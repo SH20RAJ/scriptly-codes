@@ -3,12 +3,26 @@
 Publish/Update the 5 recent templates to Scriptly Store with verified live demos and authentic Retina screenshots.
 """
 import json
+import os
+from pathlib import Path
 import urllib.request
 import urllib.error
 import time
 
-API_URL = "https://scriptly.store/api/agent/products"
-API_KEY = "sa_key_f28a9b3d5c6e8f0a1c7d2e4b"
+def get_env_var(name, fallback=""):
+    val = os.environ.get(name)
+    if val:
+        return val
+    env_path = Path(__file__).resolve().parents[1] / ".env"
+    if env_path.exists():
+        for line in env_path.read_text().splitlines():
+            line = line.strip()
+            if line.startswith(f"{name}="):
+                return line.split("=", 1)[1].strip()
+    return fallback
+
+API_URL = os.environ.get("SCRIPTLY_API_URL", "https://scriptly.store/api/agent/products")
+API_KEY = get_env_var("SCRIPTLY_API_KEY") or get_env_var("AGENT_API_KEY")
 
 TEMPLATES = [
     {

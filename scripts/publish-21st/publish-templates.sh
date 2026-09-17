@@ -3,7 +3,13 @@
 set -e
 
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-API_KEY="${API_KEY_21ST:-21st_sk_72d6ae9d2237f5ad7986e096d11e6310b3c16d97cfba3db675b95fe0c7787ac1}"
+if [ -f "$DIR/../../.env" ]; then
+  export $(grep -E '^(API_KEY_21ST|TWENTYFIRST_API_KEY)=' "$DIR/../../.env" | xargs)
+elif [ -f ".env" ]; then
+  export $(grep -E '^(API_KEY_21ST|TWENTYFIRST_API_KEY)=' .env | xargs)
+fi
+
+API_KEY="${API_KEY_21ST:-$TWENTYFIRST_API_KEY}"
 
 echo "=================================================="
 echo "Publishing Paid Templates to 21st.dev Registry"

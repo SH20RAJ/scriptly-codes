@@ -14,10 +14,10 @@
 | **ASCII Art** | `21st publish-ascii <recipe.json>` | Active CLI Login or API Key |
 
 ### Environment Setup
-Your API key is saved in `~/.zshrc`:
+Your API key can be set in `.env` or exported in your shell:
 ```bash
-export API_KEY_21ST="21st_sk_72d6ae9d2237f5ad7986e096d11e6310b3c16d97cfba3db675b95fe0c7787ac1"
-export TWENTYFIRST_TOKEN="21st_sk_72d6ae9d2237f5ad7986e096d11e6310b3c16d97cfba3db675b95fe0c7787ac1"
+export API_KEY_21ST="<your_21st_api_key>"
+export TWENTYFIRST_TOKEN="<your_21st_api_key>"
 ```
 
 ---

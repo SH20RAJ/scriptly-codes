@@ -11,14 +11,28 @@ import re
 import json
 import time
 import subprocess
+import os
+from pathlib import Path
 import urllib.request
 import urllib.error
 
-SCRIPTLY_API_URL = "https://scriptly.store/api/agent/products"
-SCRIPTLY_KEY = "sa_key_f28a9b3d5c6e8f0a1c7d2e4b"
+def get_env_var(name, fallback=""):
+    val = os.environ.get(name)
+    if val:
+        return val
+    env_path = Path(__file__).resolve().parents[2] / ".env"
+    if env_path.exists():
+        for line in env_path.read_text().splitlines():
+            line = line.strip()
+            if line.startswith(f"{name}="):
+                return line.split("=", 1)[1].strip()
+    return fallback
 
-TWENTYFIRST_API_URL = "https://21st.dev/api/v1/templates/publish"
-TWENTYFIRST_KEY = "21st_sk_72d6ae9d2237f5ad7986e096d11e6310b3c16d97cfba3db675b95fe0c7787ac1"
+SCRIPTLY_API_URL = os.environ.get("SCRIPTLY_API_URL", "https://scriptly.store/api/agent/products")
+SCRIPTLY_KEY = get_env_var("SCRIPTLY_API_KEY") or get_env_var("AGENT_API_KEY")
+
+TWENTYFIRST_API_URL = os.environ.get("TWENTYFIRST_API_URL", "https://21st.dev/api/v1/templates/publish")
+TWENTYFIRST_KEY = get_env_var("TWENTYFIRST_API_KEY") or get_env_var("API_KEY_21ST")
 
 PRODUCTS = [
     {
